@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:complexType name="AuthorType">
+        <xs:sequence>
+            <xs:element ref="Author" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ObjectiveType">
+        <xs:sequence>
+            <xs:element name="UsageFeature" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="Description" type="xs:string"/>
+            <xs:element name="Page" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PublicationIdentifierType">
+        <xs:sequence>
+            <xs:element name="IdentifierType" type="xs:string"/>
+            <xs:element name="IdentifierValue" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="RepositoryType">
+        <xs:sequence>
+            <xs:element name="RepoType" type="xs:string"/>
+            <xs:element name="URL" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AuthorsType">
+        <xs:sequence>
+            <xs:element name="AuthorUrl" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="FeatureType">
+        <xs:sequence>
+            <xs:element name="FeatureName" type="xs:string"/>
+            <xs:element name="Description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SoftwareIdentifierType">
+        <xs:complexContent>
+            <xs:extension base="GenericIdentifierType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="SoftwareCitationType">
+        <xs:sequence>
+            <xs:element name="PublicationIdentifier" type="PublicationIdentifierType"/>
+            <xs:element maxOccurs="unbounded" name="SoftwareUsage">
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="SoftwareIdentifierType">
+                            <xs:sequence>
+                                <xs:element ref="Objective"/>
+                            </xs:sequence>
+                        </xs:extension>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SoftwareType">
+        <xs:sequence>
+            <xs:element ref="Software" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="SoftwareCitation" type="SoftwareCitationType"> </xs:element>
+    <xs:complexType name="AuthorIdentifierType">
+        <xs:sequence>
+            <xs:element name="Identifier" type="GenericIdentifierType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AuthorNameType">
+        <xs:sequence>
+            <xs:element minOccurs="1" name="FirstName" type="xs:string"/>
+            <xs:element minOccurs="0" name="MidleName" type="xs:string"/>
+            <xs:element minOccurs="0" name="LastName" type="xs:string"/>
+            <xs:element name="RecordedDate" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AffiliationIdentifierType">
+        <xs:sequence>
+            <xs:element name="Identifier" type="GenericIdentifierType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GenericIdentifierType">
+        <xs:sequence>
+            <xs:element name="IdentifierType" type="xs:string"/>
+            <xs:element name="IdentifierValue" type="xs:string"/>
+            <xs:element minOccurs="0" name="RecordedDate" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PublicationType">
+        <xs:sequence>
+            <xs:element ref="Publication" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="SoftwareCitationRoot">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="SoftwareCitationList"/>
+                <xs:element ref="PublicationList"/>
+                <xs:element ref="AuthorList"/>
+                <xs:element ref="SoftwareList"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SoftwareCitationList">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="SoftwareCitation"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SoftwareList" type="SoftwareType"/>
+    <xs:element name="AuthorList" type="AuthorType"/>
+    <xs:element name="PublicationList" type="PublicationType"/>
+    <xs:element name="Publication">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="PublicationTitle" type="xs:string"/>
+                <xs:element name="PublicationIdentifiers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PublicationIdentifier"
+                                type="PublicationIdentifierType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Authors">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Author" type="AuthorIdentifierType"
+                                maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Software">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="SoftwareNames">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="SoftwareName" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SoftwareIdentifier" type="GenericIdentifierType"/>
+                <xs:element name="SoftwarePlatforms">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PlatformName" type="xs:string" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Repository" type="RepositoryType"/>
+                <xs:element name="Version" type="xs:string"/>
+                <xs:element name="Features">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Feature" type="FeatureType" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Contributors" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Contributor" type="AuthorIdentifierType"
+                                maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Author">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="AuthorIdentifiers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="AuthorIdentifier"
+                                type="AuthorIdentifierType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="AuthorNames">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded">
+                            <xs:element name="AuthorName" type="AuthorNameType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Affiliations" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="AffiliationIdentifier"
+                                type="AffiliationIdentifierType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Objective" type="ObjectiveType"/>
+</xs:schema>
