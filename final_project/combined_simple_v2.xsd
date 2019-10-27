@@ -7,7 +7,7 @@
     </xs:complexType>
     <xs:complexType name="ObjectiveType">
         <xs:sequence>
-            <xs:element name="UsageFeature" type="xs:string"/>
+            <xs:element name="UsageFeature" type="xs:string" maxOccurs="unbounded"/>
             <xs:element name="Description" type="xs:string"/>
             <xs:element name="Page" type="xs:int" maxOccurs="unbounded" minOccurs="0"/>
         </xs:sequence>
@@ -98,7 +98,7 @@
                 <xs:element ref="SoftwareCitationList"/>
                 <xs:element ref="PublicationList"/>
                 <xs:element ref="AuthorLIst"/>
-                <xs:element ref="SoftwareList"/>
+                <xs:element name="newElement"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -127,7 +127,8 @@
                 <xs:element name="Authors">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="Author" type="AuthorIdentifierType"/>
+                            <xs:element name="Author" type="AuthorIdentifierType"
+                                maxOccurs="unbounded"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -148,7 +149,7 @@
                 <xs:element name="SoftwarePlatforms">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="PlatformName" type="xs:string"/>
+                            <xs:element name="PlatformName" type="xs:string" maxOccurs="unbounded"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -157,7 +158,7 @@
                 <xs:element name="Features">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="Feature" type="FeatureType"/>
+                            <xs:element name="Feature" type="FeatureType" maxOccurs="unbounded"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
