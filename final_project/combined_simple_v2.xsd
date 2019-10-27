@@ -2,7 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
     <xs:complexType name="AuthorType">
         <xs:sequence>
-            <xs:element ref="Author"/>
+            <xs:element ref="Author" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="ObjectiveType">
@@ -58,7 +58,7 @@
     </xs:complexType>
     <xs:complexType name="SoftwareType">
         <xs:sequence>
-            <xs:element ref="Software"/>
+            <xs:element ref="Software" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     <xs:element name="SoftwareCitation" type="SoftwareCitationType"> </xs:element>
@@ -89,7 +89,7 @@
     </xs:complexType>
     <xs:complexType name="PublicationType">
         <xs:sequence>
-            <xs:element ref="Publication"/>
+            <xs:element ref="Publication" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     <xs:element name="SoftwareCitationRoot">
@@ -97,20 +97,20 @@
             <xs:sequence>
                 <xs:element ref="SoftwareCitationList"/>
                 <xs:element ref="PublicationList"/>
-                <xs:element ref="AuthorLIst"/>
-                <xs:element name="newElement"/>
+                <xs:element ref="AuthorList"/>
+                <xs:element ref="SoftwareList"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
     <xs:element name="SoftwareCitationList">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="SoftwareCitation"/>
+                <xs:element maxOccurs="unbounded" ref="SoftwareCitation"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
     <xs:element name="SoftwareList" type="SoftwareType"/>
-    <xs:element name="AuthorLIst" type="AuthorType"/>
+    <xs:element name="AuthorList" type="AuthorType"/>
     <xs:element name="PublicationList" type="PublicationType"/>
     <xs:element name="Publication">
         <xs:complexType>
