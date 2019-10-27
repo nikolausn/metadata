@@ -12,6 +12,12 @@
             <xs:element name="AuthorUrl" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
+    <xs:complexType name="FeatureType">
+        <xs:sequence>
+            <xs:element name="FeatureName" type="xs:string"/>
+            <xs:element name="Description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
     <xs:element name="Software">
         <xs:complexType>
             <xs:sequence>
@@ -31,6 +37,13 @@
                 </xs:element>
                 <xs:element name="Repository" type="RepositoryType"/>
                 <xs:element name="Version" type="xs:string"/>
+                <xs:element name="Features">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Feature" type="FeatureType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
                 <xs:element name="Contributors">
                     <xs:complexType>
                         <xs:sequence>
