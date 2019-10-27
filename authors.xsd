@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    vc:maxVersion="1.1" vc:minVersion="1.0" xmlns:person="https://schema.org/Person"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+
+    <xs:element name="Author">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="AuthorIdentifiers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="AuthorIdentifier"
+                                type="AuthorIdentifierType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="AuthorNames">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="unbounded">
+                            <xs:element name="AuthorName" type="AuthorNameType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Affiliations">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="AffiliationIdentifier"
+                                type="AffiliationIdentifierType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="AuthorIdentifierType">
+        <xs:sequence>
+            <xs:element name="Identifier" type="GenericIdentifierType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AuthorNameType">
+        <xs:sequence>
+            <xs:element minOccurs="1" name="FirstName" type="xs:string"/>
+            <xs:element minOccurs="0" name="MidleName" type="xs:string"/>
+            <xs:element minOccurs="0" name="LastName" type="xs:string"/>
+            <xs:element name="RecordedDate" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AffiliationIdentifierType">
+        <xs:sequence>
+            <xs:element name="Identifier" type="GenericIdentifierType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GenericIdentifierType">
+        <xs:sequence>
+            <xs:element name="IdentifierType" type="xs:string"/>
+            <xs:element name="IdentifierValue" type="xs:string"/>
+            <xs:element minOccurs="0" name="RecordedDate" type="xs:dateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

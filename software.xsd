@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    xmlns:author="authors.xsd">
+    <xs:complexType name="RepositoryType">
+        <xs:sequence>
+            <xs:element name="RepoType" type="xs:string"/>
+            <xs:element name="URL" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AuthorsType">
+        <xs:sequence>
+            <xs:element name="AuthorUrl" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Software">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="SoftwareNames">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="SoftwareName" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SoftwarePlatforms">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PlatformName"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Version" type="xs:string"/>
+                <xs:element name="Repository" type="RepositoryType"/>
+                <xs:element name="Contributors">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Contributor" type="AuthorsType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

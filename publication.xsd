@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:complexType name="AuthorType">
+        <xs:sequence>
+            <xs:element name="AuthorUrl" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SoftwareType">
+        <xs:sequence>
+            <xs:element name="SoftwareUrl" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ObjectiveType">
+        <xs:sequence>
+            <xs:element name="UsageFeature" type="xs:string"/>
+            <xs:element name="Description" type="xs:string"/>
+            <xs:element name="Page" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Publication">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="PublicationTitle"/>
+                <xs:element name="PublicationIdentifiers"/>
+                <xs:element name="Authors">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Author" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SoftwareList">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Software">
+                                <xs:complexType>
+                                    <xs:complexContent>
+                                        <xs:extension base="SoftwareType">
+                                            <xs:sequence>
+                                                <xs:element name="Objectives">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element ref="Objective"/>
+                                                  </xs:sequence>
+                                                  </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:extension>
+                                    </xs:complexContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Objective" type="ObjectiveType"/>
+</xs:schema>
