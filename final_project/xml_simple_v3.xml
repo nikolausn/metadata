@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SoftwareCitationRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="combined_simple_v3.xsd">
+    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/nikolausn/metadata/master/final_project/combined_simple_v3.xsd?token=AFNYOPSWIGNWYR6F7ZV7WQC5X45K4">
     <SoftwareCitationList>
         <SoftwareCitation>
             <PublicationIdentifier>
@@ -32,8 +32,55 @@
                 </Objective>
             </SoftwareUsage>
         </SoftwareCitation>
+        <SoftwareCitation>
+            <PublicationIdentifier>
+                <IdentifierType>DOI</IdentifierType>
+                <IdentifierValue>10.1086/673276</IdentifierValue>
+            </PublicationIdentifier>
+            <SoftwareUsage>
+                <IdentifierType>URL</IdentifierType>
+                <IdentifierValue>https://www.inphoproject.org</IdentifierValue>
+                <Objective>
+                    <UsageFeature>Figure</UsageFeature>
+                    <Description>Visualization Between Topic and Terms similar to "Kant"</Description>
+                    <Page>582</Page>
+                </Objective>
+            </SoftwareUsage>
+        </SoftwareCitation>
+        <SoftwareCitation>
+            <PublicationIdentifier>
+                <IdentifierType>URL</IdentifierType>
+                <IdentifierValue>https://www.researchgate.net/publication/267806761</IdentifierValue>
+            </PublicationIdentifier>
+            <SoftwareUsage>
+                <IdentifierType>URL</IdentifierType>
+                <IdentifierValue>https://www.inphoproject.org</IdentifierValue>
+                <Objective>
+                    <UsageFeature>API</UsageFeature>
+                    <Description>Use of InphoAPI for a seamless integration among digital philosophy applications.</Description>
+                    <Page>582</Page>
+                </Objective>
+            </SoftwareUsage>
+        </SoftwareCitation>        
     </SoftwareCitationList>
-    <PublicationList>
+    <PublicationList>        
+        <Publication>
+            <PublicationTitle>InPhO for All: Why APIs Matter</PublicationTitle>
+            <PublicationIdentifiers>
+                <PublicationIdentifier>
+                    <IdentifierType>URL</IdentifierType>
+                    <IdentifierValue>https://www.researchgate.net/publication/267806761</IdentifierValue>
+                </PublicationIdentifier>
+            </PublicationIdentifiers>
+            <Authors>
+                <Author>
+                    <Identifier>
+                        <IdentifierType>local</IdentifierType>
+                        <IdentifierValue>1</IdentifierValue>
+                    </Identifier>                    
+                </Author>                    
+            </Authors>
+        </Publication>
         <Publication>
             <PublicationTitle>Topic Exploration with the HTRC Data Capsule for Non-Consumptive Research</PublicationTitle>
             <PublicationIdentifiers>
@@ -84,6 +131,23 @@
                         <IdentifierValue>5</IdentifierValue>
                     </Identifier>                    
                 </Author>    
+            </Authors>
+        </Publication>
+        <Publication>
+            <PublicationTitle>Cross-Cutting Categorization Schemes in the Digital Humanities</PublicationTitle>
+            <PublicationIdentifiers>
+                <PublicationIdentifier>
+                    <IdentifierType>DOI</IdentifierType>
+                    <IdentifierValue>10.1086/673276</IdentifierValue>
+                </PublicationIdentifier>
+            </PublicationIdentifiers>
+            <Authors>
+                <Author>
+                    <Identifier>
+                        <IdentifierType>local</IdentifierType>
+                        <IdentifierValue>5</IdentifierValue>
+                    </Identifier>                    
+                </Author>
             </Authors>
         </Publication>
     </PublicationList>
