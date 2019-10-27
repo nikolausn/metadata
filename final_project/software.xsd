@@ -25,12 +25,12 @@
                 <xs:element name="SoftwarePlatforms">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="PlatformName"/>
+                            <xs:element name="PlatformName" type="xs:string"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="Version" type="xs:string"/>
                 <xs:element name="Repository" type="RepositoryType"/>
+                <xs:element name="Version" type="xs:string"/>
                 <xs:element name="Contributors">
                     <xs:complexType>
                         <xs:sequence>

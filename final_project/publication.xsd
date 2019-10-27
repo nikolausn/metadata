@@ -18,11 +18,24 @@
             <xs:element name="Page" type="xs:int"/>
         </xs:sequence>
     </xs:complexType>
+    <xs:complexType name="PublicationIdentifierType">
+        <xs:sequence>
+            <xs:element name="IdentifierType" type="xs:string"/>
+            <xs:element name="IdentifierValue" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
     <xs:element name="Publication">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="PublicationTitle"/>
-                <xs:element name="PublicationIdentifiers"/>
+                <xs:element name="PublicationTitle" type="xs:string"/>
+                <xs:element name="PublicationIdentifiers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="PublicationIdentifier"
+                                type="PublicationIdentifierType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
                 <xs:element name="Authors">
                     <xs:complexType>
                         <xs:sequence>
