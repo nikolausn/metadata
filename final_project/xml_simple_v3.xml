@@ -4,6 +4,102 @@
     <SoftwareCitationList>
         <SoftwareCitation>
             <PublicationIdentifier>
+                <IdentifierType>doi</IdentifierType>
+                <IdentifierValue>10.1088/0004-637X/745/2/154</IdentifierValue>
+            </PublicationIdentifier>
+            <SoftwareUsage>
+                <IdentifierType>URL</IdentifierType>
+                <IdentifierValue>https://yt-project.org/</IdentifierValue>
+                <Objective>
+                    <UsageFeature>Visualization</UsageFeature>
+                    <Description>Figure 4. Density-weighted projections (through the entire simulation domain) of the average density field in simulations J16 (left column), J32 (second column), and
+                        J64 (third column) at fields of view of 300 pc (top row), 1 pc (middle row), and 1000 AU (bottom row).</Description>
+                    <Page>6</Page>
+                </Objective>
+            </SoftwareUsage>
+        </SoftwareCitation>
+        <SoftwareCitation>
+            <PublicationIdentifier>
+                <IdentifierType>URL</IdentifierType>
+                <IdentifierValue>https://arxiv.org/abs/1112.4482</IdentifierValue>
+            </PublicationIdentifier>
+            <SoftwareUsage>
+                <IdentifierType>URL</IdentifierType>
+                <IdentifierValue>https://yt-project.org/</IdentifierValue>
+                <Objective>
+                    <UsageFeature>Analysis</UsageFeature>
+                    <Description>However, the usual means of doing
+                        this is through either a substantial hand-written framework
+                        that attempts to account for every analysis task, or a limited
+                        framework that only handles very limited analysis tasks.
+                        yt provides an explicit embedding API to enable in-line
+                        analysis.</Description>
+                </Objective>
+            </SoftwareUsage>
+        </SoftwareCitation>
+        <SoftwareCitation>
+            <PublicationIdentifier>
+                <IdentifierType>doi</IdentifierType>
+                <IdentifierValue>10.1088/0067-0049/192/1/9</IdentifierValue>
+            </PublicationIdentifier>
+            <SoftwareUsage>
+                <IdentifierType>URL</IdentifierType>
+                <IdentifierValue>https://yt-project.org/</IdentifierValue>
+                <Objective>
+                    <UsageFeature>Visualization</UsageFeature>
+                    <Description>Figure 1. Script that loads data from disk, identifies halos within that data set,
+                        and then projects the density of those halos aligned with the angular momentum
+                        vector of the halo.</Description>
+                    <Page>2</Page>
+                </Objective>
+            </SoftwareUsage>
+            <SoftwareUsage>
+                <IdentifierType>URL</IdentifierType>
+                <IdentifierValue>https://yt-project.org/</IdentifierValue>
+                <Objective>
+                    <UsageFeature>Dataset Processing</UsageFeature>
+                    <Description>Sample source code providing screen shot of how to process dataset using yt library</Description>
+                    <Page>3</Page>
+                </Objective>
+            </SoftwareUsage>
+        </SoftwareCitation>
+        <SoftwareCitation>
+            <PublicationIdentifier>
+                <IdentifierType>URL</IdentifierType>
+                <IdentifierValue>https://arxiv.org/abs/1112.4482</IdentifierValue>
+            </PublicationIdentifier>
+            <SoftwareUsage>
+                <IdentifierType>URL</IdentifierType>
+                <IdentifierValue>https://yt-project.org/</IdentifierValue>
+                <Objective>
+                    <UsageFeature>Analysis</UsageFeature>
+                    <Description>However, the usual means of doing
+                        this is through either a substantial hand-written framework
+                        that attempts to account for every analysis task, or a limited
+                        framework that only handles very limited analysis tasks.
+                        yt provides an explicit embedding API to enable in-line
+                        analysis.</Description>
+                </Objective>
+            </SoftwareUsage>
+        </SoftwareCitation>
+        <SoftwareCitation>
+            <PublicationIdentifier>
+                <IdentifierType>doi</IdentifierType>
+                <IdentifierValue>10.1088/0004-637X/726/1/55</IdentifierValue>
+            </PublicationIdentifier>
+            <SoftwareUsage>
+                <IdentifierType>URL</IdentifierType>
+                <IdentifierValue>https://yt-project.org/</IdentifierValue>
+                <Objective>
+                    <UsageFeature>Visualization</UsageFeature>
+                    <Description>Figure 6. Mass-weighted average quantities, calculated along rays at every pixel. Rays are cast parallel to the angular momentum vector of the region in question for
+                        every column for the AMR simulations and parallel to the Z-axis for the SPH simulations</Description>
+                    <Page>8</Page>
+                </Objective>
+            </SoftwareUsage>
+        </SoftwareCitation>
+        <SoftwareCitation>
+            <PublicationIdentifier>
                 <IdentifierType>DOI</IdentifierType>
                 <IdentifierValue>10.1145/2756406.2756929</IdentifierValue>
             </PublicationIdentifier>
@@ -63,7 +159,96 @@
             </SoftwareUsage>
         </SoftwareCitation>        
     </SoftwareCitationList>
-    <PublicationList>        
+    <PublicationList>
+        <Publication>
+            <PublicationTitle>EFFECTS OF VARYING THE THREE-BODY MOLECULAR HYDROGEN FORMATION RATE IN PRIMORDIAL STAR FORMATION</PublicationTitle>
+            <PublicationIdentifiers>
+                <PublicationIdentifier>
+                    <IdentifierType>doi</IdentifierType>
+                    <IdentifierValue>10.1088/0004-637X/726/1/55</IdentifierValue>
+                </PublicationIdentifier>
+            </PublicationIdentifiers>
+            <Authors>
+                <Author>
+                    <Identifier>
+                        <IdentifierType>local</IdentifierType>
+                        <IdentifierValue>6</IdentifierValue>
+                    </Identifier>                    
+                </Author>                    
+            </Authors>
+        </Publication>
+        <Publication>
+            <PublicationTitle>High-Performance Astrophysical Simulations and Analysis with Python</PublicationTitle>
+            <PublicationIdentifiers>
+                <PublicationIdentifier>
+                    <IdentifierType>arXiv</IdentifierType>
+                    <IdentifierValue>1112.4482</IdentifierValue>
+                </PublicationIdentifier>
+                <PublicationIdentifier>
+                    <IdentifierType>URL</IdentifierType>
+                    <IdentifierValue>https://arxiv.org/abs/1112.4482</IdentifierValue>
+                </PublicationIdentifier>
+            </PublicationIdentifiers>
+            <Authors>
+                <Author>
+                    <Identifier>
+                        <IdentifierType>local</IdentifierType>
+                        <IdentifierValue>6</IdentifierValue>
+                    </Identifier>                    
+                </Author>                    
+            </Authors>
+        </Publication>
+        <Publication>
+            <PublicationTitle>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</PublicationTitle>
+            <PublicationIdentifiers>
+                <PublicationIdentifier>
+                    <IdentifierType>doi</IdentifierType>
+                    <IdentifierValue>10.1088/0067-0049/192/1/9</IdentifierValue>
+                </PublicationIdentifier>
+            </PublicationIdentifiers>
+            <Authors>
+                <Author>
+                    <Identifier>
+                        <IdentifierType>local</IdentifierType>
+                        <IdentifierValue>6</IdentifierValue>
+                    </Identifier>                    
+                </Author>                    
+            </Authors>
+        </Publication>
+        <Publication>
+            <PublicationTitle>MAGNETIC FIELDS IN POPULATION III STAR FORMATION</PublicationTitle>
+            <PublicationIdentifiers>
+                <PublicationIdentifier>
+                    <IdentifierType>doi</IdentifierType>
+                    <IdentifierValue>10.1088/0004-637X/745/2/154</IdentifierValue>
+                </PublicationIdentifier>
+            </PublicationIdentifiers>
+            <Authors>
+                <Author>
+                    <Identifier>
+                        <IdentifierType>local</IdentifierType>
+                        <IdentifierValue>6</IdentifierValue>
+                    </Identifier>                    
+                </Author>                    
+            </Authors>
+        </Publication>
+        <Publication>
+            <PublicationTitle>How to Scale a Code in the Human Dimension</PublicationTitle>
+            <PublicationIdentifiers>
+                <PublicationIdentifier>
+                    <IdentifierType>arxiv</IdentifierType>
+                    <IdentifierValue>1301.7064</IdentifierValue>
+                </PublicationIdentifier>
+            </PublicationIdentifiers>
+            <Authors>
+                <Author>
+                    <Identifier>
+                        <IdentifierType>local</IdentifierType>
+                        <IdentifierValue>6</IdentifierValue>
+                    </Identifier>                    
+                </Author>                    
+            </Authors>
+        </Publication>
         <Publication>
             <PublicationTitle>InPhO for All: Why APIs Matter</PublicationTitle>
             <PublicationIdentifiers>
@@ -242,6 +427,24 @@
                 </AuthorName>
             </AuthorNames>
         </Author>
+        <Author>
+            <AuthorIdentifiers>
+                <AuthorIdentifier>
+                    <Identifier>
+                        <IdentifierType>local</IdentifierType>
+                        <IdentifierValue>6</IdentifierValue>
+                        <RecordedDate>2019-10-27T14:39:00</RecordedDate>
+                    </Identifier>
+                </AuthorIdentifier>
+            </AuthorIdentifiers>
+            <AuthorNames>
+                <AuthorName>
+                    <FirstName>Matthew</FirstName>
+                    <LastName>Turk</LastName>
+                    <RecordedDate>2019-10-27T14:39:00</RecordedDate>
+                </AuthorName>
+            </AuthorNames>
+        </Author>
     </AuthorList>
     <SoftwareList>
         <Software>
@@ -281,6 +484,50 @@
                     <Identifier>
                         <IdentifierType>local</IdentifierType>
                         <IdentifierValue>1</IdentifierValue>
+                    </Identifier>             
+                </Contributor>
+            </Contributors>
+        </Software>
+        <Software>
+            <SoftwareNames>
+                <SoftwareName>yt</SoftwareName>
+            </SoftwareNames>
+            <SoftwareIdentifier>
+                <IdentifierType>URL</IdentifierType>
+                <IdentifierValue>https://yt-project.org/</IdentifierValue>
+            </SoftwareIdentifier>
+            <SoftwarePlatforms>
+                <PlatformName>Python</PlatformName>
+                <PlatformName>Jupyter Notebook</PlatformName>
+            </SoftwarePlatforms>
+            <Repository>
+                <RepoType>Github</RepoType>
+                <URL>https://github.com/yt-project</URL>
+            </Repository>
+            <Version></Version>
+            <Features>
+                <Feature>
+                    <FeatureName>Visualization</FeatureName>
+                    <Description></Description>
+                </Feature>
+                <Feature>
+                    <FeatureName>Dataset Processor</FeatureName>
+                    <Description></Description>
+                </Feature>
+                <Feature>
+                    <FeatureName>Computation</FeatureName>
+                    <Description></Description>
+                </Feature>
+                <Feature>
+                    <FeatureName>Astrophysical Analysis</FeatureName>
+                    <Description></Description>
+                </Feature>
+            </Features>
+            <Contributors>
+                <Contributor>
+                    <Identifier>
+                        <IdentifierType>local</IdentifierType>
+                        <IdentifierValue>6</IdentifierValue>
                     </Identifier>             
                 </Contributor>
             </Contributors>

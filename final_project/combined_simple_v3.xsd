@@ -61,7 +61,6 @@
             <xs:element ref="Software" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element name="SoftwareCitation" type="SoftwareCitationType"> </xs:element>
     <xs:complexType name="AuthorIdentifierType">
         <xs:sequence>
             <xs:element name="Identifier" type="GenericIdentifierType"/>
@@ -92,6 +91,7 @@
             <xs:element ref="Publication" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
+    <xs:element name="SoftwareCitation" type="SoftwareCitationType"> </xs:element>
     <xs:element name="SoftwareCitationRoot">
         <xs:complexType>
             <xs:sequence>
@@ -120,7 +120,7 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="PublicationIdentifier"
-                                type="PublicationIdentifierType"/>
+                                type="PublicationIdentifierType" maxOccurs="unbounded"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
