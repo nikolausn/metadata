@@ -102,16 +102,6 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:element name="SoftwareCitationList">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element maxOccurs="unbounded" ref="SoftwareCitation"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-    <xs:element name="SoftwareList" type="SoftwareType"/>
-    <xs:element name="AuthorList" type="AuthorType"/>
-    <xs:element name="PublicationList" type="PublicationType"/>
     <xs:element name="Publication">
         <xs:complexType>
             <xs:sequence>
@@ -135,6 +125,16 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    <xs:element name="SoftwareCitationList">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="SoftwareCitation"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SoftwareList" type="SoftwareType"/>
+    <xs:element name="AuthorList" type="AuthorType"/>
+    <xs:element name="PublicationList" type="PublicationType"/>
     <xs:element name="Software">
         <xs:complexType>
             <xs:sequence>
