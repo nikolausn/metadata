@@ -7,9 +7,9 @@
             <PREMIS:objectIdentifierType>local</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>Seikilos Stele Collection</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
-        
+
         <!-- You need to add enough optional elements to indicated that this is the FRBR Work for the idea of the Seikilos Stele -->
-        
+
         <PREMIS:relationship>
             <!-- this need to link to the physical rock -->
             <PREMIS:relationshipType>structural</PREMIS:relationshipType>
@@ -22,18 +22,18 @@
                 <PREMIS:relatedObjectIdentifierType>National Museum, Denmark Inventory Number</PREMIS:relatedObjectIdentifierType>
                 <PREMIS:relatedObjectIdentifierValue>14897</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
-        </PREMIS:relationship>        
+        </PREMIS:relationship>
     </PREMIS:object>
-    
-    
+
+
     <PREMIS:object xsi:type="PREMIS:representation">
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>National Museum of Denmark Inventory Number</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>14897</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
-        
+
         <!-- You need to add enough optional elements to indicate that this is the physical rock -->
-        
+
         <!-- relation to the idea of rock -->
         <PREMIS:relationship>
             <PREMIS:relationshipType>structural</PREMIS:relationshipType>
@@ -45,10 +45,10 @@
         </PREMIS:relationship>
     </PREMIS:object>
 
-    
+
     <PREMIS:object xsi:type="PREMIS:file">
         <!-- I used the information stored here https://samlinger.natmus.dk/AS/asset/10006 -->
-        <PREMIS:objectIdentifier>         
+        <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>National Museum of Denmark Digital Collections File Identifier</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>10006</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
@@ -73,7 +73,7 @@
                 </PREMIS:formatRegistry>
             </PREMIS:format>
         </PREMIS:objectCharacteristics>
-        
+
         <!-- Relations to the physical object -->
         <PREMIS:relationship>
             <PREMIS:relationshipType>structural</PREMIS:relationshipType>
@@ -85,7 +85,7 @@
         </PREMIS:relationship>
         <!-- You need to add enough metadata values and optional elements to indicate that this is the digital image of the rock -->
     </PREMIS:object>
-    
+
     <PREMIS:object xsi:type="PREMIS:representation">
         <!-- representation of recorded song -->
         <!--
@@ -103,7 +103,7 @@
             <PREMIS:objectIdentifierType>ASIN</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>B00C3AFSMK</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
-        
+
         <!-- Relations to the physical object -->
         <PREMIS:relationship>
             <PREMIS:relationshipType>structural</PREMIS:relationshipType>
@@ -114,8 +114,8 @@
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
     </PREMIS:object>
-    
-    
+
+
     <PREMIS:object xsi:type="PREMIS:file">
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>local</PREMIS:objectIdentifierType>
@@ -143,7 +143,7 @@
                 </PREMIS:formatRegistry>
             </PREMIS:format>
         </PREMIS:objectCharacteristics>
-        
+
         <!-- Relations to the physical object -->
         <PREMIS:relationship>
             <PREMIS:relationshipType>structural</PREMIS:relationshipType>
@@ -153,7 +153,7 @@
                 <PREMIS:relatedObjectIdentifierValue>14897</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
-        
+
         <!-- Relationship to the recorded collection  -->
         <PREMIS:relationship>
             <PREMIS:relationshipType>derivation</PREMIS:relationshipType>
@@ -165,17 +165,17 @@
         </PREMIS:relationship>
         <!-- You need to add enough metadata values and optional elements to indicate that this is the digital audio file based on the content inscribed on the rock -->
     </PREMIS:object>
-    
+
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <!-- object macbook pro 2017 13 inch -->
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>Apple Model Number</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>A1706</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
-        <PREMIS:originalName>MacBook Pro 13-inch, 2017</PREMIS:originalName>        
+        <PREMIS:originalName>MacBook Pro 13-inch, 2017</PREMIS:originalName>
         <!-- You need to add enough optional elements to indicate that this is the hardware used to render your digital objects -->
     </PREMIS:object>
-    
+
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <!-- for MacOS -->
         <PREMIS:objectIdentifier>
@@ -190,14 +190,14 @@
                 <PREMIS:relatedObjectIdentifierType>Apple Model Number</PREMIS:relatedObjectIdentifierType>
                 <PREMIS:relatedObjectIdentifierValue>A1706</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
-        </PREMIS:relationship>      
+        </PREMIS:relationship>
         <PREMIS:linkingRightsStatementIdentifier>
             <PREMIS:linkingRightsStatementIdentifierType>URL</PREMIS:linkingRightsStatementIdentifierType>
             <PREMIS:linkingRightsStatementIdentifierValue>https://www.apple.com/legal/sla/docs/macOSCatalina.pdf</PREMIS:linkingRightsStatementIdentifierValue>
         </PREMIS:linkingRightsStatementIdentifier>
         <!-- You need to add enough optional elements to indicate that this is the operating system your hardware uses -->
     </PREMIS:object>
-    
+
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <!-- for Google Chrome -->
         <PREMIS:objectIdentifier>
@@ -212,14 +212,14 @@
                 <PREMIS:relatedObjectIdentifierType>LCNAF</PREMIS:relatedObjectIdentifierType>
                 <PREMIS:relatedObjectIdentifierValue>n96060065</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
-        </PREMIS:relationship>   
+        </PREMIS:relationship>
         <PREMIS:linkingRightsStatementIdentifier>
             <PREMIS:linkingRightsStatementIdentifierType>URL</PREMIS:linkingRightsStatementIdentifierType>
             <PREMIS:linkingRightsStatementIdentifierValue>https://www.google.com/intl/en_sg/chrome/privacy/eula_text.html</PREMIS:linkingRightsStatementIdentifierValue>
         </PREMIS:linkingRightsStatementIdentifier>
         <!-- You need to add enough optional elements to indicate that this is the software used to view the image file -->
     </PREMIS:object>
-    
+
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <!-- Itunes object media player -->
         <PREMIS:objectIdentifier>
@@ -232,7 +232,7 @@
             <PREMIS:relationshipSubType>requires</PREMIS:relationshipSubType>
             <PREMIS:relatedObjectIdentifier>
                 <PREMIS:relatedObjectIdentifierType>LCNAF</PREMIS:relatedObjectIdentifierType>
-                <PREMIS:relatedObjectIdentifierValue>n96060065</PREMIS:relatedObjectIdentifierValue>                
+                <PREMIS:relatedObjectIdentifierValue>n96060065</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
         <PREMIS:linkingRightsStatementIdentifier>
@@ -241,8 +241,8 @@
         </PREMIS:linkingRightsStatementIdentifier>
         <!-- You need to add enough optional elements to indicate that this is the software used to listen to the audio file -->
     </PREMIS:object>
-    
-    
+
+
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <!-- BWF Metaedit -->
         <PREMIS:objectIdentifier>
@@ -255,7 +255,7 @@
             <PREMIS:relationshipSubType>requires</PREMIS:relationshipSubType>
             <PREMIS:relatedObjectIdentifier>
                 <PREMIS:relatedObjectIdentifierType>LCNAF</PREMIS:relatedObjectIdentifierType>
-                <PREMIS:relatedObjectIdentifierValue>n96060065</PREMIS:relatedObjectIdentifierValue>                
+                <PREMIS:relatedObjectIdentifierValue>n96060065</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
         <PREMIS:linkingRightsStatementIdentifier>
@@ -264,8 +264,8 @@
         </PREMIS:linkingRightsStatementIdentifier>
         <!-- You need to add enough optional elements to indicate that this is the software used to listen to the audio file -->
     </PREMIS:object>
-    
-    
+
+
     <!-- event creation for seikolos stele -->
     <PREMIS:event>
         <PREMIS:eventIdentifier>
@@ -289,7 +289,7 @@
         </PREMIS:linkingObjectIdentifier>
         <!-- You need to add enough metadata values and optional elements to indicate the creation of the rock -->
     </PREMIS:event>
-    
+
     <PREMIS:event>
         <!-- event creation of the TIFF image -->
         <PREMIS:eventIdentifier>
@@ -311,7 +311,7 @@
             <PREMIS:linkingObjectIdentifierValue>10006</PREMIS:linkingObjectIdentifierValue>
         </PREMIS:linkingObjectIdentifier>
     </PREMIS:event>
-    
+
     <PREMIS:event>
         <!-- event recording of the seikolos music -->
         <!-- https://uiuclib.on.worldcat.org/search?databaseList=283&queryString=seikilos+madrid&clusterResults=true#/oclc/66513542 -->
@@ -334,8 +334,8 @@
             <PREMIS:linkingObjectIdentifierValue>10006</PREMIS:linkingObjectIdentifierValue>
         </PREMIS:linkingObjectIdentifier>
     </PREMIS:event>
-    
-    
+
+
     <PREMIS:event>
         <!-- checksum event for image -->
         <PREMIS:eventIdentifier>
@@ -358,9 +358,9 @@
         </PREMIS:linkingObjectIdentifier>
         <!-- You need to add enough metadata values and optional elements to indicate that this is the checksum process for the image file -->
     </PREMIS:event>
-    
+
     <PREMIS:event>
-        <!-- checksum event for audio file using command line tols md5 -->        
+        <!-- checksum event for audio file using command line tols md5 -->
         <PREMIS:eventIdentifier>
             <PREMIS:eventIdentifierType>local</PREMIS:eventIdentifierType>
             <PREMIS:eventIdentifierValue>event_checksum_seikilos_wav_bash</PREMIS:eventIdentifierValue>
@@ -381,9 +381,9 @@
         </PREMIS:linkingObjectIdentifier>
         <!-- You need to add enough metadata values and optional elements to indicate that this is the checksum process for the audio file -->
     </PREMIS:event>
-    
+
     <PREMIS:event>
-        <!-- checksum event for audio file using BWF Metaedit Application md5 -->        
+        <!-- checksum event for audio file using BWF Metaedit Application md5 -->
         <PREMIS:eventIdentifier>
             <PREMIS:eventIdentifierType>local</PREMIS:eventIdentifierType>
             <PREMIS:eventIdentifierValue>event_checksum_seikilos_wav_bwf</PREMIS:eventIdentifierValue>
@@ -404,10 +404,10 @@
         <PREMIS:linkingObjectIdentifier>
             <PREMIS:linkingObjectIdentifierType>local</PREMIS:linkingObjectIdentifierType>
             <PREMIS:linkingObjectIdentifierValue>seikilos.wav</PREMIS:linkingObjectIdentifierValue>
-        </PREMIS:linkingObjectIdentifier>        
+        </PREMIS:linkingObjectIdentifier>
         <!-- You need to add enough metadata values and optional elements to indicate that this is the checksum process for the audio file -->
     </PREMIS:event>
-    
+
     <PREMIS:agent>
         <!-- agent for the seikilos creator -->
         <PREMIS:agentIdentifier>
@@ -422,7 +422,7 @@
             <PREMIS:linkingEventIdentifierValue>event_creation_seikilos_stone</PREMIS:linkingEventIdentifierValue>
         </PREMIS:linkingEventIdentifier>
     </PREMIS:agent>
-    
+
     <PREMIS:agent>
         <!-- agent of seikilos person -->
         <PREMIS:agentIdentifier>
@@ -442,7 +442,7 @@
         </PREMIS:linkingRightsStatementIdentifier>
         <!-- You need to add enough metadata values and optional elements to indicate the creating agent -->
     </PREMIS:agent>
-    
+
     <PREMIS:agent>
         <!-- agent of me for checksum -->
         <PREMIS:agentIdentifier>
@@ -451,14 +451,14 @@
         </PREMIS:agentIdentifier>
         <!-- You need to add enough metadata values and optional elements to indicate the checksum process agent -->
     </PREMIS:agent>
-    
+
     <PREMIS:agent>
         <!-- agent for the TIF image creator -->
         <PREMIS:agentIdentifier>
             <PREMIS:agentIdentifierType>LCNAF</PREMIS:agentIdentifierType>
             <PREMIS:agentIdentifierValue>n80054951</PREMIS:agentIdentifierValue>
         </PREMIS:agentIdentifier>
-        
+
         <PREMIS:agentName>Lennart Larsen</PREMIS:agentName>
         <PREMIS:agentType>person</PREMIS:agentType>
         <PREMIS:linkingEventIdentifier>
@@ -471,51 +471,38 @@
         </PREMIS:linkingRightsStatementIdentifier>
         <!-- You need to add enough metadata values and optional elements to indicate the rights holder for the image file -->
     </PREMIS:agent>
-    
+
     <PREMIS:agent>
         <!-- agent for audio recording -->
         <PREMIS:agentIdentifier>
             <PREMIS:agentIdentifierType>viaf</PREMIS:agentIdentifierType>
             <PREMIS:agentIdentifierValue>140846570</PREMIS:agentIdentifierValue>
-        </PREMIS:agentIdentifier>      
-        
+        </PREMIS:agentIdentifier>
+
         <PREMIS:agentName>Atrium musicae (Madrid)</PREMIS:agentName>
         <PREMIS:agentType>corporate</PREMIS:agentType>
         <PREMIS:linkingEventIdentifier>
             <PREMIS:linkingEventIdentifierType>local</PREMIS:linkingEventIdentifierType>
             <PREMIS:linkingEventIdentifierValue>event_recording_seikilos_music</PREMIS:linkingEventIdentifierValue>
         </PREMIS:linkingEventIdentifier>
-        <PREMIS:linkingRightsStatementIdentifier>           
+        <PREMIS:linkingRightsStatementIdentifier>
             <PREMIS:linkingRightsStatementIdentifierType>URL</PREMIS:linkingRightsStatementIdentifierType>
             <PREMIS:linkingRightsStatementIdentifierValue>https://rightsstatements.org/page/InC/1.0/</PREMIS:linkingRightsStatementIdentifierValue>
         </PREMIS:linkingRightsStatementIdentifier>
         <!-- You need to add enough metadata values and optional elements to indicate the rights holder for the audio file -->
     </PREMIS:agent>
-    
+
     <PREMIS:agent>
         <PREMIS:agentIdentifier>
             <PREMIS:agentIdentifierType>LCNAF</PREMIS:agentIdentifierType>
             <PREMIS:agentIdentifierValue>n84040978</PREMIS:agentIdentifierValue>
-<<<<<<< HEAD
-        </PREMIS:agentIdentifier>
-        
-        <PREMIS:agentName>Apple Inc.</PREMIS:agentName>
-        <PREMIS:agentType>corporate</PREMIS:agentType>
-        <PREMIS:linkingEventIdentifier>
-            <PREMIS:linkingEventIdentifierType>local</PREMIS:linkingEventIdentifierType>
-            <PREMIS:linkingEventIdentifierValue>event_recording_seikilos_music</PREMIS:linkingEventIdentifierValue>
-        </PREMIS:linkingEventIdentifier>
-        <PREMIS:linkingRightsStatementIdentifier>           
-            <PREMIS:linkingRightsStatementIdentifierType>URL</PREMIS:linkingRightsStatementIdentifierType>
-            <PREMIS:linkingRightsStatementIdentifierValue>https://rightsstatements.org/page/InC/1.0/</PREMIS:linkingRightsStatementIdentifierValue>
-        </PREMIS:linkingRightsStatementIdentifier>
 =======
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>Apple Inc.</PREMIS:agentName>
-        <PREMIS:agentType>corporate</PREMIS:agentType>       
+        <PREMIS:agentType>corporate</PREMIS:agentType>
         <!-- You need to add enough metadata values and optional elements to indicate the rights holder for your operating system -->
     </PREMIS:agent>
-    
+
     <PREMIS:agent>
         <!-- Google as the agent that has IE to google chrome -->
         <PREMIS:agentIdentifier>
@@ -523,11 +510,10 @@
             <PREMIS:agentIdentifierValue>nr2003021731</PREMIS:agentIdentifierValue>
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>Google</PREMIS:agentName>
-        <PREMIS:agentType>corporate</PREMIS:agentType>       
->>>>>>> 9154953beb040d450892202677997f96be3a11f8
+        <PREMIS:agentType>corporate</PREMIS:agentType>
         <!-- You need to add enough metadata values and optional elements to indicate the rights holder for your operating system -->
     </PREMIS:agent>
-    
+
     <!-- You may need to add additional agents related to your software choices and or your checksum process -->
     <PREMIS:agent>
         <!-- BWF Metaedit software agent that has IE to google chrome -->
@@ -536,12 +522,12 @@
             <PREMIS:agentIdentifierValue>no2012085732</PREMIS:agentIdentifierValue>
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>Federal Agencies Digital Guidelines Initiative (FADGI)</PREMIS:agentName>
-        <PREMIS:agentType>corporate</PREMIS:agentType>       
-        <!-- You need to add enough metadata values and optional elements to indicate the rights holder for your operating system -->        
+        <PREMIS:agentType>corporate</PREMIS:agentType>
+        <!-- You need to add enough metadata values and optional elements to indicate the rights holder for your operating system -->
     </PREMIS:agent>
-  
+
     <PREMIS:rights>
-        <!-- rights for the image --> 
+        <!-- rights for the image -->
         <PREMIS:rightsStatement>
             <PREMIS:rightsStatementIdentifier>
                 <PREMIS:rightsStatementIdentifierType>URL</PREMIS:rightsStatementIdentifierType>
@@ -549,10 +535,10 @@
             </PREMIS:rightsStatementIdentifier>
             <PREMIS:rightsBasis>license</PREMIS:rightsBasis>
         </PREMIS:rightsStatement>
-        
+
         <!-- You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the image file -->
     </PREMIS:rights>
-    
+
     <PREMIS:rights>
         <!-- Right statement for audio file -->
         <PREMIS:rightsStatement>
@@ -564,7 +550,7 @@
         </PREMIS:rightsStatement>
         <!-- You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the audio file -->
     </PREMIS:rights>
-    
+
     <PREMIS:rights>
         <!-- license for MacOS Catalina -->
         <PREMIS:rightsStatement>
@@ -573,17 +559,15 @@
                 <PREMIS:rightsStatementIdentifierValue>https://www.apple.com/legal/sla/docs/macOSCatalina.pdf</PREMIS:rightsStatementIdentifierValue>
             </PREMIS:rightsStatementIdentifier>
             <PREMIS:rightsBasis>license</PREMIS:rightsBasis>
-<<<<<<< HEAD
 =======
             <PREMIS:linkingAgentIdentifier>
                 <PREMIS:linkingAgentIdentifierType>LCNAF</PREMIS:linkingAgentIdentifierType>
                 <PREMIS:linkingAgentIdentifierValue>n84040978</PREMIS:linkingAgentIdentifierValue>
             </PREMIS:linkingAgentIdentifier>
->>>>>>> 9154953beb040d450892202677997f96be3a11f8
         </PREMIS:rightsStatement>
         <!-- You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the operating system -->
     </PREMIS:rights>
-    
+
     <PREMIS:rights>
         <!-- license for Google Chrome as Image software, here we open the image using Google Chrome -->
         <PREMIS:rightsStatement>
@@ -592,17 +576,15 @@
                 <PREMIS:rightsStatementIdentifierValue>https://www.google.com/intl/en_sg/chrome/privacy/eula_text.html</PREMIS:rightsStatementIdentifierValue>
             </PREMIS:rightsStatementIdentifier>
             <PREMIS:rightsBasis>license</PREMIS:rightsBasis>
-<<<<<<< HEAD
 =======
             <PREMIS:linkingAgentIdentifier>
                 <PREMIS:linkingAgentIdentifierType>LCNAF</PREMIS:linkingAgentIdentifierType>
                 <PREMIS:linkingAgentIdentifierValue>nr2003021731</PREMIS:linkingAgentIdentifierValue>
             </PREMIS:linkingAgentIdentifier>
->>>>>>> 9154953beb040d450892202677997f96be3a11f8
         </PREMIS:rightsStatement>
         <!-- You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the image software -->
     </PREMIS:rights>
-    
+
     <PREMIS:rights>
         <!-- rights statement for Itunes, audio media player -->
         <PREMIS:rightsStatement>
@@ -612,7 +594,6 @@
             </PREMIS:rightsStatementIdentifier>
             <PREMIS:rightsBasis>license</PREMIS:rightsBasis>
 <<<<<<< HEAD
-=======
             <PREMIS:linkingAgentIdentifier>
                 <PREMIS:linkingAgentIdentifierType>LCNAF</PREMIS:linkingAgentIdentifierType>
                 <PREMIS:linkingAgentIdentifierValue>n84040978</PREMIS:linkingAgentIdentifierValue>
@@ -621,7 +602,7 @@
         </PREMIS:rightsStatement>
         <!-- You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the audio software -->
     </PREMIS:rights>
-    
+
     <PREMIS:rights>
         <!-- Rights statement for bwf metaedit -->
         <PREMIS:rightsStatement>
@@ -636,5 +617,5 @@
             </PREMIS:linkingAgentIdentifier>
         </PREMIS:rightsStatement>
     </PREMIS:rights>
-    
+
 </PREMIS:premis>
