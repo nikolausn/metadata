@@ -31,6 +31,7 @@
             <PREMIS:objectIdentifierType>National Museum of Denmark Inventory Number</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>14897</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
+        
         <!-- You need to add enough optional elements to indicate that this is the physical rock -->
         
         <!-- relation to the idea of rock -->
@@ -124,6 +125,12 @@
             <PREMIS:fixity>
                 <PREMIS:messageDigestAlgorithm>md5</PREMIS:messageDigestAlgorithm>
                 <PREMIS:messageDigest>4860be35485ea3fbc545d9f7483f1502</PREMIS:messageDigest>
+                <PREMIS:messageDigestOriginator>0000-0002-6971-0882</PREMIS:messageDigestOriginator>
+            </PREMIS:fixity>
+            <PREMIS:fixity>
+                <PREMIS:messageDigestAlgorithm>md5</PREMIS:messageDigestAlgorithm>
+                <PREMIS:messageDigest>8ABD7C1F3953F6A6EDA1D3BFCDC8729A</PREMIS:messageDigest>
+                <PREMIS:messageDigestOriginator>0000-0002-6971-0882</PREMIS:messageDigestOriginator>
             </PREMIS:fixity>
             <PREMIS:size>34930732</PREMIS:size>
             <PREMIS:format>
@@ -160,34 +167,101 @@
     </PREMIS:object>
     
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
+        <!-- object macbook pro 2017 13 inch -->
         <PREMIS:objectIdentifier>
-            <PREMIS:objectIdentifierType></PREMIS:objectIdentifierType>
-            <PREMIS:objectIdentifierValue></PREMIS:objectIdentifierValue>
+            <PREMIS:objectIdentifierType>Apple Model Number</PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue>A1706</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
+        <PREMIS:originalName>MacBook Pro 13-inch, 2017</PREMIS:originalName>        
         <!-- You need to add enough optional elements to indicate that this is the hardware used to render your digital objects -->
     </PREMIS:object>
     
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
+        <!-- for MacOS -->
         <PREMIS:objectIdentifier>
-            <PREMIS:objectIdentifierType></PREMIS:objectIdentifierType>
-            <PREMIS:objectIdentifierValue></PREMIS:objectIdentifierValue>
+            <PREMIS:objectIdentifierType>LCNAF</PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue>n96060065</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
+        <PREMIS:originalName>MacOS</PREMIS:originalName>
+        <PREMIS:relationship>
+            <PREMIS:relationshipType>structural</PREMIS:relationshipType>
+            <PREMIS:relationshipSubType>requires</PREMIS:relationshipSubType>
+            <PREMIS:relatedObjectIdentifier>
+                <PREMIS:relatedObjectIdentifierType>Apple Model Number</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue>A1706</PREMIS:relatedObjectIdentifierValue>
+            </PREMIS:relatedObjectIdentifier>
+        </PREMIS:relationship>      
+        <PREMIS:linkingRightsStatementIdentifier>
+            <PREMIS:linkingRightsStatementIdentifierType>URL</PREMIS:linkingRightsStatementIdentifierType>
+            <PREMIS:linkingRightsStatementIdentifierValue>https://www.apple.com/legal/sla/docs/macOSCatalina.pdf</PREMIS:linkingRightsStatementIdentifierValue>
+        </PREMIS:linkingRightsStatementIdentifier>
         <!-- You need to add enough optional elements to indicate that this is the operating system your hardware uses -->
     </PREMIS:object>
     
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
+        <!-- for Google Chrome -->
         <PREMIS:objectIdentifier>
-            <PREMIS:objectIdentifierType></PREMIS:objectIdentifierType>
-            <PREMIS:objectIdentifierValue></PREMIS:objectIdentifierValue>
+            <PREMIS:objectIdentifierType>LCNAF</PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue>no2009043824</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
+        <PREMIS:originalName>Google Chrome</PREMIS:originalName>
+        <PREMIS:relationship>
+            <PREMIS:relationshipType>structural</PREMIS:relationshipType>
+            <PREMIS:relationshipSubType>requires</PREMIS:relationshipSubType>
+            <PREMIS:relatedObjectIdentifier>
+                <PREMIS:relatedObjectIdentifierType>LCNAF</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue>n96060065</PREMIS:relatedObjectIdentifierValue>
+            </PREMIS:relatedObjectIdentifier>
+        </PREMIS:relationship>   
+        <PREMIS:linkingRightsStatementIdentifier>
+            <PREMIS:linkingRightsStatementIdentifierType>URL</PREMIS:linkingRightsStatementIdentifierType>
+            <PREMIS:linkingRightsStatementIdentifierValue>https://www.google.com/intl/en_sg/chrome/privacy/eula_text.html</PREMIS:linkingRightsStatementIdentifierValue>
+        </PREMIS:linkingRightsStatementIdentifier>
         <!-- You need to add enough optional elements to indicate that this is the software used to view the image file -->
     </PREMIS:object>
     
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
+        <!-- Itunes object media player -->
         <PREMIS:objectIdentifier>
-            <PREMIS:objectIdentifierType></PREMIS:objectIdentifierType>
-            <PREMIS:objectIdentifierValue></PREMIS:objectIdentifierValue>
+            <PREMIS:objectIdentifierType>LCNAF</PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue>n2002066377</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
+        <PREMIS:originalName>Itunes</PREMIS:originalName>
+        <PREMIS:relationship>
+            <PREMIS:relationshipType>structural</PREMIS:relationshipType>
+            <PREMIS:relationshipSubType>requires</PREMIS:relationshipSubType>
+            <PREMIS:relatedObjectIdentifier>
+                <PREMIS:relatedObjectIdentifierType>LCNAF</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue>n96060065</PREMIS:relatedObjectIdentifierValue>                
+            </PREMIS:relatedObjectIdentifier>
+        </PREMIS:relationship>
+        <PREMIS:linkingRightsStatementIdentifier>
+            <PREMIS:linkingRightsStatementIdentifierType>URL</PREMIS:linkingRightsStatementIdentifierType>
+            <PREMIS:linkingRightsStatementIdentifierValue>https://www.apple.com/legal/sla/docs/iTunes.pdf</PREMIS:linkingRightsStatementIdentifierValue>
+        </PREMIS:linkingRightsStatementIdentifier>
+        <!-- You need to add enough optional elements to indicate that this is the software used to listen to the audio file -->
+    </PREMIS:object>
+    
+    
+    <PREMIS:object xsi:type="PREMIS:intellectualEntity">
+        <!-- BWF Metaedit -->
+        <PREMIS:objectIdentifier>
+            <PREMIS:objectIdentifierType>URL</PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue>https://mediaarea.net/BWFMetaEdit</PREMIS:objectIdentifierValue>
+        </PREMIS:objectIdentifier>
+        <PREMIS:originalName>BWF Metaedit</PREMIS:originalName>
+        <PREMIS:relationship>
+            <PREMIS:relationshipType>structural</PREMIS:relationshipType>
+            <PREMIS:relationshipSubType>requires</PREMIS:relationshipSubType>
+            <PREMIS:relatedObjectIdentifier>
+                <PREMIS:relatedObjectIdentifierType>LCNAF</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue>n96060065</PREMIS:relatedObjectIdentifierValue>                
+            </PREMIS:relatedObjectIdentifier>
+        </PREMIS:relationship>
+        <PREMIS:linkingRightsStatementIdentifier>
+            <PREMIS:linkingRightsStatementIdentifierType>URL</PREMIS:linkingRightsStatementIdentifierType>
+            <PREMIS:linkingRightsStatementIdentifierValue>https://mediaarea.net/BWFMetaEdit/License</PREMIS:linkingRightsStatementIdentifierValue>
+        </PREMIS:linkingRightsStatementIdentifier>
         <!-- You need to add enough optional elements to indicate that this is the software used to listen to the audio file -->
     </PREMIS:object>
     
@@ -286,9 +360,10 @@
     </PREMIS:event>
     
     <PREMIS:event>
+        <!-- checksum event for audio file using command line tols md5 -->        
         <PREMIS:eventIdentifier>
             <PREMIS:eventIdentifierType>local</PREMIS:eventIdentifierType>
-            <PREMIS:eventIdentifierValue>event_checksum_seikilos_wav</PREMIS:eventIdentifierValue>
+            <PREMIS:eventIdentifierValue>event_checksum_seikilos_wav_bash</PREMIS:eventIdentifierValue>
         </PREMIS:eventIdentifier>
         <PREMIS:eventType>fixity check</PREMIS:eventType>
         <PREMIS:eventDateTime>20 October 2019</PREMIS:eventDateTime>
@@ -304,6 +379,32 @@
             <PREMIS:linkingObjectIdentifierType>local</PREMIS:linkingObjectIdentifierType>
             <PREMIS:linkingObjectIdentifierValue>seikilos.wav</PREMIS:linkingObjectIdentifierValue>
         </PREMIS:linkingObjectIdentifier>
+        <!-- You need to add enough metadata values and optional elements to indicate that this is the checksum process for the audio file -->
+    </PREMIS:event>
+    
+    <PREMIS:event>
+        <!-- checksum event for audio file using BWF Metaedit Application md5 -->        
+        <PREMIS:eventIdentifier>
+            <PREMIS:eventIdentifierType>local</PREMIS:eventIdentifierType>
+            <PREMIS:eventIdentifierValue>event_checksum_seikilos_wav_bwf</PREMIS:eventIdentifierValue>
+        </PREMIS:eventIdentifier>
+        <PREMIS:eventType>fixity check</PREMIS:eventType>
+        <PREMIS:eventDateTime>2 November 2019</PREMIS:eventDateTime>
+        <PREMIS:eventOutcomeInformation>
+            <PREMIS:eventOutcome>CV-01</PREMIS:eventOutcome>
+            <PREMIS:eventOutcomeDetail>
+                <PREMIS:eventOutcomeDetailNote>Using BWF MetaEdit: 8ABD7C1F3953F6A6EDA1D3BFCDC8729A</PREMIS:eventOutcomeDetailNote>
+            </PREMIS:eventOutcomeDetail>
+        </PREMIS:eventOutcomeInformation>
+        <PREMIS:linkingAgentIdentifier>
+            <PREMIS:linkingAgentIdentifierType>orcid</PREMIS:linkingAgentIdentifierType>
+            <PREMIS:linkingAgentIdentifierValue>0000-0002-6971-0882</PREMIS:linkingAgentIdentifierValue>
+            <PREMIS:linkingAgentRole></PREMIS:linkingAgentRole>
+        </PREMIS:linkingAgentIdentifier>
+        <PREMIS:linkingObjectIdentifier>
+            <PREMIS:linkingObjectIdentifierType>local</PREMIS:linkingObjectIdentifierType>
+            <PREMIS:linkingObjectIdentifierValue>seikilos.wav</PREMIS:linkingObjectIdentifierValue>
+        </PREMIS:linkingObjectIdentifier>        
         <!-- You need to add enough metadata values and optional elements to indicate that this is the checksum process for the audio file -->
     </PREMIS:event>
     
@@ -393,13 +494,51 @@
     
     <PREMIS:agent>
         <PREMIS:agentIdentifier>
-            <PREMIS:agentIdentifierType></PREMIS:agentIdentifierType>
-            <PREMIS:agentIdentifierValue></PREMIS:agentIdentifierValue>
+            <PREMIS:agentIdentifierType>LCNAF</PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue>n84040978</PREMIS:agentIdentifierValue>
+<<<<<<< HEAD
         </PREMIS:agentIdentifier>
+        
+        <PREMIS:agentName>Apple Inc.</PREMIS:agentName>
+        <PREMIS:agentType>corporate</PREMIS:agentType>
+        <PREMIS:linkingEventIdentifier>
+            <PREMIS:linkingEventIdentifierType>local</PREMIS:linkingEventIdentifierType>
+            <PREMIS:linkingEventIdentifierValue>event_recording_seikilos_music</PREMIS:linkingEventIdentifierValue>
+        </PREMIS:linkingEventIdentifier>
+        <PREMIS:linkingRightsStatementIdentifier>           
+            <PREMIS:linkingRightsStatementIdentifierType>URL</PREMIS:linkingRightsStatementIdentifierType>
+            <PREMIS:linkingRightsStatementIdentifierValue>https://rightsstatements.org/page/InC/1.0/</PREMIS:linkingRightsStatementIdentifierValue>
+        </PREMIS:linkingRightsStatementIdentifier>
+=======
+        </PREMIS:agentIdentifier>
+        <PREMIS:agentName>Apple Inc.</PREMIS:agentName>
+        <PREMIS:agentType>corporate</PREMIS:agentType>       
+        <!-- You need to add enough metadata values and optional elements to indicate the rights holder for your operating system -->
+    </PREMIS:agent>
+    
+    <PREMIS:agent>
+        <!-- Google as the agent that has IE to google chrome -->
+        <PREMIS:agentIdentifier>
+            <PREMIS:agentIdentifierType>LCNAF</PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue>nr2003021731</PREMIS:agentIdentifierValue>
+        </PREMIS:agentIdentifier>
+        <PREMIS:agentName>Google</PREMIS:agentName>
+        <PREMIS:agentType>corporate</PREMIS:agentType>       
+>>>>>>> 9154953beb040d450892202677997f96be3a11f8
         <!-- You need to add enough metadata values and optional elements to indicate the rights holder for your operating system -->
     </PREMIS:agent>
     
     <!-- You may need to add additional agents related to your software choices and or your checksum process -->
+    <PREMIS:agent>
+        <!-- BWF Metaedit software agent that has IE to google chrome -->
+        <PREMIS:agentIdentifier>
+            <PREMIS:agentIdentifierType>LCNAF</PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue>no2012085732</PREMIS:agentIdentifierValue>
+        </PREMIS:agentIdentifier>
+        <PREMIS:agentName>Federal Agencies Digital Guidelines Initiative (FADGI)</PREMIS:agentName>
+        <PREMIS:agentType>corporate</PREMIS:agentType>       
+        <!-- You need to add enough metadata values and optional elements to indicate the rights holder for your operating system -->        
+    </PREMIS:agent>
   
     <PREMIS:rights>
         <!-- rights for the image --> 
@@ -415,6 +554,7 @@
     </PREMIS:rights>
     
     <PREMIS:rights>
+        <!-- Right statement for audio file -->
         <PREMIS:rightsStatement>
             <PREMIS:rightsStatementIdentifier>
                 <PREMIS:rightsStatementIdentifierType>URL</PREMIS:rightsStatementIdentifierType>
@@ -426,35 +566,75 @@
     </PREMIS:rights>
     
     <PREMIS:rights>
+        <!-- license for MacOS Catalina -->
         <PREMIS:rightsStatement>
             <PREMIS:rightsStatementIdentifier>
-                <PREMIS:rightsStatementIdentifierType></PREMIS:rightsStatementIdentifierType>
-                <PREMIS:rightsStatementIdentifierValue></PREMIS:rightsStatementIdentifierValue>
+                <PREMIS:rightsStatementIdentifierType>URL</PREMIS:rightsStatementIdentifierType>
+                <PREMIS:rightsStatementIdentifierValue>https://www.apple.com/legal/sla/docs/macOSCatalina.pdf</PREMIS:rightsStatementIdentifierValue>
             </PREMIS:rightsStatementIdentifier>
-            <PREMIS:rightsBasis></PREMIS:rightsBasis>
+            <PREMIS:rightsBasis>license</PREMIS:rightsBasis>
+<<<<<<< HEAD
+=======
+            <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>LCNAF</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>n84040978</PREMIS:linkingAgentIdentifierValue>
+            </PREMIS:linkingAgentIdentifier>
+>>>>>>> 9154953beb040d450892202677997f96be3a11f8
         </PREMIS:rightsStatement>
         <!-- You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the operating system -->
     </PREMIS:rights>
     
     <PREMIS:rights>
+        <!-- license for Google Chrome as Image software, here we open the image using Google Chrome -->
         <PREMIS:rightsStatement>
             <PREMIS:rightsStatementIdentifier>
-                <PREMIS:rightsStatementIdentifierType></PREMIS:rightsStatementIdentifierType>
-                <PREMIS:rightsStatementIdentifierValue></PREMIS:rightsStatementIdentifierValue>
+                <PREMIS:rightsStatementIdentifierType>URL</PREMIS:rightsStatementIdentifierType>
+                <PREMIS:rightsStatementIdentifierValue>https://www.google.com/intl/en_sg/chrome/privacy/eula_text.html</PREMIS:rightsStatementIdentifierValue>
             </PREMIS:rightsStatementIdentifier>
-            <PREMIS:rightsBasis></PREMIS:rightsBasis>
+            <PREMIS:rightsBasis>license</PREMIS:rightsBasis>
+<<<<<<< HEAD
+=======
+            <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>LCNAF</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>nr2003021731</PREMIS:linkingAgentIdentifierValue>
+            </PREMIS:linkingAgentIdentifier>
+>>>>>>> 9154953beb040d450892202677997f96be3a11f8
         </PREMIS:rightsStatement>
         <!-- You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the image software -->
     </PREMIS:rights>
     
     <PREMIS:rights>
+        <!-- rights statement for Itunes, audio media player -->
         <PREMIS:rightsStatement>
             <PREMIS:rightsStatementIdentifier>
-                <PREMIS:rightsStatementIdentifierType></PREMIS:rightsStatementIdentifierType>
-                <PREMIS:rightsStatementIdentifierValue></PREMIS:rightsStatementIdentifierValue>
+                <PREMIS:rightsStatementIdentifierType>URL</PREMIS:rightsStatementIdentifierType>
+                <PREMIS:rightsStatementIdentifierValue>https://www.apple.com/legal/sla/docs/iTunes.pdf</PREMIS:rightsStatementIdentifierValue>
             </PREMIS:rightsStatementIdentifier>
-            <PREMIS:rightsBasis></PREMIS:rightsBasis>
+            <PREMIS:rightsBasis>license</PREMIS:rightsBasis>
+<<<<<<< HEAD
+=======
+            <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>LCNAF</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>n84040978</PREMIS:linkingAgentIdentifierValue>
+            </PREMIS:linkingAgentIdentifier>
+>>>>>>> 9154953beb040d450892202677997f96be3a11f8
         </PREMIS:rightsStatement>
         <!-- You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the audio software -->
     </PREMIS:rights>
+    
+    <PREMIS:rights>
+        <!-- Rights statement for bwf metaedit -->
+        <PREMIS:rightsStatement>
+            <PREMIS:rightsStatementIdentifier>
+                <PREMIS:rightsStatementIdentifierType>URL</PREMIS:rightsStatementIdentifierType>
+                <PREMIS:rightsStatementIdentifierValue>https://mediaarea.net/BWFMetaEdit/License</PREMIS:rightsStatementIdentifierValue>
+            </PREMIS:rightsStatementIdentifier>
+            <PREMIS:rightsBasis>license</PREMIS:rightsBasis>
+            <PREMIS:linkingAgentIdentifier>
+                <PREMIS:linkingAgentIdentifierType>LCNAF</PREMIS:linkingAgentIdentifierType>
+                <PREMIS:linkingAgentIdentifierValue>no2012085732</PREMIS:linkingAgentIdentifierValue>
+            </PREMIS:linkingAgentIdentifier>
+        </PREMIS:rightsStatement>
+    </PREMIS:rights>
+    
 </PREMIS:premis>
