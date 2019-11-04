@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SoftwareCitationRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/nikolausn/metadata/master/final_project/combined_simple_v3.xsd?token=AFNYOPSWIGNWYR6F7ZV7WQC5X45K4">
+    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/nikolausn/metadata/master/final_project/combined_simple_v3.xsd">
     <SoftwareCitationList>
         <SoftwareCitation>
             <PublicationIdentifier>
