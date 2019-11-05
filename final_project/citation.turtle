@@ -9,20 +9,44 @@
 @prefix ytproject: <https://github.com/yt-project/> .
 @prefix scs: <http://software-citation.org/schema/> .
 @prefix ytdomain: <https://yt-project.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ## person for authors
 #ytdomain:mattheturk
 </person/#matthewturk>
 	a schema:Person ;
-	schema:givenName "Matthew" ;
-	schema:familyName "Turk" ;
-	schema:identifier "https://github.com/yt-project/yt" ;
+	schema:givenName "Matthew"^^xsd:string ;
+	schema:familyName "Turk"^^xsd:string ;
+	schema:identifier [
+	    a schema:PropertyValue ;
+	    schema:propertyID "email"^^xsd:string ;
+	    schema:value "mjturk@illinois.edu"^^xsd:string
+	  ] ;
 	schema:relatedLink github:matthewTurk ;	
 	
 	.
 
 
-
+# example for one publication
+<https://doi.org/10.1088/0067-0049/192/1/9>
+	a schema:ScholarlyArticle ; # maybe we need to define something, a new schema / subclass related to this with additional feature description
+	schema:about "Works"^^xsd:string, "Catalog"^^xsd:string ;
+	schema:author </person/#matthewTurk> ;
+	schema:description "-abstract-"^^xsd:string ;
+	schema:name "yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA"^^xsd:string ;
+	scs:citeSoftware <software/#ytCore> ;
+	scs:objectives [
+		a rdf:Bag ;
+		rdf:_1 [
+			a schema:Article;
+			schema:articleBody	"Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."^^xsd:string ;
+			schema:pageStart 2 ;
+			schema:pageEnd 2 ;
+		];
+	]
+	
+	.
+	
 ## yt software repo
 github:yt-project
 	a schema:SoftwareSourceCode ;
@@ -35,13 +59,22 @@ github:yt-project
 
 ytproject:yt
 	a schema:SoftwareSourceCode ;
-	dc:title "Main yt repository http://yt-project.org" ;
+	dc:title "Main yt library repository" ;
 	schema:identifier "https://github.com/yt-project/yt" ; 
 	schema:isBasedOn github:yt-project ; 
-	schema:targetProduct </software/#ytProject> ;
+	schema:targetProduct </software/#ytCore> ;
 	
 	.
 
+# schema for a software citation
+scs:citeSoftware
+	a rdfs:Property ;
+	rdfs:domain schema:CreativeWorks ;
+	rdfs:range schema:SoftwareApplication ;
+	
+	.
+
+# attribute has Repo to associate software application and sourcecode
 scs:hasRepo
 	a rdf:Property ;
 	rdfs:domain schema:SoftwareApplication ;
@@ -65,6 +98,7 @@ scs:hasRepo
 		schema:runtimePlatform "Python" ;
 		schema:abstract "Main yt repository" ;
 		scs:hasRepo ytproject:yt ;
+		
 	.
 	
 
