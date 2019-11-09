@@ -4,7 +4,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rel: <http://www.perceive.net/schemas/relationship/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix schema: <http://schema.org/> . 
+@prefix schema: <http://schema.org/> .
 @prefix github: <https://github.com/> .
 @prefix ytproject: <https://github.com/yt-project/> .
 @prefix scs: <http://software-citation.org/schema/> .
@@ -22,8 +22,8 @@
 	    schema:propertyID "email"^^xsd:string ;
 	    schema:value "mjturk@illinois.edu"^^xsd:string
 	  ] ;
-	schema:relatedLink github:matthewTurk ;	
-	
+	schema:relatedLink github:matthewTurk ;
+
 	.
 
 
@@ -44,26 +44,26 @@
 			schema:pageEnd 2 ;
 		];
 	]
-	
+
 	.
-	
+
 ## yt software repo
 github:yt-project
 	a schema:SoftwareSourceCode ;
 	dc:title "The yt-project repository" ;
 	schema:codeRepository "https://github.com/yt-project" ;
 	schema:abstract "The yt project A toolkit for analysis and visualization of volumetric data" ;
-	schema:contributor </person/#matthewTurk> ;	
-	
+	schema:contributor </person/#matthewTurk> ;
+
 	.
 
 ytproject:yt
 	a schema:SoftwareSourceCode ;
 	dc:title "Main yt library repository" ;
-	schema:identifier "https://github.com/yt-project/yt" ; 
-	schema:isBasedOn github:yt-project ; 
+	schema:identifier "https://github.com/yt-project/yt" ;
+	schema:isBasedOn github:yt-project ;
 	schema:targetProduct </software/#ytCore> ;
-	
+
 	.
 
 # schema for a software citation
@@ -71,7 +71,9 @@ scs:citeSoftware
 	a rdfs:Property ;
 	rdfs:domain schema:CreativeWorks ;
 	rdfs:range schema:SoftwareApplication ;
-	
+	schema: softwareVersion: version at time of analysis ;
+	schema: CreativeWorks: license 
+
 	.
 
 # attribute has Repo to associate software application and sourcecode
@@ -79,7 +81,7 @@ scs:hasRepo
 	a rdf:Property ;
 	rdfs:domain schema:SoftwareApplication ;
 	rdfs:range schema:SoftwareSourceCode ;
-	
+
 	.
 
 ## yt library
@@ -89,7 +91,7 @@ scs:hasRepo
 	schema:runtimePlatform "Python" ;
 	schema:abstract "yt is an open-source, permissively-licensed python package for analyzing and visualizing volumetric data. yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles. Focused on driving physically-meaningful inquiry, yt has been applied in domains such as astrophysics, seismology, nuclear engineering, molecular dynamics, and oceanography. Composed of a friendly community of users and developers, we want to make it easy to use and develop — we'd love it if you got involved!" ;
 	scs:hasRepo github:yt-project ;
-	
+
 	.
 
 </software/#ytCore>
@@ -98,7 +100,5 @@ scs:hasRepo
 		schema:runtimePlatform "Python" ;
 		schema:abstract "Main yt repository" ;
 		scs:hasRepo ytproject:yt ;
-		
-	.
-	
 
+	.
