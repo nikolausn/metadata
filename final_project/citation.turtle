@@ -71,8 +71,8 @@ scs:citeSoftware
 	a rdfs:Property ;
 	rdfs:domain schema:CreativeWorks ;
 	rdfs:range schema:SoftwareApplication ;
-	schema: softwareVersion: version at time of analysis ;
-	schema: CreativeWorks: license 
+	schema:SoftwareApplication "3,5" ;
+	schema:CreativeWorks "Creative Commons" ;
 
 	.
 
