@@ -1,4 +1,4 @@
-@base <http://software-citation.org/> .
+@base <http://software-citation.org/corpus/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -10,10 +10,44 @@
 @prefix scs: <http://software-citation.org/schema/> .
 @prefix ytdomain: <https://yt-project.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns3: <http://purl.org/spar/datacite/> .
+@prefix ns1: <http://purl.org/spar/pro/> .
+@prefix ns2: <http://purl.org/spar/datacite/> .
+
+
+
+# schema for a software citation
+	scs:citeSoftware
+		a rdfs:Property ;
+		rdfs:domain schema:CreativeWorks ;
+		rdfs:range schema:SoftwareApplication ;
+		schema:SoftwareApplication "3,5" ;
+		schema:CreativeWorks "Creative Commons" ;
+
+		.
+
+
+# attribute has Repo to associate software application and sourcecode
+scs:hasRepo
+	a rdf:Property ;
+	rdfs:domain schema:SoftwareApplication ;
+	rdfs:range schema:SoftwareSourceCode ;
+
+	.
+
+scs:objectives
+	a rdf:Property ;
+	rdfs:domain schema:ScholarlyArticle ;
+	rdfs:range rdf:Bag ;
+	rdfs:range schema:Article ;
+
+	.
+
 
 ## person for authors
 #ytdomain:mattheturk
-</person/#matthewturk>
+# ra is related agent
+<ra/#matthewturk>
 	a schema:Person ;
 	schema:givenName "Matthew"^^xsd:string ;
 	schema:familyName "Turk"^^xsd:string ;
@@ -26,18 +60,60 @@
 
 	.
 
-
-# example for one publication
-<https://doi.org/10.1088/0067-0049/192/1/9>
-	a schema:ScholarlyArticle ; # maybe we need to define something, a new schema / subclass related to this with additional feature description
-	schema:about "Works"^^xsd:string, "Catalog"^^xsd:string ;
-	schema:author </person/#matthewTurk> ;
-	schema:description "-abstract-"^^xsd:string ;
-	schema:name "yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA"^^xsd:string ;
-	scs:citeSoftware <software/#ytCore> ;
+# sc is software citation
+<sc/1>
+	a scs:SoftwareCitation ;
+	scs:hasPublication <https://doi.org/10.1088/0067-0049/192/1/9> ;
+	scs:citeSoftware <sw/#ytCore> ;
+	schema:softwareVersion	"";
+	scs:citeSoftware <sw/#yt> ;
 	scs:objectives [
 		a rdf:Bag ;
 		rdf:_1 [
+			a schema:Article;
+			schema:articleBody	"Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."^^xsd:string ;
+			schema:pageStart 2 ;
+			schema:pageEnd 2 ;
+		];
+		rdf:_2 [
+			a schema:Article;
+			schema:articleBody	"Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."^^xsd:string ;
+			schema:pageStart 2 ;
+			schema:pageEnd 2 ;
+		];
+	]
+
+	.
+
+<id/1>
+	a ns3:Identifier ;
+	rdfs:label "identifier 1 [id/1]" ;
+	ns3:usesIdentifierScheme ns3:url ;
+	ns1:hasLiteralValue "https://doi.org/10.1088/0067-0049/192/1/9"
+
+	.
+
+
+# example for one publication
+# br is bibliographic resource, derived from opencitation
+<br/1>
+	# schema is subste from schema.org ScholarlyArticle with addition
+	a schema:ScholarlyArticle ; # maybe we need to define something, a new schema / subclass related to this with additional feature description
+	ns2:hasIdentifier <id/1> ;
+	schema:about "Works"^^xsd:string, "Catalog"^^xsd:string ;
+	schema:author <ra/#matthewTurk> ;
+	schema:description "-abstract-"^^xsd:string ;
+	schema:name "yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA"^^xsd:string ;
+	scs:citeSoftware <sw/#ytCore> ;
+	scs:objectives [
+		a rdf:Bag ;
+		rdf:_1 [
+			a schema:Article;
+			schema:articleBody	"Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."^^xsd:string ;
+			schema:pageStart 2 ;
+			schema:pageEnd 2 ;
+		];
+		rdf:_2 [
 			a schema:Article;
 			schema:articleBody	"Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."^^xsd:string ;
 			schema:pageStart 2 ;
@@ -53,7 +129,7 @@ github:yt-project
 	dc:title "The yt-project repository" ;
 	schema:codeRepository "https://github.com/yt-project" ;
 	schema:abstract "The yt project A toolkit for analysis and visualization of volumetric data" ;
-	schema:contributor </person/#matthewTurk> ;
+	schema:contributor <ra/#matthewTurk> ;
 
 	.
 
@@ -76,16 +152,9 @@ scs:citeSoftware
 
 	.
 
-# attribute has Repo to associate software application and sourcecode
-scs:hasRepo
-	a rdf:Property ;
-	rdfs:domain schema:SoftwareApplication ;
-	rdfs:range schema:SoftwareSourceCode ;
-
-	.
 
 ## yt library
-</software/#ytProject>
+<sw/#ytProject>
 	a schema:SoftwareApplication;
 	dc:title "yt-project" ;
 	schema:runtimePlatform "Python" ;
@@ -94,7 +163,7 @@ scs:hasRepo
 
 	.
 
-</software/#ytCore>
+<sw/#ytCore>
 		a schema:SoftwareApplication ;
 		dc:title "yt core library" ;
 		schema:runtimePlatform "Python" ;
