@@ -1,0 +1,299 @@
+[
+
+    {
+        "@id": "_:b0",
+        "@type": [
+            "http://schema.org/PropertyValue"
+        ],
+        "http://schema.org/propertyID": [
+            {
+                "@value": "email"
+            }
+        ],
+        "http://schema.org/value": [
+            {
+                "@value": "mjturk@illinois.edu"
+            }
+        ]
+    },
+    {
+        "@id": "_:b1",
+        "@type": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+        ],
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#_1": [
+            {
+                "@id": "_:b2"
+            }
+        ]
+    },
+    {
+        "@id": "_:b2",
+        "@type": [
+            "http://schema.org/Article"
+        ],
+        "http://schema.org/articleBody": [
+            {
+                "@value": "Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."
+            }
+        ],
+        "http://schema.org/pageStart": [
+            {
+                "@value": 2
+            }
+        ],
+        "http://schema.org/pageEnd": [
+            {
+                "@value": 2
+            }
+        ]
+    },
+    {
+        "@id": "http://schema.org/Article"
+    },
+    {
+        "@id": "http://schema.org/CreativeWorks"
+    },
+    {
+        "@id": "http://schema.org/Person"
+    },
+    {
+        "@id": "http://schema.org/PropertyValue"
+    },
+    {
+        "@id": "http://schema.org/ScholarlyArticle"
+    },
+    {
+        "@id": "http://schema.org/SoftwareApplication"
+    },
+    {
+        "@id": "http://schema.org/SoftwareSourceCode"
+    },
+    {
+        "@id": "http://software-citation.org/person/#matthewTurk"
+    },
+    {
+        "@id": "http://software-citation.org/person/#matthewturk",
+        "@type": [
+            "http://schema.org/Person"
+        ],
+        "http://schema.org/givenName": [
+            {
+                "@value": "Matthew"
+            }
+        ],
+        "http://schema.org/familyName": [
+            {
+                "@value": "Turk"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@id": "_:b0"
+            }
+        ],
+        "http://schema.org/relatedLink": [
+            {
+                "@id": "https://github.com/matthewTurk"
+            }
+        ]
+    },
+    {
+        "@id": "http://software-citation.org/schema/citeSoftware",
+        "@type": [
+            "http://www.w3.org/2000/01/rdf-schema#Property"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://schema.org/CreativeWorks"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://schema.org/SoftwareApplication"
+            }
+        ],
+        "http://schema.org/SoftwareApplication": [
+            {
+                "@value": "3,5"
+            }
+        ],
+        "http://schema.org/CreativeWorks": [
+            {
+                "@value": "Creative Commons"
+            }
+        ]
+    },
+    {
+        "@id": "http://software-citation.org/schema/hasRepo",
+        "@type": [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "http://schema.org/SoftwareApplication"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://schema.org/SoftwareSourceCode"
+            }
+        ]
+    },
+    {
+        "@id": "http://software-citation.org/software/#ytCore",
+        "@type": [
+            "http://schema.org/SoftwareApplication"
+        ],
+        "http://purl.org/dc/elements/1.1/title": [
+            {
+                "@value": "yt core library"
+            }
+        ],
+        "http://schema.org/runtimePlatform": [
+            {
+                "@value": "Python"
+            }
+        ],
+        "http://schema.org/abstract": [
+            {
+                "@value": "Main yt repository"
+            }
+        ],
+        "http://software-citation.org/schema/hasRepo": [
+            {
+                "@id": "https://github.com/yt-project/yt"
+            }
+        ]
+    },
+    {
+        "@id": "http://software-citation.org/software/#ytProject",
+        "@type": [
+            "http://schema.org/SoftwareApplication"
+        ],
+        "http://purl.org/dc/elements/1.1/title": [
+            {
+                "@value": "yt-project"
+            }
+        ],
+        "http://schema.org/runtimePlatform": [
+            {
+                "@value": "Python"
+            }
+        ],
+        "http://schema.org/abstract": [
+            {
+                "@value": "yt is an open-source, permissively-licensed python package for analyzing and visualizing volumetric data. yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles. Focused on driving physically-meaningful inquiry, yt has been applied in domains such as astrophysics, seismology, nuclear engineering, molecular dynamics, and oceanography. Composed of a friendly community of users and developers, we want to make it easy to use and develop — we'd love it if you got involved!"
+            }
+        ],
+        "http://software-citation.org/schema/hasRepo": [
+            {
+                "@id": "https://github.com/yt-project"
+            }
+        ]
+    },
+    {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"
+    },
+    {
+        "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    },
+    {
+        "@id": "http://www.w3.org/2000/01/rdf-schema#Property"
+    },
+    {
+        "@id": "https://doi.org/10.1088/0067-0049/192/1/9",
+        "@type": [
+            "http://schema.org/ScholarlyArticle"
+        ],
+        "http://schema.org/about": [
+            {
+                "@value": "Works"
+            },
+            {
+                "@value": "Catalog"
+            }
+        ],
+        "http://schema.org/author": [
+            {
+                "@id": "http://software-citation.org/person/#matthewTurk"
+            }
+        ],
+        "http://schema.org/description": [
+            {
+                "@value": "-abstract-"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA"
+            }
+        ],
+        "http://software-citation.org/schema/citeSoftware": [
+            {
+                "@id": "http://software-citation.org/software/#ytCore"
+            }
+        ],
+        "http://software-citation.org/schema/objectives": [
+            {
+                "@id": "_:b1"
+            }
+        ]
+    },
+    {
+        "@id": "https://github.com/matthewTurk"
+    },
+    {
+        "@id": "https://github.com/yt-project",
+        "@type": [
+            "http://schema.org/SoftwareSourceCode"
+        ],
+        "http://purl.org/dc/elements/1.1/title": [
+            {
+                "@value": "The yt-project repository"
+            }
+        ],
+        "http://schema.org/codeRepository": [
+            {
+                "@value": "https://github.com/yt-project"
+            }
+        ],
+        "http://schema.org/abstract": [
+            {
+                "@value": "The yt project A toolkit for analysis and visualization of volumetric data"
+            }
+        ],
+        "http://schema.org/contributor": [
+            {
+                "@id": "http://software-citation.org/person/#matthewTurk"
+            }
+        ]
+    },
+    {
+        "@id": "https://github.com/yt-project/yt",
+        "@type": [
+            "http://schema.org/SoftwareSourceCode"
+        ],
+        "http://purl.org/dc/elements/1.1/title": [
+            {
+                "@value": "Main yt library repository"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "https://github.com/yt-project/yt"
+            }
+        ],
+        "http://schema.org/isBasedOn": [
+            {
+                "@id": "https://github.com/yt-project"
+            }
+        ],
+        "http://schema.org/targetProduct": [
+            {
+                "@id": "http://software-citation.org/software/#ytCore"
+            }
+        ]
+    }
+
+]

@@ -1,10 +1,10 @@
-@base <http://software-citation.org/corpus> .
+@base <http://software-citation.org/corpus/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rel: <http://www.perceive.net/schemas/relationship/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix schema: <http://schema.org/> . 
+@prefix schema: <http://schema.org/> .
 @prefix github: <https://github.com/> .
 @prefix ytproject: <https://github.com/yt-project/> .
 @prefix scs: <http://software-citation.org/schema/> .
@@ -17,12 +17,15 @@
 
 
 # schema for a software citation
-scs:citeSoftware
-	a rdfs:Property ;
-	rdfs:domain schema:CreativeWorks ;
-	rdfs:range schema:SoftwareApplication ;
-	
-	.
+	scs:citeSoftware
+		a rdfs:Property ;
+		rdfs:domain schema:CreativeWorks ;
+		rdfs:range schema:SoftwareApplication ;
+		schema:SoftwareApplication "3,5" ;
+		schema:CreativeWorks "Creative Commons" ;
+
+		.
+
 
 # attribute has Repo to associate software application and sourcecode
 scs:hasRepo
@@ -53,8 +56,8 @@ scs:objectives
 	    schema:propertyID "email"^^xsd:string ;
 	    schema:value "mjturk@illinois.edu"^^xsd:string
 	  ] ;
-	schema:relatedLink github:matthewTurk ;	
-	
+	schema:relatedLink github:matthewTurk ;
+
 	.
 
 # sc is software citation
@@ -117,9 +120,9 @@ scs:objectives
 			schema:pageEnd 2 ;
 		];		
 	]
-	
+
 	.
-	
+
 ## yt software repo
 github:yt-project
 	a schema:SoftwareSourceCode ;
@@ -139,6 +142,7 @@ ytproject:yt
 	
 	.
 
+
 ## yt library
 <sw/#ytProject>
 	a schema:SoftwareApplication;
@@ -146,7 +150,7 @@ ytproject:yt
 	schema:runtimePlatform "Python" ;
 	schema:abstract "yt is an open-source, permissively-licensed python package for analyzing and visualizing volumetric data. yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles. Focused on driving physically-meaningful inquiry, yt has been applied in domains such as astrophysics, seismology, nuclear engineering, molecular dynamics, and oceanography. Composed of a friendly community of users and developers, we want to make it easy to use and develop — we'd love it if you got involved!" ;
 	scs:hasRepo github:yt-project ;
-	
+
 	.
 
 <sw/#ytCore>
@@ -155,7 +159,5 @@ ytproject:yt
 		schema:runtimePlatform "Python" ;
 		schema:abstract "Main yt repository" ;
 		scs:hasRepo ytproject:yt ;
-		
-	.
-	
 
+	.
