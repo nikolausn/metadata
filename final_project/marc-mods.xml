@@ -1,0 +1,1749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modsCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xmlns="http://www.loc.gov/mods/v3"
+                xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida Kahlo</title>
+         <subTitle>an open life</subTitle>
+      </titleInfo>
+      <titleInfo type="uniform" nameTitleGroup="1">
+         <title>Frida Kahlo. English</title>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Tibol, Raquel.</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <genre authority="marcgt">biography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">nmu</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Albuquerque</placeTerm>
+         </place>
+         <publisher>University of New Mexico Press</publisher>
+         <dateIssued>c1993</dateIssued>
+         <dateIssued encoding="marc">1993</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <language objectPart="translation">
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>230 p. : ill. ; 21 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">Raquel Tibol ; translated by Elinor Randall.</note>
+      <note type="bibliography">Includes bibliographical references  (p. 209-211) and index.</note>
+      <subject>
+         <geographicCode authority="marcgac">n-mx---</geographicCode>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Painters</topic>
+         <geographic>Mexico</geographic>
+         <topic>Biography</topic>
+      </subject>
+      <classification authority="lcc">ND259.K33 T513 1993</classification>
+      <classification authority="ddc" edition="20">759.972 B</classification>
+      <identifier type="isbn">082631418X</identifier>
+      <identifier type="lccn">92034145</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">920904</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19930504124550.3</recordChangeDate>
+         <recordIdentifier>1088894</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida Kahlo</title>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Herrera, Hayden.</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Kahlo, Frida.</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">nyu</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">New York, N.Y</placeTerm>
+         </place>
+         <publisher>Rizzoli</publisher>
+         <dateIssued>1992]</dateIssued>
+         <dateIssued encoding="marc">1992</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>1 v. (unpaged) : ill. (15 col.) ; 36 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">by Hayden Herrera.</note>
+      <note type="bibliography">Includes bibliographical references.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Criticism and interpretation</topic>
+      </subject>
+      <classification authority="lcc">N6559.K34 H4 1992</classification>
+      <classification authority="ddc" edition="20">759.972 B</classification>
+      <relatedItem type="series">
+         <titleInfo>
+            <title>Rizzoli art series</title>
+         </titleInfo>
+      </relatedItem>
+      <identifier type="isbn">084781517X</identifier>
+      <identifier type="lccn">91038255</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">911017</recordCreationDate>
+         <recordChangeDate encoding="iso8601">20150226134612.0</recordChangeDate>
+         <recordIdentifier>1071793</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida Kahlo unmasked</title>
+         <subTitle>portraits by various photographers</subTitle>
+      </titleInfo>
+      <name type="corporate">
+         <namePart>Throckmorton Fine Art, Inc</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">catalog</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">nyu</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">New York, NY (153 East 61st St., New York 10021)</placeTerm>
+         </place>
+         <publisher>Throckmorton Fine Art</publisher>
+         <dateIssued>c1995</dateIssued>
+         <dateIssued encoding="marc">1995</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>44 p. : ill. ; 28 cm.</extent>
+      </physicalDescription>
+      <note>Accompanies an exhibition, Nov. 9, 1994-Jan. 6, 1995, Throckmorton Fine Art, Inc., New York.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Portraits</topic>
+         <topic>Exhibitions</topic>
+      </subject>
+      <classification authority="lcc">ND259.K33 F75 1995</classification>
+      <identifier type="lccn">96188498</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">960903</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19980416085053.0</recordChangeDate>
+         <recordIdentifier>701241</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <nonSort xml:space="preserve">Die  </nonSort>
+         <title>Welt der Frida Kahlo</title>
+         <subTitle>das blaue Haus</subTitle>
+      </titleInfo>
+      <titleInfo type="alternative">
+         <title>Blaues Haus</title>
+      </titleInfo>
+      <name type="personal">
+         <namePart>Billeter, Erika</namePart>
+         <namePart type="date">1927-</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Schirn Kunsthalle Frankfurt</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">gw</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Frankfurt am Main</placeTerm>
+         </place>
+         <publisher>Schirn Kunsthalle</publisher>
+         <dateIssued>[1993]</dateIssued>
+         <dateIssued encoding="marc">1993</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>278 p. : ill. (some col.), ports. ; 29 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">herausgegeben von Erika Billeter.</note>
+      <note>Catalog of an exhibition held at the Schirn Kunsthalle Frankfurt, March 11-May 23, 1993.</note>
+      <note type="bibliography">Includes bibliographical references (p. 278).</note>
+      <subject>
+         <geographicCode authority="marcgac">n-mx---</geographicCode>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Exhibitions</topic>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Homes and haunts</topic>
+         <geographic>Mexico</geographic>
+         <geographic>Coyoacán</geographic>
+         <topic>Exhibitions</topic>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Criticism and interpretation</topic>
+      </subject>
+      <classification authority="lcc">ND259.K33 A4 1993</classification>
+      <classification authority="ddc" edition="20">759.972</classification>
+      <identifier type="lccn">94138998</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">TxHM</recordContentSource>
+         <recordCreationDate encoding="marc">941208</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19950130161131.2</recordChangeDate>
+         <recordIdentifier>659021</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Mexican Gothic</title>
+         <subTitle>poem</subTitle>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>D'Ambrosio, Vinnie-Marie.</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Kunc, Karen S.</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Blue Heron Press</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Press Collection (Library of Congress)</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">nbu</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Lincoln, Neb.]</placeTerm>
+         </place>
+         <publisher>Blue Heron Press</publisher>
+         <dateIssued>1993</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>[20] p. : col. ill. ; 21 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">by Vinnie-Marie D'Ambrosio ; woodcuts by Karen Kunc.</note>
+      <note>Limited ed. of 50 copies.</note>
+      <note>Six sheets, printed on one side, joined to form a continuous strip, folded accordion style (202 x 10 cm. folded to 21 x 10 cm.); first and last sheets are cut-outs. Issued in a slipcase.</note>
+      <note>LC has copy no. 38, signed by the author and artist.</note>
+      <note>Source: Purchase, Jan. 25, 1994 (DLC #94/28619).</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Poetry</topic>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Rivera, Diego</namePart>
+            <namePart type="date">1886-1957</namePart>
+         </name>
+         <topic>Poetry</topic>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Women painters</topic>
+         <topic>Poetry</topic>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Painters</topic>
+         <topic>Poetry</topic>
+      </subject>
+      <subject authority="lcsh">
+         <geographic>Mexico</geographic>
+         <topic>Poetry</topic>
+      </subject>
+      <classification authority="lcc">PS3554.A48 M49 1993</classification>
+      <identifier type="lccn">94102178</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">940106</recordCreationDate>
+         <recordChangeDate encoding="iso8601">20020515135736.0</recordChangeDate>
+         <recordIdentifier>656636</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Pasión por Frida</title>
+         <subTitle>Museo Estudio Diego Rivera, De Grazia Art and Cultural Foundation, 1991-1992</subTitle>
+      </titleInfo>
+      <name type="personal">
+         <namePart>Garduño, Blanca.</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Rodríguez, José Antonio.</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Museo Estudio Diego Rivera</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>De Grazia Art and Cultural Foundation (Tucson, Ariz.)</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">mx</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">México]</placeTerm>
+         </place>
+         <publisher>Instituto Nacional de Bellas Artes</publisher>
+         <dateIssued>[1992]</dateIssued>
+         <dateIssued encoding="marc">1992</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>212 p. : ill. (some col.) ; 28 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">Blanca Garduño, José Antonio Rodríguez, compiladores.</note>
+      <note>"Presentation" (p. 178-192) in English.</note>
+      <note type="bibliography">Includes bibliographical references.</note>
+      <subject>
+         <geographicCode authority="marcgac">n-mx---</geographicCode>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Portraits</topic>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Criticism and interpretation</topic>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Art, Mexican</topic>
+         <temporal>20th century</temporal>
+         <genre>Exhibitions</genre>
+      </subject>
+      <classification authority="lcc">ND255 .P37 1992</classification>
+      <identifier type="isbn">9686084584</identifier>
+      <identifier type="lccn">93139048</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">930412</recordCreationDate>
+         <recordChangeDate encoding="iso8601">20050812171620.0</recordChangeDate>
+         <recordIdentifier>640918</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida Kahlo in Mexico</title>
+         <subTitle>painters &amp; places</subTitle>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Richmond, Robin.</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">cau</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">San Francisco, CA</placeTerm>
+         </place>
+         <publisher>Pomegranate Artbooks</publisher>
+         <dateIssued>c1994</dateIssued>
+         <dateIssued encoding="marc">1994</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>157 p. : ill. (some col.) ; 29 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">Robin Richmond.</note>
+      <note type="bibliography">Includes bibliographical references (p. 154-155) and index.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Painters</topic>
+         <geographic>Mexico</geographic>
+         <topic>Biography</topic>
+      </subject>
+      <classification authority="lcc">ND259.K33 R48 1994</classification>
+      <classification authority="ddc" edition="20">759.972 B</classification>
+      <relatedItem type="series">
+         <titleInfo>
+            <title>Painters &amp; places</title>
+         </titleInfo>
+      </relatedItem>
+      <identifier type="isbn">1566408024</identifier>
+      <identifier type="lccn">93087358</identifier>
+      <identifier type="oclc">30726451</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">CGl</recordContentSource>
+         <recordCreationDate encoding="marc">940309</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19950824101854.1</recordChangeDate>
+         <recordIdentifier>638266</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida Kahlo</title>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Jones, Jane Anderson</namePart>
+         <namePart type="date">1948-</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <genre authority="marcgt">biography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">flu</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Vero Beach, Fla</placeTerm>
+         </place>
+         <publisher>Rourke</publisher>
+         <dateIssued>c1993</dateIssued>
+         <dateIssued encoding="marc">1993</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>vii, 111 p. : ill. (some col.) ; 24 cm.</extent>
+      </physicalDescription>
+      <abstract type="Summary">Discusses the life and work of Mexican painter Frida Kahlo, her tempestuous marriage to Diego Rivera, and her international reputation.</abstract>
+      <targetAudience authority="marctarget">juvenile</targetAudience>
+      <note type="statement of responsibility" altRepGroup="00">by Jane Anderson Jones.</note>
+      <note type="bibliography">Includes bibliographical references and index.</note>
+      <subject>
+         <geographicCode authority="marcgac">n-mx---</geographicCode>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Juvenile literature</topic>
+      </subject>
+      <subject authority="lcshac">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Painters</topic>
+         <geographic>Mexico</geographic>
+         <topic>Biography</topic>
+         <topic>Juvenile literature</topic>
+      </subject>
+      <subject authority="lcshac">
+         <topic>Artists</topic>
+      </subject>
+      <subject authority="lcshac">
+         <topic>Women</topic>
+         <topic>Biography</topic>
+      </subject>
+      <classification authority="lcc">ND259.K33 J65 1993</classification>
+      <classification authority="ddc" edition="20">759.972 B</classification>
+      <relatedItem type="series">
+         <titleInfo>
+            <title>Rourke biographies</title>
+            <partName>Arts</partName>
+         </titleInfo>
+      </relatedItem>
+      <identifier type="isbn">0866254854</identifier>
+      <identifier type="lccn">92044758</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">921218</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19980728095803.7</recordChangeDate>
+         <recordIdentifier>617485</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida Kahlo</title>
+         <subTitle>the paintings</subTitle>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Herrera, Hayden.</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Kahlo, Frida.</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">nyu</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">New York, NY</placeTerm>
+         </place>
+         <publisher>HarperCollins</publisher>
+         <dateIssued>c1991</dateIssued>
+         <dateIssued encoding="marc">1991</dateIssued>
+         <edition>1st ed.</edition>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>255 p. : ill. (some col.) ; 26 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">Hayden Herrera.</note>
+      <note type="bibliography">Includes bibliographical references (p. [229]-236) and index.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Self-portraits</topic>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Criticism and interpretation</topic>
+      </subject>
+      <classification authority="lcc">ND1329.K33 H4 1991</classification>
+      <classification authority="ddc" edition="20">759.972</classification>
+      <identifier type="isbn">0060166991 :</identifier>
+      <identifier type="lccn">90056348</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">901213</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19920911161310.5</recordChangeDate>
+         <recordIdentifier>583150</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida Kahlo</title>
+         <subTitle>17 February to 16 April 1989, the Meadows Museum, Southern Methodist University, Dallas, Texas</subTitle>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Grimberg, Salomón.</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Kahlo, Frida.</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Meadows Museum</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">txu</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Dallas, Tex</placeTerm>
+         </place>
+         <publisher>The Museum</publisher>
+         <dateIssued>[1989]</dateIssued>
+         <dateIssued encoding="marc">1989</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>68 p. : ill. (some col.) ; 18 x 26 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">essay and catalogue by Salomón Grimberg.</note>
+      <note type="bibliography">Includes bibliographical references.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Exhibitions</topic>
+      </subject>
+      <classification authority="lcc">ND259.K33 A4 1989</classification>
+      <classification authority="ddc" edition="20">759.972</classification>
+      <identifier type="isbn">0935937048</identifier>
+      <identifier type="lccn">89060328</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">890930</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19890930064737.4</recordChangeDate>
+         <recordIdentifier>566343</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida, a biography of Frida Kahlo</title>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Herrera, Hayden.</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <genre authority="marcgt">biography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">nyu</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">New York</placeTerm>
+         </place>
+         <publisher>Harper &amp; Row</publisher>
+         <dateIssued>c1983</dateIssued>
+         <dateIssued encoding="marc">1983</dateIssued>
+         <edition>1st ed.</edition>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>xiii, 507 p., [48] leaves of plates : ill. ; 25 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">Hayden Herrera.</note>
+      <note>Includes index.</note>
+      <note type="bibliography">Bibliography: p. 445-448.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Painters</topic>
+         <geographic>Mexico</geographic>
+         <genre>Biography</genre>
+      </subject>
+      <classification authority="lcc">ND259.K33 H47 1983</classification>
+      <classification authority="ddc" edition="19">759.972 B</classification>
+      <identifier type="isbn">0060118431 :</identifier>
+      <identifier type="lccn">80008688</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">820223</recordCreationDate>
+         <recordChangeDate encoding="iso8601">20041025150835.0</recordChangeDate>
+         <recordIdentifier>408976</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Diego Rivera, Frida Kahlo</title>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Rivera, Diego</namePart>
+         <namePart type="date">1886-1957</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Kahlo, Frida.</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Burrus, Christina.</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Fondation Pierre Gianadda</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">sz</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Martigny, Suisse</placeTerm>
+         </place>
+         <publisher>Fondation Pierre Gianadda</publisher>
+         <dateIssued>1998</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">fre</languageTerm>
+      </language>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <language objectPart="translation">
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>279 p. : ill. (mostly col.), ports. ; 24 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">commissaire de l'exposition, Christina Burrus.</note>
+      <note>"24 janvier-1er juin 1998."</note>
+      <note type="bibliography">Includes bibliographical references and index.</note>
+      <note type="language">Some text translated from the Spanish.</note>
+      <subject>
+         <geographicCode authority="marcgac">n-mx---</geographicCode>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Rivera, Diego</namePart>
+            <namePart type="date">1886-1957</namePart>
+         </name>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Art, Mexican</topic>
+         <temporal>20th century</temporal>
+         <genre>Exhibitions</genre>
+      </subject>
+      <classification authority="lcc">ACQUISITION IN PROCESS  (COPIED) (pcc)</classification>
+      <identifier type="isbn">2884430474</identifier>
+      <identifier type="lccn">99222166</identifier>
+      <identifier type="oclc">39151013</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">CGU</recordContentSource>
+         <recordCreationDate encoding="marc">990630</recordCreationDate>
+         <recordChangeDate encoding="iso8601">20010523090202.0</recordChangeDate>
+         <recordIdentifier>247888</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Libertad de expresión</title>
+         <subTitle>Adolfo Mexiac</subTitle>
+      </titleInfo>
+      <name type="corporate" nameTitleGroup="1">
+         <namePart>Instituto Nacional de Bellas Artes (Mexico)</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Mexiac, Adolfo.</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Consejo Nacional para la Cultura y las Artes (Mexico)</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Museo Casa Estudio Diego Rivera y Frida Kahlo</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Museo Mural Diego Rivera (Mexico City, Mexico)</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">catalog</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">mx</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">México</placeTerm>
+         </place>
+         <publisher>Instituto Nacional de Bellas Artes</publisher>
+         <publisher>Museo Casa Estudio Diego Rivera y Frida Kahlo</publisher>
+         <dateIssued>1998</dateIssued>
+         <edition>1. ed.</edition>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>130, [8] p., [1] loose leaf of plates : ill., ports. (some col.) ; 31 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">Consejo Nacional para la Cultura y las Artes ... [et al.]</note>
+      <note>Essays by various authors about Mexiac and his art illustrated with reproductions of the artist's murals, oil and acrylic paintings, drawings, woodcuts, linocuts, and lithographs; many portraits of the artist and others.</note>
+      <note>Original black and white relief print (woodcut?), signed by the artist, inside front pocket.</note>
+      <note>Catalog of an exhibition held at the Museo Casa Estudio Diego Rivera y Frida Kahlo, Oct. 13, 1998-Jan. 3, 1999; Museo Mural Diego Rivera, Oct. 15, 1998-Jan. 6, 1999; Pinacoteca Universitaria Alfonso Michel, Colima, Jan. 22-Mar. 14, 1999; Museo de Arte Contemporáneo Alfredo Zalce, Morelia, Michoacán, Mar. 26-Apr. 26, 1999; Mexic-Arte Museum, Austin, Texas, May 7-June 5, 1999; Instituto Cultural Mexicano de San Antonio, Texas, Nov. 1999-Jan. 2000; South Texas Institute for the Arts, Corpus Christi, May-June 2000.</note>
+      <note>"La edición consta de 1000 ejemplares"--Colophon.</note>
+      <note>Chronology of the artist's life and work, by Patricia Salas, p. 103-122.</note>
+      <note>List of illustrations, p. 123-130.</note>
+      <note>LC has copy no. 954 of the original relief print, dated 1998.</note>
+      <note type="bibliography">Includes references to books illustrated by the artist, p. 129-130.</note>
+      <subject>
+         <geographicCode authority="marcgac">n-mx---</geographicCode>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Mexiac, Adolfo</namePart>
+         </name>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Mural painting and decoration, Mexican</topic>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Painting, Modern</topic>
+         <temporal>20th century</temporal>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Block printing</topic>
+         <geographic>Mexico</geographic>
+         <temporal>20th century</temporal>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <geographic>Mexico</geographic>
+         <topic>Social conditions</topic>
+         <temporal>20th century</temporal>
+         <topic>In art</topic>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <geographic>Mexico</geographic>
+         <topic>Politics and government</topic>
+         <temporal>20th century</temporal>
+         <topic>In art</topic>
+         <genre>Exhibitions</genre>
+      </subject>
+      <classification authority="lcc">ND259.M47 A4 1998</classification>
+      <identifier type="lccn">99206305</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">990513</recordCreationDate>
+         <recordChangeDate encoding="iso8601">20020603104345.0</recordChangeDate>
+         <recordIdentifier>235562</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <nonSort xml:space="preserve">Las  </nonSort>
+         <title>dos Fridas</title>
+         <subTitle>monólogo en el espejo : poemario</subTitle>
+      </titleInfo>
+      <titleInfo type="alternative">
+         <title>2 Fridas</title>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Meza García, Roberto.</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">government publication</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">mx</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Pachuca, Mexico]</placeTerm>
+         </place>
+         <publisher>Gobierno del Estado de Hidalgo, Sistema de Educación Pública de Hidalgo, Consejo Estatal para la Cultura y las Artes</publisher>
+         <dateIssued>1996</dateIssued>
+         <edition>1. ed.</edition>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>59 p. ; 21 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">Roberto Alejandro Meza García.</note>
+      <note>Alternate pages are blank.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <genre>Poetry</genre>
+      </subject>
+      <classification authority="lcc">PQ7298.23.E92 D67 1996</classification>
+      <classification authority="ddc" edition="21">861/.64</classification>
+      <relatedItem type="series">
+         <titleInfo>
+            <title>Tremolina</title>
+         </titleInfo>
+      </relatedItem>
+      <identifier type="isbn">9686806725</identifier>
+      <identifier type="lccn">99168136</identifier>
+      <identifier type="oclc">37583185</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">990202</recordCreationDate>
+         <recordChangeDate encoding="iso8601">20011207135356.0</recordChangeDate>
+         <recordIdentifier>213718</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida Kahlo and Diego Rivera</title>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Alcántara, Isabel.</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Egnolff, Sandra.</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <genre authority="marcgt">biography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">gw</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Munich</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">New York</placeTerm>
+         </place>
+         <publisher>Prestel</publisher>
+         <dateIssued>c1999</dateIssued>
+         <dateIssued encoding="marc">1999</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>118 p. : ill. (some col.) ; 25 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">Isabel Alcántara and Sandra Egnolff.</note>
+      <note type="bibliography">Includes bibliographical references (p. 118).</note>
+      <subject>
+         <geographicCode authority="marcgac">n-mx---</geographicCode>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Rivera, Diego</namePart>
+            <namePart type="date">1886-1957</namePart>
+         </name>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Painters</topic>
+         <geographic>Mexico</geographic>
+         <genre>Biography</genre>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Artist couples</topic>
+         <geographic>Mexico</geographic>
+         <genre>Biography</genre>
+      </subject>
+      <classification authority="lcc">ND259.R5 A87 1999</classification>
+      <relatedItem type="series">
+         <titleInfo>
+            <title>Pegasus library</title>
+         </titleInfo>
+      </relatedItem>
+      <identifier type="isbn">3791321641</identifier>
+      <identifier type="lccn">99063854</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">990524</recordCreationDate>
+         <recordChangeDate encoding="iso8601">20000502123505.0</recordChangeDate>
+         <recordIdentifier>204134</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>En el nombre de Frida</title>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Fortunato, Juan María</namePart>
+         <namePart type="date">1948-</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">government publication</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">uy</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Montevideo</placeTerm>
+         </place>
+         <publisher>Bianchi Editores</publisher>
+         <publisher>Proyecto Cultural SUR</publisher>
+         <dateIssued>1997</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>77 p. ; 21 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">Juan María Fortunato.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <genre>Poetry</genre>
+      </subject>
+      <classification authority="lcc">PQ8550.16.O75 E66 1997</classification>
+      <classification authority="ddc" edition="21">861</classification>
+      <identifier type="isbn">9974755700</identifier>
+      <identifier type="lccn">98832325</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">990318</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19990823140529.0</recordChangeDate>
+         <recordIdentifier>191865</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Tarsila, Frida, Amelia</title>
+         <subTitle>Tarsila do Amaral, Frida Kahlo, Amelia Peláez</subTitle>
+      </titleInfo>
+      <titleInfo type="alternative">
+         <title>Tarsila do Amaral, Frida Kahlo, Amelia Peláez</title>
+      </titleInfo>
+      <name type="personal">
+         <namePart>Tarsila</namePart>
+         <namePart type="date">1886-1973</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Kahlo, Frida.</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Peláez, Amelia</namePart>
+         <namePart type="date">1897-1968</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Amaral, Aracy A.</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Fundación "La Caixa" (Madrid, Spain)</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Fundació "La Caixa"</namePart>
+         <namePart>Centre Cultural.</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">sp</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Barcelona</placeTerm>
+         </place>
+         <publisher>Fundació Caixa d'Estalvis i Pensions</publisher>
+         <dateIssued>1997</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">cat</languageTerm>
+      </language>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>233 p. : ill. (some col.) ; 21 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">[autores, Aracy Amaral ... et al.].</note>
+      <note>Catalog of an exhibition held February 12 - April 27, 1997 at the Sala de Exposiciones de la Fundación "la Caixa", Madrid, and May 14 - July 27, 1997 at the Centre Cultural de la Fundació "la Caixa", Barcelona.</note>
+      <note type="bibliography">Includes bibliographical references.</note>
+      <note type="language">In Catalan and Spanish, with English translation.</note>
+      <subject>
+         <geographicCode authority="marcgac">cl-----</geographicCode>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Modernism (Art)</topic>
+         <geographic>Latin America</geographic>
+         <topic>Exhibitions</topic>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Painting, Latin American</topic>
+         <topic>Exhibitions</topic>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Women artists</topic>
+         <geographic>Latin America</geographic>
+         <topic>Exhibitions</topic>
+      </subject>
+      <classification authority="lcc">ND202.5 .T37 1997</classification>
+      <identifier type="isbn">8476645597</identifier>
+      <identifier type="lccn">98153919</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">980526</recordCreationDate>
+         <recordChangeDate encoding="iso8601">20080215161147.0</recordChangeDate>
+         <recordIdentifier>2149778</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <nonSort xml:space="preserve">The  </nonSort>
+         <title>world of Frida Kahlo</title>
+         <subTitle>the blue house</subTitle>
+      </titleInfo>
+      <titleInfo type="alternative">
+         <title>Blue house</title>
+      </titleInfo>
+      <titleInfo type="uniform">
+         <title>Welt der Frida Kahlo. English</title>
+      </titleInfo>
+      <name type="personal">
+         <namePart>Billeter, Erika</namePart>
+         <namePart type="date">1927-</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Museum of Fine Arts, Houston</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <genre authority="marcgt">government publication</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">wau</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Seattle]</placeTerm>
+         </place>
+         <publisher>University of Washington Press in association with Museum of Fine Arts, Houston</publisher>
+         <dateIssued>c1993</dateIssued>
+         <dateIssued encoding="marc">1993</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <language objectPart="translation">
+         <languageTerm authority="iso639-2b" type="code">ger</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>279 p. : ill. (some col.) ; 29 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">edited by Erika Billeter ; [translation, Kathleen Jamison-Cemper, Edith M. Pross, and Arturo Sanchez].</note>
+      <note>Catalog of an exhibition held at Museum of Fine Arts, Houston, June 6-Aug. 29, 1993.</note>
+      <note>Translation of: Die Welt der Frida Kahlo.</note>
+      <note type="bibliography">Includes bibliographical references (p. 279).</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Exhibitions</topic>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Homes and haunts</topic>
+         <geographic>Mexico</geographic>
+         <topic>Exhibitions</topic>
+      </subject>
+      <classification authority="lcc">ND259.K33 A4 1993a</classification>
+      <identifier type="isbn">0295973285</identifier>
+      <identifier type="lccn">97129809</identifier>
+      <identifier type="lccn" invalid="yes">97102577</identifier>
+      <identifier type="oclc">29851029</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">OWoC</recordContentSource>
+         <recordCreationDate encoding="marc">940221</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19970324163511.9</recordChangeDate>
+         <recordIdentifier>2131004</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Mujer, ideología y arte</title>
+         <subTitle>ideología y política en Frida Kahlo y Diego Rivera</subTitle>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Bartra, Eli.</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">sp</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Barcelona</placeTerm>
+         </place>
+         <publisher>LaSal</publisher>
+         <dateIssued>c1987</dateIssued>
+         <dateIssued encoding="marc">1987</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>77 p., [8] p. of plates : ill. (some col.) ; 24 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">Eli Bartra.</note>
+      <note>"Número especial"--Cover.</note>
+      <note type="bibliography">Includes bibliographical references.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Criticism and interpretation</topic>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Rivera, Diego</namePart>
+            <namePart type="date">1886-1957</namePart>
+         </name>
+         <topic>Criticism and interpretation</topic>
+      </subject>
+      <classification authority="lcc">ND259.K33 B37 1987</classification>
+      <classification authority="ddc" edition="20">759.972</classification>
+      <relatedItem type="series">
+         <titleInfo>
+            <title>Cuadernos inacabados, 8</title>
+         </titleInfo>
+      </relatedItem>
+      <identifier type="isbn" invalid="yes">8486527415</identifier>
+      <identifier type="lccn">88115969</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">891021</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19891021074843.1</recordChangeDate>
+         <recordIdentifier>1968781</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida</title>
+         <subTitle>el pincel de la angustia</subTitle>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Zamora, Martha</namePart>
+         <namePart type="date">1940-</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Kahlo, Frida.</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <genre authority="marcgt">biography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">mx</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">La Herradura, Mexico]</placeTerm>
+         </place>
+         <publisher>M. Zamora</publisher>
+         <dateIssued>[1987]</dateIssued>
+         <dateIssued encoding="marc">1987</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>409 p. : ill., ports. (some col.) ; 28 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">Martha Zamora.</note>
+      <note>Includes index.</note>
+      <note type="bibliography">Bibliography: p. 387-401.</note>
+      <subject>
+         <geographicCode authority="marcgac">n-mx---</geographicCode>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Catalogs</topic>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Artists</topic>
+         <geographic>Mexico</geographic>
+         <topic>Biography</topic>
+      </subject>
+      <classification authority="lcc">N6559.K34 Z36 1987</classification>
+      <classification authority="ddc">759.972 B</classification>
+      <identifier type="isbn">9684992041</identifier>
+      <identifier type="lccn">87160349</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">870728</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19900807143348.3</recordChangeDate>
+         <recordIdentifier>1956533</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida Kahlo, a bibliography</title>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Garcia, Rupert</namePart>
+         <namePart type="date">1941-</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <genre authority="marcgt">biography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">cau</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Berkeley, Calif</placeTerm>
+         </place>
+         <publisher>Chicano Studies Library Publications Unit, University of California, Berkeley</publisher>
+         <dateIssued>c1983</dateIssued>
+         <dateIssued encoding="marc">1983</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>xi, 48 p. : ill. ; 23 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">by Rupert Garcia.</note>
+      <note>Includes index.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Bibliography</topic>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Painters</topic>
+         <geographic>Mexico</geographic>
+         <topic>Biography</topic>
+      </subject>
+      <classification authority="lcc">ND259.K33 G37 1983</classification>
+      <classification authority="ddc" edition="19">016.759972</classification>
+      <relatedItem type="series">
+         <titleInfo>
+            <title>Chicano Studies Library publication series ; no. 7</title>
+         </titleInfo>
+      </relatedItem>
+      <identifier type="isbn">0918520053 (pbk.)</identifier>
+      <identifier type="lccn">83010439</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">830523</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19870713000000.0</recordChangeDate>
+         <recordIdentifier>1877952</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida Kahlo</title>
+         <subTitle>crónica, testimonios y aproximaciones</subTitle>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Tibol, Raquel.</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">mx</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">México</placeTerm>
+         </place>
+         <publisher>Ediciones de Cultura Popular</publisher>
+         <dateIssued>1977</dateIssued>
+         <edition>1. ed.</edition>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>159 p., [16] leaves of plates : ill. ; 17 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">Raquel Tibol.</note>
+      <note type="bibliography">Includes bibliographical references.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+      </subject>
+      <classification authority="lcc">ND259.K33 T5</classification>
+      <classification authority="ddc">759.972</classification>
+      <relatedItem type="series">
+         <titleInfo>
+            <title>Filosofía y letras ; 34</title>
+         </titleInfo>
+      </relatedItem>
+      <identifier type="lccn">78110919</identifier>
+      <recordInfo>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">790709</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19790806000000.0</recordChangeDate>
+         <recordIdentifier>1795589</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Vida de Frida Kahlo</title>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Conde, Teresa del.</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <genre authority="marcgt">biography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">mx</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">México</placeTerm>
+         </place>
+         <publisher>Departamento Editorial, Secretaría de la Presidencia</publisher>
+         <dateIssued>1976</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>65 p. : ports. ; 19 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">[por Teresa del Conde].</note>
+      <note>Cover title: Frida Kahlo.</note>
+      <note type="bibliography">Includes bibliographical references.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Painters</topic>
+         <geographic>Mexico</geographic>
+         <topic>Biography</topic>
+      </subject>
+      <classification authority="lcc">ND259.K33 C66</classification>
+      <identifier type="lccn">77464659</identifier>
+      <recordInfo>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">770623</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19770715000000.0</recordChangeDate>
+         <recordIdentifier>1783799</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida Kahlo</title>
+         <subTitle>Helsingin kaupungin taidemuseo, 28.1.-24.4.1997</subTitle>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Kahlo, Frida.</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Hentinen, Arja.</namePart>
+      </name>
+      <name type="personal">
+         <namePart>Karjalainen, Tuula</namePart>
+         <namePart type="date">1942-</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Helsingin kaupungin taidemuseo</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">fi</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">Helsinki]</placeTerm>
+         </place>
+         <publisher>Helsingin kaupungin taidemuseo</publisher>
+         <dateIssued>[1997]</dateIssued>
+         <dateIssued encoding="marc">1997</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">fin</languageTerm>
+      </language>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">swe</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>110 p. : ill. (some col.) ; 27 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">luettelon toimituskunta, Arja Hentinen, Tuula Karjalainen, Maija Tanninen-Mattila = Frida Kahlo : Helsingfors stads konstmuseum, 28.1.-24.4.1997 / katalogredaktionen, Arja Hentinen, Tuula Karjalainen, Maija Tanninen-Mattila = Frida Kahlo : The Helsinki City Art Museum, 28.1.-24.4.1997 / editorial committee, Arja Hentinen, Tuula Karjalainen, Maija Tanninen-Mattila.</note>
+      <note type="bibliography">Includes bibliographical references (p. 90).</note>
+      <note type="language">Finnish, English, and Swedish.</note>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <topic>Exhibitions</topic>
+      </subject>
+      <classification authority="lcc">ND259.K33 A4 1997</classification>
+      <relatedItem type="series">
+         <titleInfo>
+            <title>Helsingin kaupungin taidemuseon julkaisuja ; n:o 52</title>
+         </titleInfo>
+      </relatedItem>
+      <identifier type="isbn">9518965285</identifier>
+      <identifier type="lccn">97167714</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">DLC</recordContentSource>
+         <recordCreationDate encoding="marc">970630</recordCreationDate>
+         <recordChangeDate encoding="iso8601">19970721155101.4</recordChangeDate>
+         <recordIdentifier>1662088</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+   <mods version="3.6">
+      <titleInfo>
+         <title>Frida Kahlo, Diego Rivera, and Mexican modernism</title>
+         <subTitle>from the Jacques and Natasha Gelman collection</subTitle>
+      </titleInfo>
+      <titleInfo type="alternative">
+         <title>Mexican modernism</title>
+      </titleInfo>
+      <titleInfo type="alternative">
+         <title>Kahlo, Rivera, Mexican modernism</title>
+      </titleInfo>
+      <name type="personal" usage="primary" nameTitleGroup="1">
+         <namePart>Oles, James.</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>San Francisco Museum of Modern Art</namePart>
+      </name>
+      <name type="corporate">
+         <namePart>Museum of Contemporary Art (North Miami, Fla.)</namePart>
+      </name>
+      <typeOfResource>text</typeOfResource>
+      <genre authority="marcgt">bibliography</genre>
+      <originInfo>
+         <place>
+            <placeTerm type="code" authority="marccountry">cau</placeTerm>
+         </place>
+         <place>
+            <placeTerm type="text">San Francisco</placeTerm>
+         </place>
+         <publisher>San Francisco Museum of Modern Art</publisher>
+         <dateIssued>c1996</dateIssued>
+         <dateIssued encoding="marc">1996</dateIssued>
+         <issuance>monographic</issuance>
+      </originInfo>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+      </language>
+      <language>
+         <languageTerm authority="iso639-2b" type="code">spa</languageTerm>
+      </language>
+      <physicalDescription>
+         <form authority="marcform">print</form>
+         <extent>88 p. : ill. (some col.) ; 31 cm.</extent>
+      </physicalDescription>
+      <note type="statement of responsibility" altRepGroup="00">essay by James Oles.</note>
+      <note>"Published on the occasion of the exhibition Frida Kahlo, Diego Rivera, and Mexican modernism from the Jacques and Natasha Gelman Collection, organized by the San Francisco Museum of Modern Art (April 18-September 8, 1996) and the exhibition Mexican modernism from the Jacques and Natasha Gelman Collection, organized by the Museum of Contemporary Art, Miami (October 5-December 2, 1996)"--Verso t.p.</note>
+      <note type="bibliography">Includes bibliographical references (p. 88).</note>
+      <note type="language">English and Spanish texts printed side-by-side.</note>
+      <subject>
+         <geographicCode authority="marcgac">n-mx---</geographicCode>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Kahlo, Frida</namePart>
+         </name>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Rivera, Diego</namePart>
+            <namePart type="date">1886-1957</namePart>
+         </name>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Gelman, Jacques</namePart>
+         </name>
+         <topic>Art collections</topic>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <name type="personal">
+            <namePart>Gelman, Natasha</namePart>
+         </name>
+         <topic>Art collections</topic>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Painting, Mexican</topic>
+         <temporal>20th century</temporal>
+         <genre>Exhibitions</genre>
+      </subject>
+      <subject authority="lcsh">
+         <topic>Painting</topic>
+         <topic>Private collections</topic>
+         <geographic>Mexico</geographic>
+         <genre>Exhibitions</genre>
+      </subject>
+      <classification authority="lcc">ND255 .O43 1996</classification>
+      <identifier type="isbn">0918471370</identifier>
+      <identifier type="lccn">96067244</identifier>
+      <identifier type="oclc">34771466</identifier>
+      <recordInfo>
+         <descriptionStandard>aacr</descriptionStandard>
+         <recordContentSource authority="marcorg">CSfCiC</recordContentSource>
+         <recordCreationDate encoding="marc">960429</recordCreationDate>
+         <recordChangeDate encoding="iso8601">20011221082016.0</recordChangeDate>
+         <recordIdentifier>1637843</recordIdentifier>
+         <recordOrigin>Converted from MARCXML to MODS version 3.6 using MARC21slim2MODS3-6.xsl
+				(Revision 1.119 2018/06/21)</recordOrigin>
+      </recordInfo>
+   </mods>
+</modsCollection>
+
