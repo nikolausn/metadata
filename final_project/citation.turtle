@@ -10,9 +10,11 @@
 @prefix scs: <http://software-citation.org/schema/> .
 @prefix ytdomain: <https://yt-project.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ns3: <http://purl.org/spar/datacite/> .
-@prefix ns1: <http://purl.org/spar/pro/> .
-@prefix ns2: <http://purl.org/spar/datacite/> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
+@prefix inphoproject: <https://github.com/inpho/> .
+
 
 
 
@@ -100,10 +102,10 @@ scs:outcome
 	.
 
 <id/1> 
-	a ns3:Identifier ;
-	rdfs:label "identifier 1 [id/1]" ;
-    ns2:usesIdentifierScheme ns2:doi ;
-	ns1:hasLiteralValue "https://doi.org/10.1088/0067-0049/192/1/9" 
+	a datacite:Identifier ;
+	rdfs:label "identifier 1 [id/1]"^^xsd:string ;
+    datacite:usesIdentifierScheme datacite:doi ;
+	literal:hasLiteralValue "https://doi.org/10.1088/0067-0049/192/1/9"^^xsd:string ;
 	
 	.
 	
@@ -113,7 +115,7 @@ scs:outcome
 <br/1>
 	# schema is subste from schema.org ScholarlyArticle with addition
 	a schema:ScholarlyArticle ; # maybe we need to define something, a new schema / subclass related to this with additional feature description
-	ns2:hasIdentifier <id/1> ;
+	datacite:hasIdentifier <id/1> ;
 	schema:about "Works"^^xsd:string, "Catalog"^^xsd:string ;
 	schema:author <ra/#matthewTurk> ;
 	schema:description "-abstract-"^^xsd:string ;
@@ -126,16 +128,16 @@ scs:outcome
 github:yt-project
 	a schema:SoftwareSourceCode ;
 	dc:title "The yt-project repository" ;
-	schema:codeRepository "https://github.com/yt-project" ;
+	schema:codeRepository <https://github.com/yt-project> ;
 	schema:abstract "The yt project A toolkit for analysis and visualization of volumetric data" ;
-	schema:contributor <ra/#matthewTurk> ;	
+	schema:contributor <ra/#matthewTurk> ;
 	
 	.
 
 ytproject:yt
 	a schema:SoftwareSourceCode ;
 	dc:title "Main yt library repository" ;
-	schema:identifier "https://github.com/yt-project/yt" ; 
+	schema:identifier <https://github.com/yt-project/yt> ; 
 	schema:isBasedOn github:yt-project ; 
 	schema:targetProduct <sw/#ytCore> ;
 	
@@ -143,7 +145,7 @@ ytproject:yt
 
 ## yt library
 <sw/#ytProject>
-	a schema:SoftwareApplication;
+	a schema:SoftwareApplication ;
 	dc:title "yt-project" ;
 	schema:runtimePlatform "Python" ;
 	schema:abstract "yt is an open-source, permissively-licensed python package for analyzing and visualizing volumetric data. yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles. Focused on driving physically-meaningful inquiry, yt has been applied in domains such as astrophysics, seismology, nuclear engineering, molecular dynamics, and oceanography. Composed of a friendly community of users and developers, we want to make it easy to use and develop — we'd love it if you got involved!" ;
@@ -152,10 +154,102 @@ ytproject:yt
 	.
 
 <sw/#ytCore>
-		a schema:SoftwareApplication ;
-		dc:title "yt core library" ;
-		schema:runtimePlatform "Python" ;
-		schema:abstract "Main yt repository" ;
-		scs:hasRepo ytproject:yt ;
+	a schema:SoftwareApplication ;
+	dc:title "yt core library" ;
+	schema:runtimePlatform "Python" ;
+	schema:abstract "Main yt repository" ;
+	scs:hasRepo ytproject:yt ;
 
 	.
+	
+<sw/#unyt>
+	a schema:SoftwareApplication ;
+	dc:title "yt core library" ;
+	schema:runtimePlatform "Python" ;
+	schema:abstract "Main yt repository" ;
+	scs:hasRepo ytproject:yt ;
+
+	.
+
+
+<ra/#jaimieMurdock>
+	a scs:Author ;
+	schema:givenName "Jaimie"^^xsd:string ;
+	schema:familyName "Murdock"^^xsd:string ;
+	schema:identifier [
+		a schema:PropertyValue ;
+		schema:propertyID "email"^^xsd:string ;
+		schema:value "mjturk@illinois.edu"^^xsd:string ;
+		] , [
+		a schema:PropertyValue ;
+		schema:propertyID "github"^^xsd:string ;
+		schema:value github:JaimieMurdock ;
+		] ;
+	schema:relatedLink github:JaimieMurdock ;
+
+	.
+
+github:inpho
+	a schema:SoftwareSourceCode ;
+	dc:title "Main yt library repository" ;
+	schema:identifier <https://github.com/inpho> ; 
+	schema:targetProduct <sw/#InPho> ;
+	schema:contributor <ra/#jaimieMurdock> ;
+	
+	.
+	
+inphoproject:inpho
+	a schema:SoftwareSourceCode ;
+	dc:title "Main yt library repository" ;
+	schema:identifier <https://github.com/inpho/inpho> ; 
+	schema:targetProduct <sw/#InPhoCore> ;
+	schema:isBasedOn github:inpho ; 
+	schema:contributor <ra/#matthewTurk> ;	
+	
+	.
+
+
+<sw/#InPhoCore>
+	a schema:SoftwareApplication ;
+	dc:title "The inpho tools." ;
+	schema:identifier <https://github.com/inpho/inpho> ; 
+	schema:runtimePlatform "Python" ;
+	schema:abstract '''The inpho model and dataprocessing tools. Interface between codex and inphosite https://inpho.cogs.indiana.edu''' ;
+	scs:hasRepo github:inpho ;
+	
+	.
+
+<sw/#InPho>
+a schema:SoftwareApplication ;
+	dc:title "The InPhO Project" ;
+	schema:identifier <https://www.inphoproject.org> ; 
+	schema:runtimePlatform "JavaScript", "Python", "NodeJS" ;
+	schema:abstract '''The InPhO is constructed by a novel 3-step semi-automated process, called dynamic ontology: 
+Data Mining — Natural language processing (NLP) techniques generate statistical hypothesis about the relationships among philosophically-salient topics.
+Expert Feedback — These hypotheses are evaluated by domain experts through online interfaces.
+Machine Reasoning — Our machine reasoning program uses feedback and statistical measures to populate the ontology.''' ;
+	scs:hasRepo github:inpho ;
+	
+	.
+
+<br/2>
+	# schema is subste from schema.org ScholarlyArticle with addition
+	a schema:ScholarlyArticle ; # maybe we need to define something, a new schema / subclass related to this with additional feature description
+	datacite:hasIdentifier <id/2> ;
+	schema:identifier <https://www.researchgate.net/publication/267806761>
+	schema:author <ra/#jaimieMurdock> ;
+	schema:description "-abstract-"^^xsd:string ;
+	schema:name "InPhO for All: Why APIs Matter"^^xsd:string ;
+	scs:citeSoftware <sw/#InPhoCore> ;
+
+	.
+	
+		
+<id/2> 
+	a datacite:Identifier ;
+	rdfs:label "identifier 2 [id/2]"^^xsd:string ;
+	datacite:usesIdentifierScheme datacite:url ;
+	literal:hasLiteralValue "https://www.researchgate.net/publication/267806761"^^xsd:string ;
+	
+	.
+
