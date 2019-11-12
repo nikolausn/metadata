@@ -496,7 +496,7 @@
         <PREMIS:agentIdentifier>
             <PREMIS:agentIdentifierType>LCNAF</PREMIS:agentIdentifierType>
             <PREMIS:agentIdentifierValue>n84040978</PREMIS:agentIdentifierValue>
-=======
+
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>Apple Inc.</PREMIS:agentName>
         <PREMIS:agentType>corporate</PREMIS:agentType>
@@ -559,7 +559,7 @@
                 <PREMIS:rightsStatementIdentifierValue>https://www.apple.com/legal/sla/docs/macOSCatalina.pdf</PREMIS:rightsStatementIdentifierValue>
             </PREMIS:rightsStatementIdentifier>
             <PREMIS:rightsBasis>license</PREMIS:rightsBasis>
-=======
+            
             <PREMIS:linkingAgentIdentifier>
                 <PREMIS:linkingAgentIdentifierType>LCNAF</PREMIS:linkingAgentIdentifierType>
                 <PREMIS:linkingAgentIdentifierValue>n84040978</PREMIS:linkingAgentIdentifierValue>
@@ -576,7 +576,7 @@
                 <PREMIS:rightsStatementIdentifierValue>https://www.google.com/intl/en_sg/chrome/privacy/eula_text.html</PREMIS:rightsStatementIdentifierValue>
             </PREMIS:rightsStatementIdentifier>
             <PREMIS:rightsBasis>license</PREMIS:rightsBasis>
-=======
+
             <PREMIS:linkingAgentIdentifier>
                 <PREMIS:linkingAgentIdentifierType>LCNAF</PREMIS:linkingAgentIdentifierType>
                 <PREMIS:linkingAgentIdentifierValue>nr2003021731</PREMIS:linkingAgentIdentifierValue>
@@ -593,12 +593,10 @@
                 <PREMIS:rightsStatementIdentifierValue>https://www.apple.com/legal/sla/docs/iTunes.pdf</PREMIS:rightsStatementIdentifierValue>
             </PREMIS:rightsStatementIdentifier>
             <PREMIS:rightsBasis>license</PREMIS:rightsBasis>
-<<<<<<< HEAD
             <PREMIS:linkingAgentIdentifier>
                 <PREMIS:linkingAgentIdentifierType>LCNAF</PREMIS:linkingAgentIdentifierType>
                 <PREMIS:linkingAgentIdentifierValue>n84040978</PREMIS:linkingAgentIdentifierValue>
             </PREMIS:linkingAgentIdentifier>
->>>>>>> 9154953beb040d450892202677997f96be3a11f8
         </PREMIS:rightsStatement>
         <!-- You need to add enough information to adequately describe the rights situation as it relates to administrative actions for the audio software -->
     </PREMIS:rights>

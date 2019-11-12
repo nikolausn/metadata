@@ -58,6 +58,7 @@ scs:outcome
 # ra is related agent
 # or ar => agent role
 <ra/#matthewturk>
+	a schema:Person ;
 	a scs:Author ;
 	schema:givenName "Matthew"^^xsd:string ;
 	schema:familyName "Turk"^^xsd:string ;
@@ -73,10 +74,27 @@ scs:outcome
 # sc is software citation
 <sc/1>
 	a scs:SoftwareCitation ;
-	scs:hasPublication <br/1> ;
+	scs:hasPublication <https://doi.org/10.1088/0067-0049/192/1/9> ;
 	scs:citeSoftware <sw/#ytCore> ;
 	schema:softwareVersion	"";
 	scs:citeSoftware <sw/#yt> ;
+	scs:objectives [
+		a rdf:Bag ;
+		rdf:_1 [
+			a schema:Article;
+			schema:articleBody	"Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."^^xsd:string ;
+			schema:pageStart 2 ;
+			schema:pageEnd 2 ;
+		];
+		rdf:_2 [
+			a schema:Article;
+			schema:articleBody	"Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."^^xsd:string ;
+			schema:pageStart 2 ;
+			schema:pageEnd 2 ;
+		];
+	];
+	
+	
 	scs:outcome [
 		a schema:Article ;
 	] ;
@@ -96,8 +114,31 @@ scs:outcome
 			schema:articleBody	"Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."^^xsd:string ;
 			schema:pageStart 2 ;
 			schema:pageEnd 2 ;
-		];		
+		];
 	]
+
+	.
+
+<id/1>
+	a datacite:Identifier ;
+	rdfs:label "identifier 1 [id/1]" ;
+	datacite:usesIdentifierScheme datacite:url ;
+	literal:hasLiteralValue "https://doi.org/10.1088/0067-0049/192/1/9"
+
+	.
+
+
+# example for one publication
+# br is bibliographic resource, derived from opencitation
+<br/1>
+	# schema is subste from schema.org ScholarlyArticle with addition
+	a schema:ScholarlyArticle ; # maybe we need to define something, a new schema / subclass related to this with additional feature description
+	datacite:hasIdentifier <id/1> ;
+	schema:about "Works"^^xsd:string, "Catalog"^^xsd:string ;
+	schema:author <ra/#matthewTurk> ;
+	schema:description "-abstract-"^^xsd:string ;
+	schema:name "yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA"^^xsd:string ;
+	scs:citeSoftware <sw/#ytCore> ;
 	
 	.
 
@@ -131,17 +172,28 @@ github:yt-project
 	schema:codeRepository <https://github.com/yt-project> ;
 	schema:abstract "The yt project A toolkit for analysis and visualization of volumetric data" ;
 	schema:contributor <ra/#matthewTurk> ;
-	
+
 	.
 
 ytproject:yt
 	a schema:SoftwareSourceCode ;
 	dc:title "Main yt library repository" ;
 	schema:identifier <https://github.com/yt-project/yt> ; 
-	schema:isBasedOn github:yt-project ; 
-	schema:targetProduct <sw/#ytCore> ;
-	
+	schema:isBasedOn github:yt-project ;
+	schema:targetProduct </software/#ytCore> ;
+
 	.
+
+# schema for a software citation
+scs:citeSoftware
+	a rdfs:Property ;
+	rdfs:domain schema:CreativeWorks ;
+	rdfs:range schema:SoftwareApplication ;
+	schema:SoftwareApplication "3.5" ;
+	schema:CreativeWorks "Creative Commons" ;
+
+	.
+
 
 ## yt library
 <sw/#ytProject>
@@ -193,7 +245,7 @@ github:inpho
 	a schema:SoftwareSourceCode ;
 	dc:title "Main yt library repository" ;
 	schema:identifier <https://github.com/inpho> ; 
-	schema:targetProduct <sw/#InPho> ;
+	schema:targetProduct <sw/#inPho> ;
 	schema:contributor <ra/#jaimieMurdock> ;
 	
 	.
@@ -202,14 +254,14 @@ inphoproject:inpho
 	a schema:SoftwareSourceCode ;
 	dc:title "Main yt library repository" ;
 	schema:identifier <https://github.com/inpho/inpho> ; 
-	schema:targetProduct <sw/#InPhoCore> ;
+	schema:targetProduct <sw/#inPhoCore> ;
 	schema:isBasedOn github:inpho ; 
 	schema:contributor <ra/#matthewTurk> ;	
 	
 	.
 
 
-<sw/#InPhoCore>
+<sw/#inPhoCore>
 	a schema:SoftwareApplication ;
 	dc:title "The inpho tools." ;
 	schema:identifier <https://github.com/inpho/inpho> ; 
@@ -219,7 +271,7 @@ inphoproject:inpho
 	
 	.
 
-<sw/#InPho>
+<sw/#inPho>
 a schema:SoftwareApplication ;
 	dc:title "The InPhO Project" ;
 	schema:identifier <https://www.inphoproject.org> ; 
@@ -236,11 +288,11 @@ Machine Reasoning — Our machine reasoning program uses feedback and statistica
 	# schema is subste from schema.org ScholarlyArticle with addition
 	a schema:ScholarlyArticle ; # maybe we need to define something, a new schema / subclass related to this with additional feature description
 	datacite:hasIdentifier <id/2> ;
-	schema:identifier <https://www.researchgate.net/publication/267806761>
+	schema:identifier <https://www.researchgate.net/publication/267806761> ;
 	schema:author <ra/#jaimieMurdock> ;
 	schema:description "-abstract-"^^xsd:string ;
 	schema:name "InPhO for All: Why APIs Matter"^^xsd:string ;
-	scs:citeSoftware <sw/#InPhoCore> ;
+	scs:citeSoftware <sw/#inPhoCore> ;
 
 	.
 	
@@ -252,4 +304,29 @@ Machine Reasoning — Our machine reasoning program uses feedback and statistica
 	literal:hasLiteralValue "https://www.researchgate.net/publication/267806761"^^xsd:string ;
 	
 	.
+	
+	
+<sc/2>
+	a scs:SoftwareCitation ;
+	scs:hasPublication <br/2> ;
+	scs:citeSoftware <sw/#inPhoCore> ;
+	schema:softwareVersion	"";
+	scs:citeSoftware <sw/#inPho> ;
+	scs:outcome [
+			a schema:Article ;
+		] ;
+		scs:outcome [
+			a schema:Article ;
+		];
+		scs:outcomes [
+			a rdf:Bag ;
+			rdf:_1 [
+				a schema:Article;
+				schema:articleBody	"Figure 1. Usage of InPho project on the website"^^xsd:string ;
+				schema:pageStart 2 ;
+				schema:pageEnd 2 ;
+			];				
+		]
+	
+		.
 
