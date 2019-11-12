@@ -17,16 +17,6 @@
 
 
 # schema for a software citation
-<<<<<<< HEAD
-	scs:citeSoftware
-		a rdfs:Property ;
-		rdfs:domain schema:CreativeWorks ;
-		rdfs:range schema:SoftwareApplication ;
-		schema:SoftwareApplication "3,5" ;
-		schema:CreativeWorks "Creative Commons" ;
-
-		.
-=======
 scs:citeSoftware
 	a rdfs:Property ;
 	rdfs:domain schema:CreativeWorks ;
@@ -35,7 +25,6 @@ scs:citeSoftware
 	schema:CreativeWorks "Creative Commons" ;
 
 	.
->>>>>>> b127eac4431fa5552960cee3744efbad31436d74
 
 
 # attribute has Repo to associate software application and sourcecode
@@ -43,49 +32,31 @@ scs:hasRepo
 	a rdf:Property ;
 	rdfs:domain schema:SoftwareApplication ;
 	rdfs:range schema:SoftwareSourceCode ;
-<<<<<<< HEAD
 
-	.
-
-scs:objectives
-=======
-	
 	.
 
 scs:outcomes
->>>>>>> b127eac4431fa5552960cee3744efbad31436d74
 	a rdf:Property ;
 	rdfs:domain schema:ScholarlyArticle ;
 	rdfs:range rdf:Bag ;
 	rdfs:range schema:Article ;
-<<<<<<< HEAD
 
 	.
 
-=======
-	
-	.
-	
 scs:outcome
 	a rdf:Property ;
-	rdfs:domain schema:ScholarlyArticle ;	
+	rdfs:domain schema:ScholarlyArticle ;
 	rdfs:range schema:Article ;
-	
+
 	.
-	
->>>>>>> b127eac4431fa5552960cee3744efbad31436d74
+
 
 ## person for authors
 #ytdomain:mattheturk
 # ra is related agent
-<<<<<<< HEAD
-<ra/#matthewturk>
-	a schema:Person ;
-=======
 # or ar => agent role
 <ra/#matthewturk>
 	a scs:Author ;
->>>>>>> b127eac4431fa5552960cee3744efbad31436d74
 	schema:givenName "Matthew"^^xsd:string ;
 	schema:familyName "Turk"^^xsd:string ;
 	schema:identifier [
@@ -100,12 +71,17 @@ scs:outcome
 # sc is software citation
 <sc/1>
 	a scs:SoftwareCitation ;
-<<<<<<< HEAD
-	scs:hasPublication <https://doi.org/10.1088/0067-0049/192/1/9> ;
+	scs:hasPublication <br/1> ;
 	scs:citeSoftware <sw/#ytCore> ;
 	schema:softwareVersion	"";
 	scs:citeSoftware <sw/#yt> ;
-	scs:objectives [
+	scs:outcome [
+		a schema:Article ;
+	] ;
+	scs:outcome [
+		a schema:Article ;
+	];
+	scs:outcomes [
 		a rdf:Bag ;
 		rdf:_1 [
 			a schema:Article;
@@ -126,66 +102,11 @@ scs:outcome
 <id/1>
 	a ns3:Identifier ;
 	rdfs:label "identifier 1 [id/1]" ;
-	ns3:usesIdentifierScheme ns3:url ;
+    ns2:usesIdentifierScheme ns2:doi ;
 	ns1:hasLiteralValue "https://doi.org/10.1088/0067-0049/192/1/9"
 
 	.
 
-
-# example for one publication
-# br is bibliographic resource, derived from opencitation
-<br/1>
-	# schema is subste from schema.org ScholarlyArticle with addition
-	a schema:ScholarlyArticle ; # maybe we need to define something, a new schema / subclass related to this with additional feature description
-	ns2:hasIdentifier <id/1> ;
-	schema:about "Works"^^xsd:string, "Catalog"^^xsd:string ;
-	schema:author <ra/#matthewTurk> ;
-	schema:description "-abstract-"^^xsd:string ;
-	schema:name "yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA"^^xsd:string ;
-	scs:citeSoftware <sw/#ytCore> ;
-	scs:objectives [
-=======
-	scs:hasPublication <br/1> ;
-	scs:citeSoftware <sw/#ytCore> ;
-	schema:softwareVersion	"";
-	scs:citeSoftware <sw/#yt> ;
-	scs:outcome [
-		a schema:Article ;
-	] ;
-	scs:outcome [
-		a schema:Article ;
-	];
-	scs:outcomes [
->>>>>>> b127eac4431fa5552960cee3744efbad31436d74
-		a rdf:Bag ;
-		rdf:_1 [
-			a schema:Article;
-			schema:articleBody	"Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."^^xsd:string ;
-			schema:pageStart 2 ;
-			schema:pageEnd 2 ;
-		];
-		rdf:_2 [
-			a schema:Article;
-			schema:articleBody	"Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."^^xsd:string ;
-			schema:pageStart 2 ;
-			schema:pageEnd 2 ;
-<<<<<<< HEAD
-		];
-=======
-		];		
->>>>>>> b127eac4431fa5552960cee3744efbad31436d74
-	]
-	
-	.
-
-<id/1> 
-	a ns3:Identifier ;
-	rdfs:label "identifier 1 [id/1]" ;
-    ns2:usesIdentifierScheme ns2:doi ;
-	ns1:hasLiteralValue "https://doi.org/10.1088/0067-0049/192/1/9" 
-	
-	.
-	
 
 # example for one publication
 # br is bibliographic resource, derived from opencitation
@@ -207,42 +128,18 @@ github:yt-project
 	dc:title "The yt-project repository" ;
 	schema:codeRepository "https://github.com/yt-project" ;
 	schema:abstract "The yt project A toolkit for analysis and visualization of volumetric data" ;
-<<<<<<< HEAD
 	schema:contributor <ra/#matthewTurk> ;
 
-=======
-	schema:contributor <ra/#matthewTurk> ;	
-	
->>>>>>> b127eac4431fa5552960cee3744efbad31436d74
 	.
 
 ytproject:yt
 	a schema:SoftwareSourceCode ;
 	dc:title "Main yt library repository" ;
-<<<<<<< HEAD
-	schema:identifier "https://github.com/yt-project/yt" ;
-	schema:isBasedOn github:yt-project ;
-	schema:targetProduct </software/#ytCore> ;
-
-	.
-
-# schema for a software citation
-scs:citeSoftware
-	a rdfs:Property ;
-	rdfs:domain schema:CreativeWorks ;
-	rdfs:range schema:SoftwareApplication ;
-	schema:SoftwareApplication "3.5" ;
-	schema:CreativeWorks "Creative Commons" ;
-
-	.
-
-=======
 	schema:identifier "https://github.com/yt-project/yt" ; 
-	schema:isBasedOn github:yt-project ; 
+	schema:isBasedOn github:yt-project ;
 	schema:targetProduct <sw/#ytCore> ;
-	
+
 	.
->>>>>>> b127eac4431fa5552960cee3744efbad31436d74
 
 ## yt library
 <sw/#ytProject>
