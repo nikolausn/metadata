@@ -10,17 +10,12 @@
 @prefix scs: <http://software-citation.org/schema/> .
 @prefix ytdomain: <https://yt-project.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix pro: <http://purl.org/spar/pro/> .
-@prefix datacite: <http://purl.org/spar/datacite/> .
-@prefix literal: <http://www.essepuntato.it/2010/06/literalreification/> .
-@prefix inphoproject: <https://github.com/inpho/> .
+@prefix ns3: <http://purl.org/spar/datacite/> .
+@prefix ns1: <http://purl.org/spar/pro/> .
+@prefix ns2: <http://purl.org/spar/datacite/> .
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 88e9650958201267f460be396ceba6cf645bf443
 # schema for a software citation
 scs:citeSoftware
 	a rdfs:Property ;
@@ -37,11 +32,7 @@ scs:hasRepo
 	a rdf:Property ;
 	rdfs:domain schema:SoftwareApplication ;
 	rdfs:range schema:SoftwareSourceCode ;
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 88e9650958201267f460be396ceba6cf645bf443
 	.
 
 scs:outcomes
@@ -49,33 +40,22 @@ scs:outcomes
 	rdfs:domain schema:ScholarlyArticle ;
 	rdfs:range rdf:Bag ;
 	rdfs:range schema:Article ;
-<<<<<<< HEAD
 
 	.
 
-=======
-	
-	.
-	
->>>>>>> 88e9650958201267f460be396ceba6cf645bf443
 scs:outcome
 	a rdf:Property ;
 	rdfs:domain schema:ScholarlyArticle ;
 	rdfs:range schema:Article ;
 
 	.
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> 88e9650958201267f460be396ceba6cf645bf443
 
 ## person for authors
 #ytdomain:mattheturk
 # ra is related agent
 # or ar => agent role
 <ra/#matthewturk>
-	a schema:Person ;
 	a scs:Author ;
 	schema:givenName "Matthew"^^xsd:string ;
 	schema:familyName "Turk"^^xsd:string ;
@@ -91,34 +71,10 @@ scs:outcome
 # sc is software citation
 <sc/1>
 	a scs:SoftwareCitation ;
-<<<<<<< HEAD
 	scs:hasPublication <br/1> ;
 	scs:citeSoftware <sw/#ytCore> ;
 	schema:softwareVersion	"";
 	scs:citeSoftware <sw/#yt> ;
-=======
-	scs:hasPublication <https://doi.org/10.1088/0067-0049/192/1/9> ;
-	scs:citeSoftware <sw/#ytCore> ;
-	schema:softwareVersion	"";
-	scs:citeSoftware <sw/#yt> ;
-	scs:objectives [
-		a rdf:Bag ;
-		rdf:_1 [
-			a schema:Article;
-			schema:articleBody	"Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."^^xsd:string ;
-			schema:pageStart 2 ;
-			schema:pageEnd 2 ;
-		];
-		rdf:_2 [
-			a schema:Article;
-			schema:articleBody	"Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo."^^xsd:string ;
-			schema:pageStart 2 ;
-			schema:pageEnd 2 ;
-		];
-	];
-	
-	
->>>>>>> 88e9650958201267f460be396ceba6cf645bf443
 	scs:outcome [
 		a schema:Article ;
 	] ;
@@ -141,7 +97,6 @@ scs:outcome
 		];
 	]
 
-<<<<<<< HEAD
 	.
 
 <id/1>
@@ -150,15 +105,6 @@ scs:outcome
     ns2:usesIdentifierScheme ns2:doi ;
 	ns1:hasLiteralValue "https://doi.org/10.1088/0067-0049/192/1/9"
 
-=======
-	.
-
-<id/1>
-	a datacite:Identifier ;
-	rdfs:label "identifier 1 [id/1]" ;
-	datacite:usesIdentifierScheme datacite:url ;
-	literal:hasLiteralValue "https://doi.org/10.1088/0067-0049/192/1/9"
-
 	.
 
 
@@ -167,31 +113,7 @@ scs:outcome
 <br/1>
 	# schema is subste from schema.org ScholarlyArticle with addition
 	a schema:ScholarlyArticle ; # maybe we need to define something, a new schema / subclass related to this with additional feature description
-	datacite:hasIdentifier <id/1> ;
-	schema:about "Works"^^xsd:string, "Catalog"^^xsd:string ;
-	schema:author <ra/#matthewTurk> ;
-	schema:description "-abstract-"^^xsd:string ;
-	schema:name "yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA"^^xsd:string ;
-	scs:citeSoftware <sw/#ytCore> ;
-	
-	.
-
-<id/1> 
-	a datacite:Identifier ;
-	rdfs:label "identifier 1 [id/1]"^^xsd:string ;
-    datacite:usesIdentifierScheme datacite:doi ;
-	literal:hasLiteralValue "https://doi.org/10.1088/0067-0049/192/1/9"^^xsd:string ;
-	
->>>>>>> 88e9650958201267f460be396ceba6cf645bf443
-	.
-
-
-# example for one publication
-# br is bibliographic resource, derived from opencitation
-<br/1>
-	# schema is subste from schema.org ScholarlyArticle with addition
-	a schema:ScholarlyArticle ; # maybe we need to define something, a new schema / subclass related to this with additional feature description
-	datacite:hasIdentifier <id/1> ;
+	ns2:hasIdentifier <id/1> ;
 	schema:about "Works"^^xsd:string, "Catalog"^^xsd:string ;
 	schema:author <ra/#matthewTurk> ;
 	schema:description "-abstract-"^^xsd:string ;
@@ -204,7 +126,7 @@ scs:outcome
 github:yt-project
 	a schema:SoftwareSourceCode ;
 	dc:title "The yt-project repository" ;
-	schema:codeRepository <https://github.com/yt-project> ;
+	schema:codeRepository "https://github.com/yt-project" ;
 	schema:abstract "The yt project A toolkit for analysis and visualization of volumetric data" ;
 	schema:contributor <ra/#matthewTurk> ;
 
@@ -213,34 +135,15 @@ github:yt-project
 ytproject:yt
 	a schema:SoftwareSourceCode ;
 	dc:title "Main yt library repository" ;
-<<<<<<< HEAD
-	schema:identifier "https://github.com/yt-project/yt" ; 
+	schema:identifier "https://github.com/yt-project/yt" ;
 	schema:isBasedOn github:yt-project ;
 	schema:targetProduct <sw/#ytCore> ;
 
 	.
-=======
-	schema:identifier <https://github.com/yt-project/yt> ; 
-	schema:isBasedOn github:yt-project ;
-	schema:targetProduct </software/#ytCore> ;
-
-	.
-
-# schema for a software citation
-scs:citeSoftware
-	a rdfs:Property ;
-	rdfs:domain schema:CreativeWorks ;
-	rdfs:range schema:SoftwareApplication ;
-	schema:SoftwareApplication "3.5" ;
-	schema:CreativeWorks "Creative Commons" ;
-
-	.
-
->>>>>>> 88e9650958201267f460be396ceba6cf645bf443
 
 ## yt library
 <sw/#ytProject>
-	a schema:SoftwareApplication ;
+	a schema:SoftwareApplication;
 	dc:title "yt-project" ;
 	schema:runtimePlatform "Python" ;
 	schema:abstract "yt is an open-source, permissively-licensed python package for analyzing and visualizing volumetric data. yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles. Focused on driving physically-meaningful inquiry, yt has been applied in domains such as astrophysics, seismology, nuclear engineering, molecular dynamics, and oceanography. Composed of a friendly community of users and developers, we want to make it easy to use and develop — we'd love it if you got involved!" ;
@@ -249,127 +152,389 @@ scs:citeSoftware
 	.
 
 <sw/#ytCore>
-	a schema:SoftwareApplication ;
-	dc:title "yt core library" ;
-	schema:runtimePlatform "Python" ;
-	schema:abstract "Main yt repository" ;
-	scs:hasRepo ytproject:yt ;
-
-	.
-	
-<sw/#unyt>
-	a schema:SoftwareApplication ;
-	dc:title "yt core library" ;
-	schema:runtimePlatform "Python" ;
-	schema:abstract "Main yt repository" ;
-	scs:hasRepo ytproject:yt ;
+		a schema:SoftwareApplication ;
+		dc:title "yt core library" ;
+		schema:runtimePlatform "Python" ;
+		schema:abstract "Main yt repository" ;
+		scs:hasRepo ytproject:yt ;
 
 	.
 
+### yt cross-domain example
 
-<ra/#jaimieMurdock>
+## Turk, Matthew J. "How to scale a code in the human dimension." arXiv preprint arXiv:1301.7064 (2013). https:// iopscience.iop.org/article/10.1088/0004-637X/726/1/55/meta
+## A paper about community of the yt software to keep software development of this project alive.
+
+
+# schema for a software citation
+scs:citeSoftware
+	a rdfs:Property ;
+	rdfs:domain schema:CreativeWorks ;
+	rdfs:range schema:SoftwareApplication ;
+
+	.
+
+
+# attribute has Repo to associate software application and sourcecode
+scs:hasRepo
+	a rdf:Property ;
+	rdfs:domain schema:SoftwareApplication ;
+	rdfs:range schema:SoftwareSourceCode ;
+
+	.
+
+scs:outcomes
+	a rdf:Property ;
+	rdfs:domain schema:ScholarlyArticle ;
+	rdfs:range rdf:Bag ;
+	rdfs:range schema:Article ;
+
+	.
+
+scs:outcome
+	a rdf:Property ;
+	rdfs:domain schema:ScholarlyArticle ;
+	rdfs:range schema:Article ;
+
+	.
+
+
+## person for authors
+#ytdomain:mattheturk
+# ra is related agent
+# or ar => agent role
+<ra/#matthewturk>
 	a scs:Author ;
-	schema:givenName "Jaimie"^^xsd:string ;
-	schema:familyName "Murdock"^^xsd:string ;
+	schema:givenName "Matthew"^^xsd:string ;
+	schema:familyName "Turk"^^xsd:string ;
 	schema:identifier [
-		a schema:PropertyValue ;
-		schema:propertyID "email"^^xsd:string ;
-		schema:value "mjturk@illinois.edu"^^xsd:string ;
-		] , [
-		a schema:PropertyValue ;
-		schema:propertyID "github"^^xsd:string ;
-		schema:value github:JaimieMurdock ;
-		] ;
-	schema:relatedLink github:JaimieMurdock ;
+	    a schema:PropertyValue ;
+	    schema:propertyID "email"^^xsd:string ;
+	    schema:value "mjturk@illinois.edu"^^xsd:string
+	  ] ;
+	schema:relatedLink github:matthewTurk ;
 
 	.
 
-github:inpho
-	a schema:SoftwareSourceCode ;
-	dc:title "Main yt library repository" ;
-	schema:identifier <https://github.com/inpho> ; 
-	schema:targetProduct <sw/#inPho> ;
-	schema:contributor <ra/#jaimieMurdock> ;
-	
-	.
-	
-inphoproject:inpho
-	a schema:SoftwareSourceCode ;
-	dc:title "Main yt library repository" ;
-	schema:identifier <https://github.com/inpho/inpho> ; 
-	schema:targetProduct <sw/#inPhoCore> ;
-	schema:isBasedOn github:inpho ; 
-	schema:contributor <ra/#matthewTurk> ;	
-	
-	.
+# sc is software citation
+<sc/1>
+	a scs:SoftwareCitation ;
+	scs:hasPublication <br/1> ;
+	scs:citeSoftware <sw/#ytCore> ;
+	schema:softwareVersion	"";
+	scs:citeSoftware <sw/#yt> ;
+	scs:outcome [
+		a schema:Article ;
+	] ;
 
+	scs:outcomes [
+		a rdf:Bag ;
+		rdf:_1 [
+			a schema:Article;
+			schema:articleBody	"Software is the subject of the article, as part of an investigation into software development and community."^^xsd:string ;
+			schema:pageStart 2 ;
+			schema:pageEnd 2 ;
+		];
 
-<sw/#inPhoCore>
-	a schema:SoftwareApplication ;
-	dc:title "The inpho tools." ;
-	schema:identifier <https://github.com/inpho/inpho> ; 
-	schema:runtimePlatform "Python" ;
-	schema:abstract '''The inpho model and dataprocessing tools. Interface between codex and inphosite https://inpho.cogs.indiana.edu''' ;
-	scs:hasRepo github:inpho ;
-	
+	]
+
 	.
 
-<sw/#inPho>
-a schema:SoftwareApplication ;
-	dc:title "The InPhO Project" ;
-	schema:identifier <https://www.inphoproject.org> ; 
-	schema:runtimePlatform "JavaScript", "Python", "NodeJS" ;
-	schema:abstract '''The InPhO is constructed by a novel 3-step semi-automated process, called dynamic ontology: 
-Data Mining — Natural language processing (NLP) techniques generate statistical hypothesis about the relationships among philosophically-salient topics.
-Expert Feedback — These hypotheses are evaluated by domain experts through online interfaces.
-Machine Reasoning — Our machine reasoning program uses feedback and statistical measures to populate the ontology.''' ;
-	scs:hasRepo github:inpho ;
-	
+<id/1>
+	a ns3:Identifier ;
+	rdfs:label "identifier 1 [id/1]" ;
+    ns2:usesIdentifierScheme ns2:doi ;
+	ns1:hasLiteralValue "Can't find doi"
+
 	.
 
-<br/2>
+
+# example for one publication
+# br is bibliographic resource, derived from opencitation
+<br/1>
 	# schema is subste from schema.org ScholarlyArticle with addition
 	a schema:ScholarlyArticle ; # maybe we need to define something, a new schema / subclass related to this with additional feature description
-	datacite:hasIdentifier <id/2> ;
-	schema:identifier <https://www.researchgate.net/publication/267806761> ;
-	schema:author <ra/#jaimieMurdock> ;
-	schema:description "-abstract-"^^xsd:string ;
-	schema:name "InPhO for All: Why APIs Matter"^^xsd:string ;
-	scs:citeSoftware <sw/#inPhoCore> ;
+	ns2:hasIdentifier <id/1> ;
+	schema:about "Works"^^xsd:string, "Catalog"^^xsd:string ;
+	schema:author <ra/#matthewTurk> ;
+	schema:description "As scientists’ needs for computational techniques and tools grow,they cease to be supportable by software developed in isolation.  Inmany cases,these needs are being met by communities of practice, where software is developedby domain scientists to reach pragmatic goals and satisfy distinct and enumerablescientific goals.  We present techniques that have been successful in growing andengaging communities of practice, specifically in theytand Enzo communities."^^xsd:string ;
+	schema:name "How to Scale a Code in the Human Dimension"^^xsd:string ;
+	scs:citeSoftware <sw/#ytCore> ;
 
 	.
-	
-		
-<id/2> 
-	a datacite:Identifier ;
-	rdfs:label "identifier 2 [id/2]"^^xsd:string ;
-	datacite:usesIdentifierScheme datacite:url ;
-	literal:hasLiteralValue "https://www.researchgate.net/publication/267806761"^^xsd:string ;
-	
+
+## yt software repo
+github:yt-project
+	a schema:SoftwareSourceCode ;
+	dc:title "The yt-project repository" ;
+	schema:codeRepository "https://github.com/yt-project" ;
+	schema:abstract "The yt project A toolkit for analysis and visualization of volumetric data" ;
+	schema:contributor <ra/#matthewTurk> ;
+
 	.
-	
-	
-<sc/2>
-	a scs:SoftwareCitation ;
-	scs:hasPublication <br/2> ;
-	scs:citeSoftware <sw/#inPhoCore> ;
-	schema:softwareVersion	"";
-	scs:citeSoftware <sw/#inPho> ;
-	scs:outcome [
-			a schema:Article ;
-		] ;
-		scs:outcome [
-			a schema:Article ;
-		];
-		scs:outcomes [
-			a rdf:Bag ;
-			rdf:_1 [
-				a schema:Article;
-				schema:articleBody	"Figure 1. Usage of InPho project on the website"^^xsd:string ;
-				schema:pageStart 2 ;
-				schema:pageEnd 2 ;
-			];				
-		]
-	
+
+ytproject:yt
+	a schema:SoftwareSourceCode ;
+	dc:title "Main yt library repository" ;
+	schema:identifier "https://github.com/yt-project/yt" ;
+	schema:isBasedOn github:yt-project ;
+	schema:targetProduct <sw/#ytCore> ;
+
+	.
+
+## yt library
+<sw/#ytProject>
+	a schema:SoftwareApplication;
+	dc:title "yt-project" ;
+	schema:runtimePlatform "Python" ;
+	schema:abstract "yt is an open-source, permissively-licensed python package for analyzing and visualizing volumetric data. yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles. Focused on driving physically-meaningful inquiry, yt has been applied in domains such as astrophysics, seismology, nuclear engineering, molecular dynamics, and oceanography. Composed of a friendly community of users and developers, we want to make it easy to use and develop — we'd love it if you got involved!" ;
+	scs:hasRepo github:yt-project ;
+
+	.
+
+<sw/#ytCore>
+		a schema:SoftwareApplication ;
+		dc:title "yt core library" ;
+		schema:runtimePlatform "Python" ;
+		schema:abstract "Main yt repository" ;
+		scs:hasRepo ytproject:yt ;
+
+	.
+
+### other software example
+
+## Goldbaum, Nathan J., et al. "unyt: Handle, manipulate, and convert data with units in Python." arXiv preprint arXiv:1806.02417 (2018). https://arxiv.org/abs/1806.02417
+3# This paper talks about software development branching off the yt for more specific purpose but using the same base code. Use supplemental visualization for different unyt system
+
+
+# schema for a software citation
+scs:citeSoftware
+	a rdfs:Property ;
+	rdfs:domain schema:CreativeWorks ;
+	rdfs:range schema:SoftwareApplication ;
+
+	.
+
+
+# attribute has Repo to associate software application and sourcecode
+scs:hasRepo
+	a rdf:Property ;
+	rdfs:domain schema:SoftwareApplication ;
+	rdfs:range schema:SoftwareSourceCode ;
+
+	.
+
+scs:outcomes
+	a rdf:Property ;
+	rdfs:domain schema:ScholarlyArticle ;
+	rdfs:range rdf:Bag ;
+	rdfs:range schema:Article ;
+
+	.
+
+scs:outcome
+	a rdf:Property ;
+	rdfs:domain schema:ScholarlyArticle ;
+	rdfs:range schema:Article ;
+
+	.
+
+
+## person for authors
+# ra is related agent
+# or ar => agent role
+<ra/#nathangoldbaum>
+	a scs:Author ;
+	schema:givenName "Nathan"^^xsd:string ;
+	schema:familyName "Goldbaum"^^xsd:string ;
+	schema:identifier [
+	    a schema:PropertyValue ;
+	    schema:propertyID "email"^^xsd:string ;
+	    schema:value "ngoldbau@illinois.edu"^^xsd:string
+	  ] ;
+	schema:relatedLink github:matthewTurk ;
+
+	.
+
+	## person for authors
+	# ra is related agent
+	# or ar => agent role
+	<ra/#johnazuhone>
+		a scs:Author ;
+		schema:givenName "John"^^xsd:string ;
+		schema:familyName "A. ZuHone"^^xsd:string ;
+		schema:identifier [
+		    a schema:PropertyValue ;
+		    schema:propertyID "email"^^xsd:string ;
+		    schema:value "jzuhone@cfa.harvard.edu"^^xsd:string
+		  ] ;
+		schema:relatedLink github:matthewTurk ;
+
 		.
 
+	## person for authors
+	#ytdomain:mattheturk
+	# ra is related agent
+	# or ar => agent role
+	<ra/#matthewturk>
+		a scs:Author ;
+		schema:givenName "Matthew"^^xsd:string ;
+		schema:familyName "Turk"^^xsd:string ;
+		schema:identifier [
+		    a schema:PropertyValue ;
+		    schema:propertyID "email"^^xsd:string ;
+		    schema:value "mjturk@illinois.edu"^^xsd:string
+		  ] ;
+		schema:relatedLink github:matthewTurk ;
+
+		.
+
+	## person for authors
+	# ra is related agent
+	# or ar => agent role
+	<ra/kacperkowalik>
+		a scs:Author ;
+		schema:givenName "Kacper"^^xsd:string ;
+		schema:familyName "Kowalik"^^xsd:string ;
+		schema:identifier [
+		    a schema:PropertyValue ;
+		    schema:propertyID "email"^^xsd:string ;
+		    schema:value "kowalikk@illinois.edu"^^xsd:string
+		  ] ;
+		schema:relatedLink github:matthewTurk ;
+
+		.
+
+	## person for authors
+	# ra is related agent
+	# or ar => agent role
+	<ra/#annalrosen>
+		a scs:Author ;
+		schema:givenName "Anna"^^xsd:string ;
+		schema:familyName "L. Rosen"^^xsd:string ;
+		schema:identifier [
+		    a schema:PropertyValue ;
+		    schema:propertyID "email"^^xsd:string ;
+		    schema:value ""^^xsd:string
+		  ] ;
+		schema:relatedLink github:matthewTurk ;
+
+		.
+
+# sc is software citation
+<sc/1>
+	a scs:SoftwareCitation ;
+	scs:hasPublication <br/3> ;
+	scs:citeSoftware <sw/#unytCore> ;
+	schema:softwareVersion	"";
+	scs:citeSoftware <sw/#unyt> ;
+	scs:outcome [
+		a schema:Article ;
+	] ;
+
+		rdf:_1 [
+			a schema:Article;
+			schema:articleBody	"Figure 6:The same as Figure 5, but with in-placeufuncoperations. See Figure 1 for a detailedexplanation of the plot style"^^xsd:string ;
+			schema:pageStart 9 ;
+			schema:pageEnd 9 ;
+		];
+	]
+
+	.
+
+<id/1>
+	a ns3:Identifier ;
+	rdfs:label "identifier 1 [id/1]" ;
+    ns2:usesIdentifierScheme ns2:doi ;
+	ns1:hasLiteralValue "https://doi.org/10.21105/joss.00809"
+
+	.
+
+
+# example for one publication
+# br is bibliographic resource, derived from opencitation
+<br/1>
+	# schema is subste from schema.org ScholarlyArticle with addition
+	a schema:ScholarlyArticle ; # maybe we need to define something, a new schema / subclass related to this with additional feature description
+	ns2:hasIdentifier <id/1> ;
+	schema:about "Works"^^xsd:string, "Catalog"^^xsd:string ;
+	schema:author <ra/#matthewTurk> ;
+	schema:description "Software that processes real-world data or that models a physical system must have some way of managing units. While simple approaches like the understood convention that all data are in a unit system (such as the MKS SI unit system) do work in practice, they are fraught with possible sources of error both by developers and users of the software. In this paper we present unyt, a Python library based on NumPy and SymPy for handling data that has units. It is designed both to aid quick interactive calculations and to be tightly integrated into a larger Python application or library. We compare unyt with two other Python libraries for handling units, Pint and astropy.units, and find that unyt is faster, has higher test coverage, and has fewer lines of code. "^^xsd:string ;
+	schema:name "unyt: Handle, manipulate, and convert data with units in Python"^^xsd:string ;
+	scs:citeSoftware <sw/#ytCore> ;
+
+	.
+
+## yt software repo
+github:yt-project
+	a schema:SoftwareSourceCode ;
+	dc:title "The yt-project repository" ;
+	schema:codeRepository "https://github.com/yt-project" ;
+	schema:abstract "The yt project A toolkit for analysis and visualization of volumetric data" ;
+	schema:contributor <ra/#matthewTurk> ;
+
+	.
+
+ytproject:yt
+	a schema:SoftwareSourceCode ;
+	dc:title "Main yt library repository" ;
+	schema:identifier "https://github.com/yt-project/yt" ;
+	schema:isBasedOn github:yt-project ;
+	schema:targetProduct <sw/#ytCore> ;
+
+	.
+
+## yt library
+<sw/#ytProject>
+	a schema:SoftwareApplication;
+	dc:title "yt-project" ;
+	schema:runtimePlatform "Python" ;
+	schema:abstract "yt is an open-source, permissively-licensed python package for analyzing and visualizing volumetric data. yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles. Focused on driving physically-meaningful inquiry, yt has been applied in domains such as astrophysics, seismology, nuclear engineering, molecular dynamics, and oceanography. Composed of a friendly community of users and developers, we want to make it easy to use and develop — we'd love it if you got involved!" ;
+	scs:hasRepo github:yt-project ;
+
+	.
+
+<sw/#ytCore>
+		a schema:SoftwareApplication ;
+		dc:title "yt core library" ;
+		schema:runtimePlatform "Python" ;
+		schema:abstract "Main yt repository" ;
+		scs:hasRepo ytproject:yt ;
+
+	.
+
+## yt software repo
+github:yt-project/unyt
+	a schema:SoftwareSourceCode ;
+	dc:title "unyt" ;
+	schema:codeRepository "https://github.com/yt-project/unyt" ;
+	schema:abstract "A package for handling numpy arrays with units" ;
+	schema:contributor <ra/#nathangoldbaum> ;
+
+	.
+
+	ytproject:yt
+		a schema:SoftwareSourceCode ;
+		dc:title "Main yt library repository" ;
+		schema:identifier "https://github.com/yt-project/yt" ;
+		schema:isBasedOn github:yt-project ;
+		schema:targetProduct <sw/#ytCore> ;
+
+		.
+
+	## unyt library
+	<sw/#unyt>
+		a schema:SoftwareApplication;
+		dc:title "unyt" ;
+		schema:runtimePlatform "Python" ;
+		schema:abstract "A package for handling numpy arrays with units.Often writing code that deals with data that has units can be confusing. A function might return an array but at least with plain NumPy arrays, there is no way to easily tell what the units of the data are without somehow knowing a priori." ;
+		scs:hasRepo github:yt-project ;
+
+		.
+
+	<sw/#unytCore>
+			a schema:SoftwareApplication ;
+			dc:title "unyt core library" ;
+			schema:runtimePlatform "Python" ;
+			schema:abstract "Main yt repository" ;
+			scs:hasRepo ytproject:yt ;
