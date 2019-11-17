@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PREMIS:premis xmlns:PREMIS="http://www.loc.gov/premis/v3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/premis/v3 https://www.loc.gov/standards/premis/premis.xsd" version="3.0">
+    <!-- In this assignment, I discussed and worked with Sam (swalkow2) --> 
+    <PREMIS:object xsi:type="PREMIS:intellectualEntity">
+        <PREMIS:objectIdentifier>
+            <PREMIS:objectIdentifierType>local</PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue>Monalisa Collection</PREMIS:objectIdentifierValue>
+        </PREMIS:objectIdentifier>
+        
+        
+        <PREMIS:relationship>
+            <!-- this need to link to the physical rock -->
+            <PREMIS:relationshipType>structural</PREMIS:relationshipType>
+            <PREMIS:relationshipSubType>isRepresentedBy</PREMIS:relationshipSubType>
+            <PREMIS:relatedObjectIdentifier>
+                <!-- Item Identifier for Monalisa Painting --> 
+                <PREMIS:relatedObjectIdentifierType>Louvre Museum Item Number</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue>779</PREMIS:relatedObjectIdentifierValue>
+            </PREMIS:relatedObjectIdentifier>
+        </PREMIS:relationship>        
+    </PREMIS:object>
+    
+    <PREMIS:object xsi:type="PREMIS:representation">
+        <PREMIS:objectIdentifier>
+            <PREMIS:objectIdentifierType>Louvre Museum Item Number</PREMIS:objectIdentifierType>
+            <PREMIS:objectIdentifierValue>779</PREMIS:objectIdentifierValue>            
+        </PREMIS:objectIdentifier>        
+        <PREMIS:originalName>PORTRAIT DE MONA LISA</PREMIS:originalName>
+                
+        <!-- relation to the idea of rock -->
+        <PREMIS:relationship>
+            <PREMIS:relationshipType>structural</PREMIS:relationshipType>
+            <PREMIS:relationshipSubType>represents</PREMIS:relationshipSubType>
+            <PREMIS:relatedObjectIdentifier>
+                <PREMIS:relatedObjectIdentifierType>local</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue>Monalisa Collection</PREMIS:relatedObjectIdentifierValue>
+            </PREMIS:relatedObjectIdentifier>
+        </PREMIS:relationship>
+        
+        <PREMIS:linkingRightsStatementIdentifier>
+            <PREMIS:linkingRightsStatementIdentifierType></PREMIS:linkingRightsStatementIdentifierType>
+            <PREMIS:linkingRightsStatementIdentifierValue></PREMIS:linkingRightsStatementIdentifierValue>
+        </PREMIS:linkingRightsStatementIdentifier>        
+    </PREMIS:object>
+
+    
+    <!-- event creation for Monalisa -->
+    <PREMIS:event>
+        <PREMIS:eventIdentifier>
+            <!-- we don't know the id for this stone creation so we define it as local -->
+            <PREMIS:eventIdentifierType>local</PREMIS:eventIdentifierType>
+            <PREMIS:eventIdentifierValue>event_creation_monalisa</PREMIS:eventIdentifierValue>
+        </PREMIS:eventIdentifier>
+        <PREMIS:eventType>creation</PREMIS:eventType>
+        <PREMIS:eventDateTime>1503-1506</PREMIS:eventDateTime>
+        <PREMIS:eventOutcomeInformation>
+            <!-- 00 success -->
+            <PREMIS:eventOutcome>00</PREMIS:eventOutcome>
+        </PREMIS:eventOutcomeInformation>
+        <PREMIS:linkingAgentIdentifier>
+            <PREMIS:linkingAgentIdentifierType>VIAF</PREMIS:linkingAgentIdentifierType>
+            <PREMIS:linkingAgentIdentifierValue>24604287</PREMIS:linkingAgentIdentifierValue>
+            <PREMIS:linkingAgentRole>implementer</PREMIS:linkingAgentRole>
+        </PREMIS:linkingAgentIdentifier>
+        <PREMIS:linkingObjectIdentifier>
+            <PREMIS:linkingObjectIdentifierType>Louvre Museum Item Number</PREMIS:linkingObjectIdentifierType>
+            <PREMIS:linkingObjectIdentifierValue>779</PREMIS:linkingObjectIdentifierValue>
+        </PREMIS:linkingObjectIdentifier>
+    </PREMIS:event>
+    
+    
+    <!-- event preservation of Monalisa -->
+    <PREMIS:event>
+        <PREMIS:eventIdentifier>
+            <!-- we don't know the id for this stone creation so we define it as local -->
+            <PREMIS:eventIdentifierType>local</PREMIS:eventIdentifierType>
+            <PREMIS:eventIdentifierValue>event_preservation_monalisa</PREMIS:eventIdentifierValue>
+        </PREMIS:eventIdentifier>
+        <PREMIS:eventType>capture</PREMIS:eventType>
+        <PREMIS:eventDateTime>1797</PREMIS:eventDateTime>
+        <PREMIS:eventOutcomeInformation>
+            <!-- 00 success -->
+            <PREMIS:eventOutcome>00</PREMIS:eventOutcome>
+        </PREMIS:eventOutcomeInformation>
+        <PREMIS:linkingAgentIdentifier>
+            <PREMIS:linkingAgentIdentifierType>LCNAF</PREMIS:linkingAgentIdentifierType>
+            <PREMIS:linkingAgentIdentifierValue>n80020283</PREMIS:linkingAgentIdentifierValue>
+            <PREMIS:linkingAgentRole>implementer</PREMIS:linkingAgentRole>
+        </PREMIS:linkingAgentIdentifier>
+        <PREMIS:linkingObjectIdentifier>
+            <PREMIS:linkingObjectIdentifierType>Louvre Museum Item Number</PREMIS:linkingObjectIdentifierType>
+            <PREMIS:linkingObjectIdentifierValue>779</PREMIS:linkingObjectIdentifierValue>
+        </PREMIS:linkingObjectIdentifier>
+    </PREMIS:event>
+
+  
+    <PREMIS:agent>
+        <!-- agent of Leonardo Da Vinci as the creator person -->
+        <PREMIS:agentIdentifier>
+            <PREMIS:agentIdentifierType>VIAF</PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue>24604287</PREMIS:agentIdentifierValue>
+        </PREMIS:agentIdentifier>
+        <PREMIS:agentName>Leonardo, da Vinci</PREMIS:agentName>
+        <PREMIS:agentType>person</PREMIS:agentType>
+        <PREMIS:linkingEventIdentifier>
+            <PREMIS:linkingEventIdentifierType>local</PREMIS:linkingEventIdentifierType>
+            <PREMIS:linkingEventIdentifierValue>event_creation_monalisa</PREMIS:linkingEventIdentifierValue>
+        </PREMIS:linkingEventIdentifier>        
+        <!-- You need to add enough metadata values and optional elements to indicate the creating agent -->
+    </PREMIS:agent>
+    
+    
+    <PREMIS:agent>
+        <!-- BWF Metaedit software agent that has IE to google chrome -->
+        <PREMIS:agentIdentifier>
+            <PREMIS:agentIdentifierType>LCNAF</PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue>n80020283</PREMIS:agentIdentifierValue>
+        </PREMIS:agentIdentifier>
+        <PREMIS:agentName>Louvre Museum Paris</PREMIS:agentName>
+        <PREMIS:agentType>corporate</PREMIS:agentType>       
+        <!-- You need to add enough metadata values and optional elements to indicate the rights holder for your operating system -->
+        <PREMIS:linkingEventIdentifier>
+            <PREMIS:linkingEventIdentifierType></PREMIS:linkingEventIdentifierType>
+            <PREMIS:linkingEventIdentifierValue></PREMIS:linkingEventIdentifierValue>
+        </PREMIS:linkingEventIdentifier>
+        <PREMIS:linkingRightsStatementIdentifier>
+            <PREMIS:linkingRightsStatementIdentifierType></PREMIS:linkingRightsStatementIdentifierType>
+            <PREMIS:linkingRightsStatementIdentifierValue></PREMIS:linkingRightsStatementIdentifierValue>
+        </PREMIS:linkingRightsStatementIdentifier>
+    </PREMIS:agent>
+
+    
+</PREMIS:premis>

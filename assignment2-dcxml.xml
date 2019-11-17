@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier>779</dc:identifier>
+    <dc:title>PORTRAIT DE MONA LISA</dc:title>    
+    <dc:type>portrait</dc:type>
+    <dc:type>painting</dc:type>
+    <dc:format>oil paint</dc:format>
+    <dc:format>poplar panel</dc:format>
+    <dc:publisher>Louvre Museum</dc:publisher>
+    <dc:format>53 cm</dc:format>
+    <dc:format>77 cm</dc:format>
+    <dc:subject>Lisa Gherardini</dc:subject>
+    <dc:coverage>Louvre Museum, Paris, France</dc:coverage>
+    <dc:creator>Leonardo da Vinci</dc:creator>
+    <dc:date>1503-1506</dc:date>
+    <dc:rights>Louvre Museum</dc:rights>
+</metadata>
