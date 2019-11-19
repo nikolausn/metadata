@@ -6,36 +6,66 @@
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>local</PREMIS:objectIdentifierType>
-            <PREMIS:objectIdentifierValue>Monalisa Collection</PREMIS:objectIdentifierValue>
-        </PREMIS:objectIdentifier>
+            <PREMIS:objectIdentifierValue>Mona Lisa Painting</PREMIS:objectIdentifierValue>
+        </PREMIS:objectIdentifier>      
         
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>width</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>53 cm</PREMIS:significantPropertiesValue>           
+        </PREMIS:significantProperties>
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>height</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>77 cm</PREMIS:significantPropertiesValue>           
+        </PREMIS:significantProperties>
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>type</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>portrait</PREMIS:significantPropertiesValue>           
+        </PREMIS:significantProperties>
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>type</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>portrait</PREMIS:significantPropertiesValue>           
+        </PREMIS:significantProperties>        
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>description</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>Portrait of Mona Lisa (1479-1528), also known as La Gioconda, the wife of Francesco del Giocondo; 1503-06 (150 Kb); Oil on wood, 77 x 53 cm (30 x 20 7/8 in); Musee du Louvre, Paris This figure of a woman, dressed in the Florentine fashion of her day and seated in a visionary, mountainous landscape, is a remarkable instance of Leonardo's sfumato technique of soft, heavily shaded modeling. The Mona Lisa's enigmatic expression, which seems both alluring and aloof, has given the portrait universal fame</PREMIS:significantPropertiesValue>           
+        </PREMIS:significantProperties>
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>subject</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>Lisa Gherardini</PREMIS:significantPropertiesValue>
+        </PREMIS:significantProperties>
         
         <PREMIS:relationship>
-            <!-- this need to link to the physical rock -->
             <PREMIS:relationshipType>structural</PREMIS:relationshipType>
             <PREMIS:relationshipSubType>isRepresentedBy</PREMIS:relationshipSubType>
             <PREMIS:relatedObjectIdentifier>
-                <!-- Item Identifier for Monalisa Painting --> 
                 <PREMIS:relatedObjectIdentifierType>Louvre Museum Item Number</PREMIS:relatedObjectIdentifierType>
                 <PREMIS:relatedObjectIdentifierValue>779</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>        
     </PREMIS:object>
     
+    
+    
     <PREMIS:object xsi:type="PREMIS:representation">
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>Louvre Museum Item Number</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>779</PREMIS:objectIdentifierValue>            
         </PREMIS:objectIdentifier>        
-        <PREMIS:originalName>PORTRAIT DE MONA LISA</PREMIS:originalName>
-                
-        <!-- relation to the idea of rock -->
+        <PREMIS:originalName>PORTRAIT DE MONA LISA</PREMIS:originalName>        
+        
+        <PREMIS:storage>
+            <PREMIS:contentLocation>
+                <PREMIS:contentLocationType>psi</PREMIS:contentLocationType>
+                <PREMIS:contentLocationValue>Louvre Museum Paris</PREMIS:contentLocationValue>
+            </PREMIS:contentLocation>
+        </PREMIS:storage>
+        
         <PREMIS:relationship>
             <PREMIS:relationshipType>structural</PREMIS:relationshipType>
             <PREMIS:relationshipSubType>represents</PREMIS:relationshipSubType>
             <PREMIS:relatedObjectIdentifier>
                 <PREMIS:relatedObjectIdentifierType>local</PREMIS:relatedObjectIdentifierType>
-                <PREMIS:relatedObjectIdentifierValue>Monalisa Collection</PREMIS:relatedObjectIdentifierValue>
+                <PREMIS:relatedObjectIdentifierValue>Mona Lisa Painting</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
         
@@ -101,7 +131,7 @@
         <PREMIS:agentIdentifier>
             <PREMIS:agentIdentifierType>VIAF</PREMIS:agentIdentifierType>
             <PREMIS:agentIdentifierValue>24604287</PREMIS:agentIdentifierValue>
-        </PREMIS:agentIdentifier>
+        </PREMIS:agentIdentifier>               
         <PREMIS:agentName>Leonardo, da Vinci</PREMIS:agentName>
         <PREMIS:agentType>person</PREMIS:agentType>
         <PREMIS:linkingEventIdentifier>
