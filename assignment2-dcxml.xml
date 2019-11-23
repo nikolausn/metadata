@@ -22,7 +22,6 @@
     <date xmlns="http://purl.org/dc/elements/1.1/">1503-1506</date>
     <rights xmlns="http://purl.org/dc/elements/1.1/">Louvre Museum</rights>
 
-    <description xmlns="http://purl.org/dc/elements/1.1/">Portrait of Mona Lisa (1479-1528), also known as La Gioconda, the wife of Francesco del Giocondo; 1503-06 (150 Kb); Oil on wood, 77 x 53 cm (30 x 20 7/8 in); Musee du Louvre, Paris This figure of a woman, dressed in the Florentine fashion of her day and seated in a visionary, mountainous landscape, is a remarkable instance of Leonardo's sfumato technique of soft, heavily shaded modeling. The Mona Lisa's enigmatic expression, which seems both alluring and aloof, has given the portrait universal fame</description>
-    <!-- event for mona lisa acquisition -->
-    <description xmlns="http://purl.org/dc/elements/1.1/">Louvre acquired the Mona Lisa painting on 1707</description>    
+    <description xmlns="http://purl.org/dc/elements/1.1/">Portrait of Mona Lisa (1479-1528), also known as La Gioconda, the wife of Francesco del Giocondo, Lisa Gherardini; 1503-06 (150 Kb); Oil on wood, 77 x 53 cm (30 x 20 7/8 in); acquired by Musee du Louvre, Paris on 1707.                    
+        This figure of a woman, dressed in the Florentine fashion of her day and seated in a visionary, mountainous landscape, is a remarkable instance of Leonardo's sfumato technique of soft, heavily shaded modeling. The Mona Lisa's enigmatic expression, which seems both alluring and aloof, has given the portrait universal fame.</description>    
 </simpledc>
