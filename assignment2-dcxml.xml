@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <dc:identifier>779</dc:identifier>
-    <dc:title>PORTRAIT DE MONA LISA</dc:title>
-    <dc:title>DITE LA JOCONDE</dc:title>    
-    <dc:type>portrait</dc:type>
-    <dc:type>painting</dc:type>
-    <dc:format>oil paint</dc:format>
-    <dc:format>poplar panel</dc:format>
-    <dc:publisher>Louvre Museum</dc:publisher>    
-    <dc:format>53 cm</dc:format>
-    <dc:format>77 cm</dc:format>
-    <dc:subject>Lisa Gherardini</dc:subject>
-    <dc:coverage>Louvre Museum, Paris, France</dc:coverage>
-    <dc:creator>Leonardo da Vinci</dc:creator>
-    <dc:date>1503-1506</dc:date>
-    <dc:rights>Louvre Museum</dc:rights>
-    <dc:dateAccepted>1797</dc:dateAccepted>
-    <dc:description>Portrait of Mona Lisa (1479-1528), also known as La Gioconda, the wife of Francesco del Giocondo; 1503-06 (150 Kb); Oil on wood, 77 x 53 cm (30 x 20 7/8 in); Musee du Louvre, Paris This figure of a woman, dressed in the Florentine fashion of her day and seated in a visionary, mountainous landscape, is a remarkable instance of Leonardo's sfumato technique of soft, heavily shaded modeling. The Mona Lisa's enigmatic expression, which seems both alluring and aloof, has given the portrait universal fame</dc:description>
-</metadata>
+<simpledc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://www.dublincore.org/schemas/xmls/qdc/2008/02/11/simpledc.xsd">
+    <!-- 1 - to - 1 principle, here we are describing about mona lisa painting -->
+    <identifier xmlns="http://purl.org/dc/elements/1.1/">779</identifier>
+    <title xmlns="http://purl.org/dc/elements/1.1/">PORTRAIT DE MONA LISA</title>
+    <title xmlns="http://purl.org/dc/elements/1.1/">DITE LA JOCONDE</title>    
+    <type xmlns="http://purl.org/dc/elements/1.1/">portrait</type>
+    <type xmlns="http://purl.org/dc/elements/1.1/">painting</type>
+    <format xmlns="http://purl.org/dc/elements/1.1/">oil paint</format>
+    <format xmlns="http://purl.org/dc/elements/1.1/">poplar panel</format>
+    <!-- An entity responsible for making the resource available. -->
+    <publisher xmlns="http://purl.org/dc/elements/1.1/">Louvre Museum</publisher>
+    <format xmlns="http://purl.org/dc/elements/1.1/">53 cm</format>
+    <format xmlns="http://purl.org/dc/elements/1.1/">77 cm</format>
+    <subject xmlns="http://purl.org/dc/elements/1.1/">Lisa Gherardini</subject>
+    <!-- The spatial or temporal topic of the resource, -->
+    <!-- many to one -->
+    <coverage xmlns="http://purl.org/dc/elements/1.1/">Louvre Museum, Paris, France</coverage>
+    <creator xmlns="http://purl.org/dc/elements/1.1/">Leonardo da Vinci</creator>
+    <!-- A point or period of time associated with an event in the lifecycle of the resource. -->
+    <date xmlns="http://purl.org/dc/elements/1.1/">1503-1506</date>
+    <rights xmlns="http://purl.org/dc/elements/1.1/">Louvre Museum</rights>
+
+    <description xmlns="http://purl.org/dc/elements/1.1/">Portrait of Mona Lisa (1479-1528), also known as La Gioconda, the wife of Francesco del Giocondo; 1503-06 (150 Kb); Oil on wood, 77 x 53 cm (30 x 20 7/8 in); Musee du Louvre, Paris This figure of a woman, dressed in the Florentine fashion of her day and seated in a visionary, mountainous landscape, is a remarkable instance of Leonardo's sfumato technique of soft, heavily shaded modeling. The Mona Lisa's enigmatic expression, which seems both alluring and aloof, has given the portrait universal fame</description>
+    <!-- event for mona lisa acquisition -->
+    <description xmlns="http://purl.org/dc/elements/1.1/">Louvre acquired the Mona Lisa painting on 1707</description>    
+</simpledc>

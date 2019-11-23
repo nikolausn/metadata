@@ -2,29 +2,16 @@
 <PREMIS:premis xmlns:PREMIS="http://www.loc.gov/premis/v3"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.loc.gov/premis/v3 https://www.loc.gov/standards/premis/premis.xsd" version="3.0">
-    <!-- In this assignment, I discussed and worked with Sam (swalkow2) --> 
+    <!-- In this assignment, I discussed and worked with Sam (swalkow2) -->
+    <!-- with limited information from dc xml, we fit values and without additional information from the internet
+        we use local identifier for most of the object and agent -->
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>local</PREMIS:objectIdentifierType>
-            <PREMIS:objectIdentifierValue>Mona Lisa Painting</PREMIS:objectIdentifierValue>
+            <PREMIS:objectIdentifierValue>mona_lisa_painting</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>      
         
-        <PREMIS:significantProperties>
-            <PREMIS:significantPropertiesType>width</PREMIS:significantPropertiesType>
-            <PREMIS:significantPropertiesValue>53 cm</PREMIS:significantPropertiesValue>           
-        </PREMIS:significantProperties>
-        <PREMIS:significantProperties>
-            <PREMIS:significantPropertiesType>height</PREMIS:significantPropertiesType>
-            <PREMIS:significantPropertiesValue>77 cm</PREMIS:significantPropertiesValue>           
-        </PREMIS:significantProperties>
-        <PREMIS:significantProperties>
-            <PREMIS:significantPropertiesType>type</PREMIS:significantPropertiesType>
-            <PREMIS:significantPropertiesValue>portrait</PREMIS:significantPropertiesValue>           
-        </PREMIS:significantProperties>
-        <PREMIS:significantProperties>
-            <PREMIS:significantPropertiesType>type</PREMIS:significantPropertiesType>
-            <PREMIS:significantPropertiesValue>portrait</PREMIS:significantPropertiesValue>           
-        </PREMIS:significantProperties>        
+        <!-- FRBR work -->
         <PREMIS:significantProperties>
             <PREMIS:significantPropertiesType>description</PREMIS:significantPropertiesType>
             <PREMIS:significantPropertiesValue>Portrait of Mona Lisa (1479-1528), also known as La Gioconda, the wife of Francesco del Giocondo; 1503-06 (150 Kb); Oil on wood, 77 x 53 cm (30 x 20 7/8 in); Musee du Louvre, Paris This figure of a woman, dressed in the Florentine fashion of her day and seated in a visionary, mountainous landscape, is a remarkable instance of Leonardo's sfumato technique of soft, heavily shaded modeling. The Mona Lisa's enigmatic expression, which seems both alluring and aloof, has given the portrait universal fame</PREMIS:significantPropertiesValue>           
@@ -45,17 +32,35 @@
     </PREMIS:object>
     
     
-    
     <PREMIS:object xsi:type="PREMIS:representation">
+        <!-- Physical Mona Lisa Painting -->
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>Louvre Museum Item Number</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>779</PREMIS:objectIdentifierValue>            
         </PREMIS:objectIdentifier>        
-        <PREMIS:originalName>PORTRAIT DE MONA LISA</PREMIS:originalName>        
+        
+        <PREMIS:significantProperties>           
+            <PREMIS:significantPropertiesType>type</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>portrait</PREMIS:significantPropertiesValue>           
+        </PREMIS:significantProperties>                
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>type</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>painting</PREMIS:significantPropertiesValue>           
+        </PREMIS:significantProperties>
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>width</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>53 cm</PREMIS:significantPropertiesValue>           
+        </PREMIS:significantProperties>
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>height</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>77 cm</PREMIS:significantPropertiesValue>           
+        </PREMIS:significantProperties>
+        
+        <PREMIS:originalName>PORTRAIT DE MONA LISA</PREMIS:originalName>                
         
         <PREMIS:storage>
             <PREMIS:contentLocation>
-                <PREMIS:contentLocationType>psi</PREMIS:contentLocationType>
+                <PREMIS:contentLocationType>physical storage location</PREMIS:contentLocationType>
                 <PREMIS:contentLocationValue>Louvre Museum Paris</PREMIS:contentLocationValue>
             </PREMIS:contentLocation>
         </PREMIS:storage>
@@ -65,14 +70,17 @@
             <PREMIS:relationshipSubType>represents</PREMIS:relationshipSubType>
             <PREMIS:relatedObjectIdentifier>
                 <PREMIS:relatedObjectIdentifierType>local</PREMIS:relatedObjectIdentifierType>
-                <PREMIS:relatedObjectIdentifierValue>Mona Lisa Painting</PREMIS:relatedObjectIdentifierValue>
+                <PREMIS:relatedObjectIdentifierValue>mona_lisa_painting</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>
-        
-        <PREMIS:linkingRightsStatementIdentifier>
-            <PREMIS:linkingRightsStatementIdentifierType></PREMIS:linkingRightsStatementIdentifierType>
-            <PREMIS:linkingRightsStatementIdentifierValue></PREMIS:linkingRightsStatementIdentifierValue>
-        </PREMIS:linkingRightsStatementIdentifier>        
+        <PREMIS:linkingEventIdentifier>
+            <PREMIS:linkingEventIdentifierType>local</PREMIS:linkingEventIdentifierType>
+            <PREMIS:linkingEventIdentifierValue>event_creation_monalisa</PREMIS:linkingEventIdentifierValue>            
+        </PREMIS:linkingEventIdentifier>
+        <PREMIS:linkingEventIdentifier>
+            <PREMIS:linkingEventIdentifierType>local</PREMIS:linkingEventIdentifierType>
+            <PREMIS:linkingEventIdentifierValue>event_acquisition_monalisa</PREMIS:linkingEventIdentifierValue>            
+        </PREMIS:linkingEventIdentifier>        
     </PREMIS:object>
 
     
@@ -90,8 +98,8 @@
             <PREMIS:eventOutcome>00</PREMIS:eventOutcome>
         </PREMIS:eventOutcomeInformation>
         <PREMIS:linkingAgentIdentifier>
-            <PREMIS:linkingAgentIdentifierType>VIAF</PREMIS:linkingAgentIdentifierType>
-            <PREMIS:linkingAgentIdentifierValue>24604287</PREMIS:linkingAgentIdentifierValue>
+            <PREMIS:linkingAgentIdentifierType>local</PREMIS:linkingAgentIdentifierType>
+            <PREMIS:linkingAgentIdentifierValue>leonardo_da_vinci</PREMIS:linkingAgentIdentifierValue>
             <PREMIS:linkingAgentRole>implementer</PREMIS:linkingAgentRole>
         </PREMIS:linkingAgentIdentifier>
         <PREMIS:linkingObjectIdentifier>
@@ -101,12 +109,12 @@
     </PREMIS:event>
     
     
-    <!-- event preservation of Monalisa -->
+    <!-- event acquisiton of Monalisa -->
     <PREMIS:event>
         <PREMIS:eventIdentifier>
             <!-- we don't know the id for this stone creation so we define it as local -->
             <PREMIS:eventIdentifierType>local</PREMIS:eventIdentifierType>
-            <PREMIS:eventIdentifierValue>event_preservation_monalisa</PREMIS:eventIdentifierValue>
+            <PREMIS:eventIdentifierValue>event_acquisition_monalisa</PREMIS:eventIdentifierValue>
         </PREMIS:eventIdentifier>
         <PREMIS:eventType>capture</PREMIS:eventType>
         <PREMIS:eventDateTime>1797</PREMIS:eventDateTime>
@@ -115,8 +123,8 @@
             <PREMIS:eventOutcome>00</PREMIS:eventOutcome>
         </PREMIS:eventOutcomeInformation>
         <PREMIS:linkingAgentIdentifier>
-            <PREMIS:linkingAgentIdentifierType>LCNAF</PREMIS:linkingAgentIdentifierType>
-            <PREMIS:linkingAgentIdentifierValue>n80020283</PREMIS:linkingAgentIdentifierValue>
+            <PREMIS:linkingAgentIdentifierType>local</PREMIS:linkingAgentIdentifierType>
+            <PREMIS:linkingAgentIdentifierValue>louvre_museum_paris</PREMIS:linkingAgentIdentifierValue>
             <PREMIS:linkingAgentRole>implementer</PREMIS:linkingAgentRole>
         </PREMIS:linkingAgentIdentifier>
         <PREMIS:linkingObjectIdentifier>
@@ -129,12 +137,17 @@
     <PREMIS:agent>
         <!-- agent of Leonardo Da Vinci as the creator person -->
         <PREMIS:agentIdentifier>
-            <PREMIS:agentIdentifierType>VIAF</PREMIS:agentIdentifierType>
-            <PREMIS:agentIdentifierValue>24604287</PREMIS:agentIdentifierValue>
+            <!-- use local identifier because we cannot use internet -->
+            <PREMIS:agentIdentifierType>local</PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue>leonardo_da_vinci</PREMIS:agentIdentifierValue>             
+            <!-- 
+             <PREMIS:agentIdentifierType>VIAF</PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue>24604287</PREMIS:agentIdentifierValue> 
+            -->            
         </PREMIS:agentIdentifier>               
         <PREMIS:agentName>Leonardo, da Vinci</PREMIS:agentName>
         <PREMIS:agentType>person</PREMIS:agentType>
-        <PREMIS:linkingEventIdentifier>
+        <PREMIS:linkingEventIdentifier>            
             <PREMIS:linkingEventIdentifierType>local</PREMIS:linkingEventIdentifierType>
             <PREMIS:linkingEventIdentifierValue>event_creation_monalisa</PREMIS:linkingEventIdentifierValue>
         </PREMIS:linkingEventIdentifier>        
@@ -143,23 +156,21 @@
     
     
     <PREMIS:agent>
-        <!-- BWF Metaedit software agent that has IE to google chrome -->
         <PREMIS:agentIdentifier>
+            <!--
             <PREMIS:agentIdentifierType>LCNAF</PREMIS:agentIdentifierType>
             <PREMIS:agentIdentifierValue>n80020283</PREMIS:agentIdentifierValue>
+            -->
+            <PREMIS:agentIdentifierType>local</PREMIS:agentIdentifierType>
+            <PREMIS:agentIdentifierValue>louvre_museum_paris</PREMIS:agentIdentifierValue>
         </PREMIS:agentIdentifier>
         <PREMIS:agentName>Louvre Museum Paris</PREMIS:agentName>
         <PREMIS:agentType>corporate</PREMIS:agentType>       
         <!-- You need to add enough metadata values and optional elements to indicate the rights holder for your operating system -->
         <PREMIS:linkingEventIdentifier>
-            <PREMIS:linkingEventIdentifierType></PREMIS:linkingEventIdentifierType>
-            <PREMIS:linkingEventIdentifierValue></PREMIS:linkingEventIdentifierValue>
-        </PREMIS:linkingEventIdentifier>
-        <PREMIS:linkingRightsStatementIdentifier>
-            <PREMIS:linkingRightsStatementIdentifierType></PREMIS:linkingRightsStatementIdentifierType>
-            <PREMIS:linkingRightsStatementIdentifierValue></PREMIS:linkingRightsStatementIdentifierValue>
-        </PREMIS:linkingRightsStatementIdentifier>
+            <PREMIS:linkingEventIdentifierType>local</PREMIS:linkingEventIdentifierType>
+            <PREMIS:linkingEventIdentifierValue>event_acquisition_monalisa</PREMIS:linkingEventIdentifierValue>
+        </PREMIS:linkingEventIdentifier>              
     </PREMIS:agent>
-
     
 </PREMIS:premis>
