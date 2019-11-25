@@ -3,21 +3,27 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.loc.gov/premis/v3 https://www.loc.gov/standards/premis/premis.xsd" version="3.0">
     <!-- In this assignment, I discussed and worked with Sam (swalkow2) --> 
-    <PREMIS:object xsi:type="PREMIS:intellectualEntity">
+    <PREMIS:object xsi:type="PREMIS:intellectualEntity">        
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>local</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>Seikilos Stele Collection</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
         
-        <!-- You need to add enough optional elements to indicated that this is the FRBR Work for the idea of the Seikilos Stele -->        
+        <!-- You need to add enough optional elements to indicated that this is the FRBR Work for the idea of the Seikilos Stele -->
         <PREMIS:significantProperties>
             <!-- what should we put here -->
             <PREMIS:significantPropertiesType>description</PREMIS:significantPropertiesType>
             <PREMIS:significantPropertiesValue>
                 a composition of musical work from a physical thombstone from 2nd century AD                
             </PREMIS:significantPropertiesValue>
-        </PREMIS:significantProperties>
-                
+        </PREMIS:significantProperties>                
+        <PREMIS:significantProperties>
+            <!-- what should we put here -->
+            <PREMIS:significantPropertiesType>description</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>
+                work of Seikilos Stele that manifested as music composition and digital image of the stone 
+            </PREMIS:significantPropertiesValue>
+        </PREMIS:significantProperties>         
         
         <PREMIS:relationship>
             <!-- this need to link to the physical rock -->
@@ -31,8 +37,38 @@
                 <PREMIS:relatedObjectIdentifierType>National Museum, Denmark Inventory Number</PREMIS:relatedObjectIdentifierType>
                 <PREMIS:relatedObjectIdentifierValue>14897</PREMIS:relatedObjectIdentifierValue>
             </PREMIS:relatedObjectIdentifier>
+        </PREMIS:relationship>
+        
+        <PREMIS:relationship>
+            <!-- this need to link to the physical rock -->
+            <PREMIS:relationshipType>structural</PREMIS:relationshipType>
+            <PREMIS:relationshipSubType>isRepresentedBy</PREMIS:relationshipSubType>
+            <PREMIS:relatedObjectIdentifier>
+                <PREMIS:relatedObjectIdentifierType>National Museum, Denmark Inventory Number</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue>14897</PREMIS:relatedObjectIdentifierValue>
+            </PREMIS:relatedObjectIdentifier>
         </PREMIS:relationship>    
-                        
+
+        <PREMIS:relationship>
+            <!-- link to the digital picture  -->
+            <PREMIS:relationshipType>structural</PREMIS:relationshipType>
+            <PREMIS:relationshipSubType>isRepresentedBy</PREMIS:relationshipSubType>
+            <PREMIS:relatedObjectIdentifier>
+                <PREMIS:relatedObjectIdentifierType>National Museum of Denmark Digital Collections File Identifier</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue>28501</PREMIS:relatedObjectIdentifierValue>
+            </PREMIS:relatedObjectIdentifier>
+        </PREMIS:relationship>    
+
+        <PREMIS:relationship>
+            <!-- link to the music  -->
+            <PREMIS:relationshipType>structural</PREMIS:relationshipType>
+            <PREMIS:relationshipSubType>isRepresentedBy</PREMIS:relationshipSubType>
+            <PREMIS:relatedObjectIdentifier>
+                <PREMIS:relatedObjectIdentifierType>ASIN</PREMIS:relatedObjectIdentifierType>
+                <PREMIS:relatedObjectIdentifierValue>B00C3AFSMK</PREMIS:relatedObjectIdentifierValue>
+            </PREMIS:relatedObjectIdentifier>
+        </PREMIS:relationship>    
+                
     </PREMIS:object>
     
     
