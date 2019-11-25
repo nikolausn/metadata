@@ -2,7 +2,7 @@
 <PREMIS:premis xmlns:PREMIS="http://www.loc.gov/premis/v3"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.loc.gov/premis/v3 https://www.loc.gov/standards/premis/premis.xsd" version="3.0">
-    <!-- In this assignment, I discussed and worked with Sam (swalkow2) -->
+    <!-- By Sam Walkow (swalkow2) and Nikolaus Parulian (nnp2) -->
     <!-- with limited information from dc xml, we fit values and without additional information from the internet
         we use local identifier for most of the object and agent -->
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">

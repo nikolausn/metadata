@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <simpledc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://www.dublincore.org/schemas/xmls/qdc/2008/02/11/simpledc.xsd">
+    <!-- By Sam Walkow (swalkow2) and Nikolaus Parulian (nnp2) -->
     <!-- 1 - to - 1 principle, here we are describing about mona lisa painting -->
     <identifier xmlns="http://purl.org/dc/elements/1.1/">779</identifier>
     <title xmlns="http://purl.org/dc/elements/1.1/">PORTRAIT DE MONA LISA</title>
