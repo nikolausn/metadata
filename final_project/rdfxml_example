@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:schema="http://schema.org/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:ns0="http://software-citation.org/schema/">
+
+  <schema:Person rdf:about="http://software-citation.org/person/#matthewturk">
+    <schema:familyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turk</schema:familyName>
+    <schema:givenName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Matthew</schema:givenName>
+    <schema:identifier>
+      <schema:PropertyValue>
+        <schema:propertyID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">email</schema:propertyID>
+        <schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mjturk@illinois.edu</schema:value>
+      </schema:PropertyValue>
+    </schema:identifier>
+
+    <schema:relatedLink rdf:resource="https://github.com/matthewTurk"/>
+  </schema:Person>
+
+  <rdfs:Property rdf:about="http://software-citation.org/schema/citeSoftware">
+    <schema:CreativeWorks rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creative Commons</schema:CreativeWorks>
+    <schema:SoftwareApplication rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3,5</schema:SoftwareApplication>
+    <rdfs:domain rdf:resource="http://schema.org/CreativeWorks"/>
+    <rdfs:range rdf:resource="http://schema.org/SoftwareApplication"/>
+  </rdfs:Property>
+
+  <rdf:Property rdf:about="http://software-citation.org/schema/hasRepo">
+    <rdfs:domain rdf:resource="http://schema.org/SoftwareApplication"/>
+    <rdfs:range rdf:resource="http://schema.org/SoftwareSourceCode"/>
+  </rdf:Property>
+
+  <schema:SoftwareApplication rdf:about="http://software-citation.org/software/#ytCore">
+    <dc11:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yt core library</dc11:title>
+    <schema:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Main yt repository</schema:abstract>
+    <schema:runtimePlatform rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</schema:runtimePlatform>
+    <ns0:hasRepo>
+      <schema:SoftwareSourceCode rdf:about="https://github.com/yt-project/yt">
+        <dc11:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Main yt library repository</dc11:title>
+        <schema:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/yt-project/yt</schema:identifier>
+        <schema:isBasedOn rdf:resource="https://github.com/yt-project"/>
+        <schema:targetProduct rdf:resource="http://software-citation.org/software/#ytCore"/>
+      </schema:SoftwareSourceCode>
+    </ns0:hasRepo>
+
+  </schema:SoftwareApplication>
+
+  <schema:SoftwareApplication rdf:about="http://software-citation.org/software/#ytProject">
+    <dc11:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yt-project</dc11:title>
+    <schema:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yt is an open-source, permissively-licensed python package for analyzing and visualizing volumetric data. yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles. Focused on driving physically-meaningful inquiry, yt has been applied in domains such as astrophysics, seismology, nuclear engineering, molecular dynamics, and oceanography. Composed of a friendly community of users and developers, we want to make it easy to use and develop — we'd love it if you got involved!</schema:abstract>
+    <schema:runtimePlatform rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Python</schema:runtimePlatform>
+    <ns0:hasRepo rdf:resource="https://github.com/yt-project"/>
+  </schema:SoftwareApplication>
+
+  <schema:SoftwareSourceCode rdf:about="https://github.com/yt-project">
+    <dc11:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The yt-project repository</dc11:title>
+    <schema:abstract rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The yt project A toolkit for analysis and visualization of volumetric data</schema:abstract>
+    <schema:codeRepository rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/yt-project</schema:codeRepository>
+    <schema:contributor rdf:resource="http://software-citation.org/person/#matthewTurk"/>
+  </schema:SoftwareSourceCode>
+
+  <schema:ScholarlyArticle rdf:about="https://doi.org/10.1088/0067-0049/192/1/9">
+    <schema:about rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Works</schema:about>
+    <schema:about rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catalog</schema:about>
+    <schema:author rdf:resource="http://software-citation.org/person/#matthewTurk"/>
+    <schema:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-abstract-</schema:description>
+    <schema:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</schema:name>
+    <ns0:citeSoftware rdf:resource="http://software-citation.org/software/#ytCore"/>
+    <ns0:objectives>
+      <rdf:Bag>
+        <rdf:li>
+          <schema:Article>
+            <schema:articleBody rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Figure 1. Script that loads data from disk, identifies halos within that data set, and then projects the density of those halos aligned with the angular momentum vector of the halo.</schema:articleBody>
+            <schema:pageEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</schema:pageEnd>
+            <schema:pageStart rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</schema:pageStart>
+          </schema:Article>
+        </rdf:li>
+
+      </rdf:Bag>
+    </ns0:objectives>
+
+  </schema:ScholarlyArticle>
+
+</rdf:RDF>
