@@ -12,18 +12,26 @@
         <!-- You need to add enough optional elements to indicated that this is the FRBR Work for the idea of the Seikilos Stele -->
         <PREMIS:significantProperties>
             <!-- what should we put here -->
-            <PREMIS:significantPropertiesType>description</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesType>content</PREMIS:significantPropertiesType>
             <PREMIS:significantPropertiesValue>
-                a composition of musical work from a physical thombstone from 2nd century AD                
+                a composition of musical work from a physical tombstone from 2nd century AD                
             </PREMIS:significantPropertiesValue>
         </PREMIS:significantProperties>                
         <PREMIS:significantProperties>
             <!-- what should we put here -->
             <PREMIS:significantPropertiesType>description</PREMIS:significantPropertiesType>
             <PREMIS:significantPropertiesValue>
-                work of Seikilos Stele that manifested as music composition and digital image of the stone 
+                work of Seikilos that manifested as music composition and digital image of the stone 
             </PREMIS:significantPropertiesValue>
-        </PREMIS:significantProperties>         
+        </PREMIS:significantProperties>
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType>description</PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue>
+                This is a collection of work by Seikilos (a person) possibly dedicated to wife to function as her tombstone with notation 
+                written on the physical object
+            </PREMIS:significantPropertiesValue>
+        </PREMIS:significantProperties>
+        
         
         <PREMIS:relationship>
             <!-- this need to link to the physical rock -->
