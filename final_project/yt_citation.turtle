@@ -1,0 +1,205 @@
+@base <http://softwarecitation.web.illinois.edu/corpus/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix github: <https://github.com/> .
+@prefix scs: <http://softwarecitation.web.illinois.edu/software-citation-schema#> .
+@prefix xsd: <http://www.w3.org/TR/xmlschema-2/#> .
+
+
+<author/#matthewjturk>
+  a schema:Author ;
+  schema:identifier "local:/M.J.T."^^xsd:string ;
+  schema:givenName "Matthew"^^xsd:string ;
+  schema:additionalName "J"^^xsd:string ;
+  schema:familyName "Turk"^^xsd:string ;
+  schema:affiliation "Center for Astrophysics and Space Sciences"^^xsd:string ;
+  .
+
+<author/#brittondsmith>
+  a schema:Author ;
+  schema:identifier "local:/B.D.S."^^xsd:string ;
+  schema:givenName "Britton"^^xsd:string ;
+  schema:additionalName "D."^^xsd:string ;
+  schema:familyName "Smith"^^xsd:string ;
+  schema:affiliation "Department of Physics and Astronomy, Michigan State University"^^xsd:string ;
+  .
+
+<author/#jeffreysoishi>
+  a schema:Author ;
+  schema:identifier "local:/J.S.O."^^xsd:string ;
+  schema:givenName "Jeffrey"^^xsd:string ;
+  schema:additionalName "S."^^xsd:string ;
+  schema:familyName "Oishi"^^xsd:string ;
+  schema:affiliation "Kavli Institute for Particle Astrophysics and Cosmology, Stanford University"^^xsd:string ;
+  schema:affiliation "Department of Physics, Stanford University"^^xsd:string ;
+  .
+
+<author/#stephenstory>
+  a schema:Author ;
+  schema:identifier "local:/S.S."^^xsd:string ;
+  schema:givenName "Stephen"^^xsd:string ;
+  schema:familyName "Skory"^^xsd:string ;
+  schema:affiliation "Center for Astrophysics and Space Astronomy, University of Colorado, Boulder"^^xsd:string ;
+  .
+
+<author/#samuelwskillman>
+  a schema:Author ;
+  schema:identifier "local:/S.W.S."^^xsd:string ;
+  schema:givenName "Samuel"^^xsd:string ;
+  schema:additionalName "W."^^xsd:string ;
+  schema:familyName "Skillman"^^xsd:string ;
+  schema:affiliation "Center for Astrophysics and Space Astronomy, University of Colorado, Boulder"^^xsd:string ;
+  .
+
+<author/#tomabel>
+  a schema:Author ;
+  schema:identifier "local:/T.A."^^xsd:string ;
+  schema:givenName "Tom"^^xsd:string ;
+  schema:familyName "Abel"^^xsd:string ;
+  schema:affiliation "Kavli Institute for Particle Astrophysics and Cosmology, Stanford University"^^xsd:string ;
+  schema:affiliation "Department of Physics, Stanford University"^^xsd:string ;
+  .
+
+<article/#ytpub>
+  a scs:ScholarlyArticle ;
+  schema:identifier "doi:/10.1088/0067-0049/192/1/9" ;
+  schema:name "yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA"^^xsd:string ;
+  schema:about "local:/cosmology: theory"^^xsd:string ;
+  schema:about "local:/methods - data analysis"^^xsd:string ;
+  schema:about "local:/methods - numerical"^^xsd:string ;
+  scs:author [
+    a scs:AuthorOrder ;
+    schema:author  <author/#matthewjturk>;
+    scs:order: 1 ;
+    ] ;
+  scs:authorOrder [
+    a scs:AuthorOrder ;
+    schema:author <author/#brittondsmith> ;
+    scs:order: 2 ;
+    ] ;
+  scs:authorOrder [
+    a scs:AuthorOrder ;
+    schema:author <author/#jeffreysoishi> ;
+    scs:order: 3 ;
+    ];
+  scs:authorOrder [
+    a scs:AuthorOrder ;
+    schema:author <author/#stephenstory> ;
+    scs:order: 4 ;
+    ] ;
+  scs:authorOrder [
+    a scs:AuthorOrder ;
+    schema:author <author/#samuelwskillman> ;
+    scs:order: 5 ;
+    ] ;
+  scs:authorOrder [
+    a scs:AuthorOrder ;
+    schema:author <author/#tomabel> ;
+    scs:order: 6 ;
+    ];
+  schema:abstract """The  analysis  of  complex  multiphysics  astrophysical  simulations  presents  a  unique  and  rapidly  growing  set  ofchallenges:  reproducibility,  parallelization,  and  vast  increases  in  data  size  and  complexity  chief  among  them. In  order  to  meet  these  challenges,  and  in  order  to  open  up  new  avenues  for  collaboration  between  users  ofmultiple simulation platforms, we present yt (available at
+  http://yt.enzotools.org/) an open source, community-developed astrophysical analysis and visualization toolkit. Analysis and visualization withytare oriented aroundphysically  relevant  quantities  rather  than  quantities  native  to  astrophysical  simulation  codes.  While  originallydesigned for handling Enzo’s structure adaptive mesh refinement data,ythas been extended to work with severaldifferent  simulation  methods  and  simulation  codes  including  Orion,  RAMSES,  and  FLASH.  We  report  on  its methods for reading, handling, and visualizing data, including projections, multivariate volume rendering, multi-dimensional histograms, halo finding, light cone generation, and topologically connected isocontour identification.Furthermore, we discuss the underlying algorithmsytuses for processing and visualizing data, and its mechanisms for parallelization of analysis tasks."""^^xsd:string ;
+  schema:publisher "The Astrophysical Journal Supplement Series"^^xsd:string ;
+  schema:datePublished: "2011" ;
+  schema:publicationType "journal article" ;
+  scs:citeSoftware [
+    a scs:SoftwareOutcome ;
+    schema:identifier <software/#yt> ;
+    scs:outcome [
+      a scs:Outcome ;
+      schema:articleBody """Figure 1.Script that loads data from disk, identifies halos within that data set,and then projects the density of those halos aligned with the angular momentumvector of the halo.(A color version of this figure is available in the online journal.)"""^^xsd:string ;
+      schema:pageStart 2 ;
+      scs:usageType "visualization" ;
+      ]
+    ];
+    a scs:SoftwareOutcome ;
+    schema:identifier <software/#yt> ;
+    scs:outcome [
+      a scs:Outcome ;
+      schema:articleBody "Figure 2.Unweighted  profile,  showing  the  distribution  of  mass  in  a  galaxymerger simulation as a function of density (x-axis) and the velocity (y-axis).(A color version of this figure is available in the online journal.)" ;
+      schema:pageStart 5 ;
+      scs:usageType "visualization" ;      
+    ];
+    a scs:SoftwareOutcome ;
+    schema:identifier <software/#yt> ;
+    scs:outcome [
+      a scs:Outcome ;
+      schema:articleBody "Figure 3. Example  oblique  slice  through  a  primordial  star-forming  region,where the image plane has been chosen such that its normal is coincident withthe angular momentum vector. Velocity vectors have been overlaid.(A color version of this figure is available in the online journal.)" ;
+      schema:pageStart 7 ;
+      scs:usageType "visualization" ;
+    ];
+    a scs:SoftwareOutcome ;
+    schema:identifier <software/#yt> ;
+    scs:outcome [
+      a scs:Outcome ;
+      schema:articleBody "Figure 4. Volume  rendering  of  a  metal-free  star-forming  region  that  hasfragmented into two cores, each of which is likely to host a Population III star.The field of view is 2000 AU. Isocontours were placed at 10−15,10−14,10−13and 10−12gcm−3(Turk et al.2009).(A color version of this figure is available in the online journal.)" ;
+      schema:pageStart 8 ;
+      scs:usageType "visualization" ;
+    ];
+    a scs:SoftwareOutcome ;
+    schema:identifier <software/#yt> ;
+    scs:outcome [
+      a scs:Outcome ;
+      schema:articleBody "Figure 5.Time taken for conducting 1D and 2D profiles on the Santa Fe LightCone data set atz=0 (Hallman et al.2007), a 5123data set with six levels ofrefinement (throughout the entire simulation domain), and a total of 5.5×108 computational elements. The overplotted thin solid lines represent ideal scaling,as calibrated to the time taken by 16 processors" ;
+      schema:pageStart 10 ;
+      scs:usageType "performance analytics" ;
+    ];
+    a scs:SoftwareOutcome ;
+    schema:identifier <software/#yt> ;
+    scs:outcome [
+      a scs:Outcome ;
+      schema:articleBody "Figure 6. Time taken creating adaptive projections of the Santa Fe Light Conedata  set  atz=0  (Hallman  et  al.2007),  a  5123data  set  with  six  levels  ofrefinement (throughout the entire simulation domain), and a total of 5.5×108 computational  elements.  In  the  case  where  IO  was  not  conducted,  a  fieldconsisting uniformly of 1.0 everywhere was used as input. The overplotted thinlines represent ideal scaling, as calibrated to the time taken by 16 processors." ;
+      schema:pageStart 11 ;
+      scs:usageType "performance analytics" ;
+      ] ;
+	  schema:url <https://iopscience.iop.org/article/10.1088/0067-0049/192/1/9> ;
+      .
+
+
+<software/#yt>
+  a schema:SoftwareApplication ;
+  schema:name "yt"^^xsd:string ;
+  schema:alernate "Yours Truly"^^xsd:string ;
+  schema:description """yt is an open-source, permissively-licensed python package for analyzing and visualizing volumetric data.yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles. Focused on driving physically-meaningful inquiry, yt has been applied in domains such as astrophysics, seismology, nuclear engineering, molecular dynamics, and oceanography. Composed of a friendly community of users and developers, we want to make it easy to use and develop - we'd love it if you got involved! We've written a method paper you may be interested in; if you use yt in the preparation of a publication, please consider citing it."""^^xsd:string ;
+  schema:about "local:/Scientific/Engineering :: Astronomy"^^xsd:string ;
+  schema:about "local:/Scientific/Engineering :: Physics"^^xsd:string ;
+  schema:about "local:/Scientific/Engineering :: Visualization"^^xsd:string ;
+  schema:about "local:/numerical analysis"^^xsd:string ;
+  schema:about "local:/scientific visualization"^^xsd:string ;
+  schema:relatedLink <https://pypi.org/project/yt/> ;
+  schema:funder "NSF"^^xsd:string ;
+  schema:version "3.5.1"^^xsd:string ;
+  schema:license "BSD License (BSD 3-Clause)"^^xsd:string ;
+  schema:softwareRequirements "python"^^xsd:string ;
+  .
+
+<repository/#ytrepo>
+  a schema:SoftwareSourceCode ;
+  schema:codeRepository <https://github.com/yt-project/yt/> ;
+  schema:targetProduct <software/#yt> ;
+  schema:description "yt is an open-source, permissively-licensed python package for analyzing and visualizing volumetric data.yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles. Focused on driving physically-meaningful inquiry, yt has been applied in domains such as astrophysics, seismology, nuclear engineering, molecular dynamics, and oceanography. Composed of a friendly community of users and developers, we want to make it easy to use and develop - we'd love it if you got involved! We've written a method paper you may be interested in; if you use yt in the preparation of a publication, please consider citing it."^^xsd:string ;
+  schema:contributor <codemaintainer/#matthewjturk> ;
+  schema:contributor <codemaintainer/nathangoldbaum> ;
+  schema:contributor <codemaintainer/brittondsmith> ;
+  .
+
+<codemaintainer/#matthewjturk>
+  a scs:CodeMaintainer ;
+  schema:identifier <https://github.com/matthewturk> ;
+  schema:name "Matthew J. Turk"^^xsd:string ;
+  schema:sameAs <author/#matthewjturk> ;
+  .
+
+<codemaintainer/nathangoldbaum>
+  a scs:CodeMaintainer ;
+  schema:identifier <https://github.com/ngoldbaum> ;
+  schema:name "Nathan Goldbaum"^^xsd:string ;
+  .
+
+<codemaintainer/brittondsmith>
+  a scs:CodeMaintainer ;
+  schema:identifier <https://github.com/brittonsmith> ;
+  schema:name "Britton D. Smith"^^xsd:string ;
+  schema:sameAs <author/#brittondsmith> ;
+  .
