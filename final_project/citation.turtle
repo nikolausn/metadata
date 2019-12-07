@@ -304,7 +304,7 @@ ytproject:yt
 ### other software example
 
 ## Goldbaum, Nathan J., et al. "unyt: Handle, manipulate, and convert data with units in Python." arXiv preprint arXiv:1806.02417 (2018). https://arxiv.org/abs/1806.02417
-3# This paper talks about software development branching off the yt for more specific purpose but using the same base code. Use supplemental visualization for different unyt system
+# This paper talks about software development branching off the yt for more specific purpose but using the same base code. Use supplemental visualization for different unyt system
 
 
 # schema for a software citation
