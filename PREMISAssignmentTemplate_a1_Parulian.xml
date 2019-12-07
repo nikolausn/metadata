@@ -341,7 +341,7 @@
     </PREMIS:object>
     
     <PREMIS:object xsi:type="PREMIS:intellectualEntity">
-        <!-- for Google Chrome -->
+        <!-- for Google -->
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>LCNAF</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>no2009043824</PREMIS:objectIdentifierValue>

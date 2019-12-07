@@ -8,6 +8,11 @@
             <PREMIS:objectIdentifierType>local</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>Seikilos Stele Collection</PREMIS:objectIdentifierValue>
         </PREMIS:objectIdentifier>
+        <PREMIS:significantProperties>
+            <PREMIS:significantPropertiesType></PREMIS:significantPropertiesType>
+            <PREMIS:significantPropertiesValue></PREMIS:significantPropertiesValue>
+        </PREMIS:significantProperties>
+    
 
         <!-- You need to add enough optional elements to indicated that this is the FRBR Work for the idea of the Seikilos Stele -->
 
