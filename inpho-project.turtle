@@ -1,0 +1,359 @@
+@base <http://softwarecitation.web.illinois.edu/corpus/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix github: <https://github.com/> .
+@prefix scs: <http://softwarecitation.web.illinois.edu/software-citation-schema#> .
+@prefix xsd: <http://www.w3.org/TR/xmlschema-2/#> .
+
+# schema for a software citation
+scs:ScholarlyArticle
+	a rdfs:Class ;
+	rdfs:subClassOf schema:ScholarlyArticle ;
+	.
+
+scs:SoftwareOutcome
+	a rdfs:Class ;
+	rdfs:subClassOf schema:Thing ;	
+	.
+
+scs:Outcome
+	a rdfs:Class ;
+	rdfs:subClassOf schema:Article ;	
+	.
+	
+scs:author
+	a rdf:Property ;
+	rdfs:domain scs:ScholarlyArticle ;
+	rdfs:range schema:Author ;
+	rdfs:range scs:AuthorOrder ;
+	.
+	
+scs:useSoftware
+	a rdf:Property ;
+	rdfs:domain scs:ScholarlyArticle ;
+	rdfs:range schema:SoftwareApplication ;
+	rdfs:range scs:SoftwareOutcome ;
+	.
+	
+scs:outcome
+	a rdf:Property ;
+	rdfs:domain scs:SoftwareOutcome ;
+	rdfs:range scs:Outcome ;
+	.
+
+scs:usageType
+	a rdf:Property ;
+	rdfs:domain scs:Outcome ;
+	rdfs:range schema:Text ;
+	.
+
+<author/#colinAllen>
+	a schema:Author ;
+	schema:identifier "orcid:/0000-0003-4497-1725"^^xsd:string ;
+	schema:givenName "Colin"^^xsd:string ; 
+	schema:familyName "Allen"^^xsd:string ; 
+	schema:affiliation "Department of History and Philosophy of Science and Program in Cognitive Science, Indiana University"^^xsd:string ; 
+	schema:affiliation "Indiana University"^^xsd:string ; 
+	schema:email "colallen@indiana.edu" ;
+	.	
+	
+<author/#jaimieMurdock>
+	a schema:Author ;
+	schema:identifier "orcid:/0000-0002-1732-5499"^^xsd:string ;
+	schema:givenName "Jaimie"^^xsd:string ; 
+	schema:familyName "Murdock"^^xsd:string ; 
+	schema:affiliation "Indiana University"^^xsd:string ; 
+	schema:email "jammurdo@indiana.edu" ;
+	.
+
+<author/#jiaanZheng>
+	a schema:Author ;
+	schema:identifier "local:/JiaanZheng"^^xsd:string ;
+	schema:givenName "Jiaan"^^xsd:string ; 
+	schema:familyName "Zheng"^^xsd:string ; 
+	schema:affiliation "Indiana University"^^xsd:string ; 
+	schema:email "jiaazeng@indiana.edu" ;
+	.
+
+<author/#robertMcdonald>
+	a schema:Author ;
+	schema:identifier "orcid:/0000-0003-4258-0982"^^xsd:string ;
+	schema:givenName "Robert"^^xsd:string ; 
+	schema:additionalName "H."^^xsd:string ; 
+	schema:familyName "Mcdonald"^^xsd:string ; 
+	schema:affiliation "Indiana University"^^xsd:string ; 
+	schema:email "rhmcdona@indiana.edu" ;
+	.
+
+<article/#inphoarticle1>
+	a scs:ScholarlyArticle ;
+	schema:identifier "doi:/10.1086/673276" ;
+	schema:name "Cross-Cutting Categorization Schemes in the Digital Humanities"^^xsd:string ;
+	schema:about "local:/digital humanities"^^xsd:string ;
+	scs:author [
+		schema:author <author/#collinAllen> ;
+		scs:order 1 ;
+	] ;
+	schema:abstract """Digital access to large amounts of scholarly text presents both challenges and opportunities for
+researchers in the humanities. Meeting these challenges depends on having 
+high-quality representations of the contents of digital resources suitable for both machines 
+and humans to use. Different ways of categorizing these contents are appropriate for
+different purposes, leading to the further problem of relating the contents of different
+categorization schemes to each other. This essay discusses the rationale for categorizing
+philosophical concepts and surveys some of the main approaches to doing so for materials
+that are continuously changing. It describes the goals and methods of the Indiana Philosophy Ontology (InPhO) project and provides an example of the kind of analysis that is
+made possible by powerful modeling methods."""^^xsd:string ;
+	schema:publisher "University of Chicago Press"^^xsd:string ;
+	schema:datePublished "2013" ;
+	schema:publicationType "journal" ;
+	scs:useSoftware [
+		a scs:SoftwareOutcome ;
+		schema:identifier <software/#inPho> ;
+		scs:outcome [
+			a scs:Outcome ;
+			schema:articleBody """AT THE INDIANA PHILOSOPHY ONTOLOGY PROJECT (InPhO) we have developed and are continuing to develop methods for categorizing and linking philosophical
+ideas and thinkers."""^^xsd:string ;
+			schema:pageStart "1" ;
+			scs:usageType "development" ;
+		]
+	] ;
+	schema:url <https://www.journals.uchicago.edu/doi/abs/10.1086/673276> ;
+	.
+
+<article/#inphoarticle2>
+	a scs:ScholarlyArticle ;
+	schema:identifier "doi:/10.1145/2756406.2756929" ;
+	schema:name "Topic Exploration with the HTRC Data Capsule for Non-Consumptive Research"^^xsd:string ;
+	schema:about "acm:/Distributed systems"^^xsd:string ;
+	schema:about "acm:/Digital libraries"^^xsd:string ;
+	schema:about "acm:/Text analysis"^^xsd:string ;
+	scs:author [
+		schema:author <author/#jaimieMurdock> ;
+		scs:order 1 ;
+	] ;
+	scs:author [
+		schema:author <author/#jiaanZheng> ;
+		scs:order 2 ;
+	] ;
+	scs:author [
+		schema:author <author/#robertMcdonald> ;
+		scs:order 3 ;
+	] ;
+	schema:abstract """In this half-day tutorial, we will show 1) how the HathiTrust
+Research Center (HTRC) Data Capsule can be used for nonconsumptive research over collection of texts and 2) how integrated tools for LDA topic modeling and visualization can
+be used to drive formulation of new research questions. Participants will be given an account in the HTRC Data Capsule and taught how to use the workset manager to create
+a corpus, and then use the VM’s secure mode to download
+texts and analyze their contents."""^^xsd:string ;
+	schema:publisher "ACM"^^xsd:string ;
+	schema:datePublished "2015" ;
+	schema:publicationType "proceedings" ;
+	scs:useSoftware [
+		a scs:SoftwareOutcome ;
+		schema:identifier <software/#htrcDataCapsule> ;
+		scs:outcome [
+			a scs:Outcome ;
+			schema:articleBody """As large-scale digitization projects have grown to include
+both copyrighted and public domain works, legal consensus was built for the “non-expressive use” of text, including text mining over copyrighted works to produce analysis
+of a large corpus (see Authors Guild v. HathiTrust). The
+HathiTrust Research Center (HTRC)1 Data Capsule [4] enables this “non-consumptive”use."""^^xsd:string ;
+			schema:pageStart "1" ;
+			scs:usageType "applied" ;
+			scs:usageType "text mining" ;
+			scs:usageType "analytics platform" ;
+		]
+	] ;	
+	scs:useSoftware [
+		a scs:SoftwareOutcome ;
+		schema:identifier <software/#inPho> ;
+		scs:outcome [
+			a scs:Outcome ;
+			schema:articleBody """In this tutorial, we present
+a five-stage research pipeline for non-consumptive textual
+analysis: from initial corpus curation to modeling and visualization with tools developed by the InPhO Project
+."""^^xsd:string ;
+			schema:pageStart "1" ;
+			scs:usageType "mention" ;
+			scs:usageType "text mining" ;
+			scs:usageType "analytics platform" ;
+		]
+	] ;
+	scs:useSoftware [
+		a scs:SoftwareOutcome ;
+		schema:identifier <software/#inPhoTopicExplorer> ;
+		scs:outcome [
+			a scs:Outcome ;
+			schema:articleBody """At this point, the volumes
+may be downloaded to the Data Capsule. These are modeled by Latent Dirichlet Allocation (LDA) [1] and visualized
+through the InPhO Topic Explorer [2] (Figure 1, top). Additional programmatic access to the models is provided by
+automatically-generated IPython/Jupyter Notebooks"""^^xsd:string ;
+			schema:pageStart "1" ;
+			scs:usageType "development" ;
+			scs:usageType "applied" ;
+			scs:usageType "text mining" ;
+			scs:usageType "visualization" ;
+		]
+	] ;
+	schema:url <https://dl.acm.org/citation.cfm?id=2756929> ;
+	.	
+
+<article/#inphoarticle3>
+	a scs:ScholarlyArticle ;
+	schema:identifier "doi:/10.1145/2756406.2756929" ;
+	schema:name "InPhO for All: Why APIs Matter"^^xsd:string ;
+	schema:about "local:/semantic web"^^xsd:string ;
+	schema:about "local:/application programming interface"^^xsd:string ;
+	schema:about "local:/digital humanities"^^xsd:string ;
+	scs:author [
+		schema:author <author/#jaimieMurdock> ;
+		scs:order 1 ;
+	] ;
+	scs:author [
+		schema:author <author/#colinAllen>;
+		scs:order 2 ;
+	] ;
+	schema:abstract """The unique convergence of humanities scholars, computer scientists, librarians, and information scientists in digital humanities projects highlights the collaborative opportunities such research entails. Unfortunately, the relatively limited human resources committed to many digital humanities projects have led to unwieldy initial implementations and underutilization of semantic web technology, creating a sea of isolated projects with data that cannot be integrated. Furthermore, the use of standards for one particular purpose may not suit other kinds of scholarly activities, impeding collaboration in the digital humanities. By designing and utilizing an Application Platform Interface (API), projects can reduce these barriers, while simultaneously reducing internal support costs and easing the transition to new development teams. Our experience developing an API for the Indiana Philosophy Ontology (InPhO) Project highlights these benefits."""^^xsd:string ;
+	schema:publisher "Journal of the Chicago Colloquium on Digital Humanities and Computer Science"^^xsd:string ;
+	schema:publisher "The Division of the Humanities at the University of Chicago"^^xsd:string ;
+	schema:datePublished "2011"^^xsd:string ;
+	schema:publicationType "journal"^^xsd:string ;	
+	scs:useSoftware [
+		a scs:SoftwareOutcome ;
+		schema:identifier <software/#inPho> ;
+		scs:outcome [
+			a scs:Outcome ;
+			schema:articleBody """The Indiana Philosophy Ontology Project (InPhO) aims to overcome barriers to broader collaboration by providing a simple, lightweight API (application programming interface) capable of serving a wide variety of data formats. APIs allow programmers to focus on the ‘what’ of computing rather than the ‘how.’"""^^xsd:string ;
+			schema:pageStart "2" ;
+			scs:usageType "development"^^xsd:string ;
+			scs:usageType "application programming interface"^^xsd:string ;
+		]
+	] ;
+	schema:url <https://www.researchgate.net/publication/267806761_InPhO_for_All_Why_APIs_Matter> ;
+	.	
+
+<software/#inPho>
+	a schema:SoftwareApplication ;
+	schema:name "The InPhO Project"^^xsd:string ;
+	schema:alternate "Internet Philosophy Ontology (InPhO) project"^^xsd:string ;
+	schema:alternate "Indiana Philosophy Ontology"^^xsd:string ;
+	schema:description """Indiana Philosophy Ontology (InPhO) project, which uses a combination of automated
+methods and expert feedback to create a dynamic computational ontology for the discipline of philosophy"""^^xsd:string ;
+	schema:about "local:/data mining"^^xsd:string ;
+	schema:about "local:/natural language processing"^^xsd:string ;
+	schema:about "local:/Expert Feedback"^^xsd:string ;
+	schema:about "local:/Machine Reasoning"^^xsd:string ;
+	schema:relatedLink <https://www.inphoproject.org> ;
+	schema:funder "NEH"^^xsd:string ;
+	schema:license "CC BY-NC-SA 3.0"^^xsd:string ;
+	schema:softwareRequirements "browser" ;
+	.
+	
+<software/#inPhoTopicExplorer> 
+	a schema:SoftwareApplication ;
+	schema:name "InPho-TE Topic Explorer"^^xsd:string ;
+	schema:alternate "Internet Philosophy Ontology (InPhO) Topic Explorer"^^xsd:string ;
+	schema:description """The InPhO-TE is a way to interactively explore and interpret document collections"""^^xsd:string ;
+	schema:about "local:/data mining"^^xsd:string ;
+	schema:about "local:/natural language processing"^^xsd:string ;
+	schema:relatedLink <https://www.inphoproject.org> ;
+	schema:funder "National Endowment for the Humanities"^^xsd:string ;
+	schema:funder "HathiTrust Reseach Center"^^xsd:string ;
+	schema:funder "Indiana University Office of Vice Provost for Research"^^xsd:string ;
+	schema:license "MIT"^^xsd:string ;
+	schema:softwareRequirements "python" ;
+	schema:isBasedOn <software/#inPho> ;
+	.
+
+<software/#htrcDataCapsule>
+	a schema:SoftwareApplication ;
+	schema:name "HathiTrust Research Center Data Capsule"^^xsd:string ;
+	schema:alternate "HTRC Data Capsule"^^xsd:string ;
+	schema:description """The HTRC Data Capsule environment provides individual, secure computing environments to analyze content in the HathiTrust Digital Library. Researchers can create virtual machines (called Capsules) to which they can import and then analyze HathiTrust text data. Researchers can only perform computational analysis within the secure Data Capsule environment and then export the results of their analysis. Volume text may not be exported outside the HTRC Data Capsule, and data products leaving a Capsule must undergo results review prior to release to ensure they meet the HTRC's policy for non-consumptive data exports."""^^xsd:string ;
+	schema:about "local:/natural language processing"^^xsd:string ;
+	schema:about "local:/analytics platform"^^xsd:string ;
+	schema:relatedLink <https://analytics.hathitrust.org> ;
+	schema:funder "HathiTrust Reseach Center"^^xsd:string ;
+	schema:softwareRequirements "browser" ;
+	.
+
+<repository/#inPho>
+	a schema:SoftwareSourceCode ;
+	schema:codeRepository <https://github.com/inpho/> ;
+	schema:targetProduct <software/#inPho> ;
+	schema:description "Internet Philosophy Ontology (InPhO) Project main repository. Contains several sub items related to the InPho project" ;
+	schema:contributor <developer/#jaimieMurdock> ;
+	schema:contributor <developer/#colinAllen> ;
+	schema:contributor <developer/#kirtanSakariya> ;
+	schema:contributor <developer/#sriramIyer> ;
+	.	
+	
+<repository/#inPhoTopicExplorer>
+	a schema:SoftwareSourceCode ;
+	schema:codeRepository <https://github.com/inpho/topic-explorer> ;
+	schema:targetProduct <software/#inPhoTopicExplorer> ;
+	schema:isBasedOn <software/#inPho> ;
+	schema:description "System for building, visualizing, and working with LDA topic models https://www.hypershelf.org/" ;
+	schema:contributor <developer/#jaimieMurdock> ;
+	schema:contributor <developer/#colinAllen> ;
+	schema:contributor <developer/#kirtanSakariya> ;
+	schema:contributor <developer/#sriramIyer> ;
+	.	
+
+<repository/#htrcDataCapsule>
+	a schema:SoftwareSourceCode ;
+	schema:codeRepository <https://github.com/htrc/HTRC-DataCapsules> ;
+	schema:targetProduct <software/#htrcDataCapsule> ;
+	schema:description """Digital texts with access and use protections form a unique and fast growing collection of materials. Growing equally as quickly is the development of text and data mining algorithms that process large text-based collections for purposes of exploring the content computationally. There is a strong need for research to establish the foundations for secure computational and data technologies that can ensure a non-consumptive environment for use-protected texts such as the copyrighted works in the HathiTrust Digital Library. Non-consumptive research can be defined as as “research in which computational analysis is performed on one or more books, but not research in which a researcher reads or displays.” (in Google Book Settlement). Operationally, non-consumptive research requires that no action or set of actions on the part of users, either acting alone or in cooperation with other users over the duration of one or multiple sessions can result in sufficient information gathered from a collection of copyrighted works to reassemble pages from the collection. Non-consumptive research is, in and of itself, a research challenge which requires deeper study.""" ;
+	schema:contributor <developer/#charitha306> ;
+	schema:contributor <developer/#samithaLiyanage> ;
+	schema:contributor <developer/#guangChen> ;
+	schema:contributor <developer/#jaimieMurdock> ;
+	.	
+
+<developer/#charitha306>
+	a scs:CodeMaintainer ;
+	schema:identifier <https://github.com/charitha306> ;
+	schema:name "charitha306" ;
+	.
+
+<developer/#samithaLiyanage>
+	a scs:CodeMaintainer ;
+	schema:identifier <https://github.com/samithaliyanage> ;
+	schema:name "Samitha Liyanage" ;
+	.
+
+<developer/#guangChen>
+	a scs:CodeMaintainer ;
+	schema:identifier <https://github.com/guangchen> ;
+	schema:name "Guangchen Ruan" ;
+	.
+
+<developer/#jaimieMurdock>
+	a scs:CodeMaintainer ;
+	schema:identifier <https://github.com/JaimieMurdock> ;
+	schema:name "Jaimie Murdock" ;
+	schema:sameAs <author/#jaimieMurdock> ;
+	.
+	
+<developer/#colinAllen>
+	a scs:CodeMaintainer ;
+	schema:identifier <https://github.com/colinallen> ;
+	schema:name "Colin Allen" ;
+	schema:sameAs <author/#colinAllen> ;
+	.
+
+<developer/#kirtanSakariya>
+	a scs:CodeMaintainer ;
+	schema:identifier <https://github.com/kirtansakariya> ;
+	schema:name "Kirtan Sakariya" ;
+	.
+	
+<developer/#sriramIyer>
+	a scs:CodeMaintainer ;
+	schema:identifier <https://github.com/RamIyer1998> ;
+	schema:name "Sriram Iyer" ;
+	.
+
+
+
+

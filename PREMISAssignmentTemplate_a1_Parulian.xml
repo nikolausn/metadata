@@ -84,7 +84,7 @@
         <PREMIS:objectIdentifier>
             <PREMIS:objectIdentifierType>National Museum of Denmark Inventory Number</PREMIS:objectIdentifierType>
             <PREMIS:objectIdentifierValue>14897</PREMIS:objectIdentifierValue>
-        </PREMIS:objectIdentifier>
+        </PREMIS:objectIdentifier>              
         
         <!-- You need to add enough optional elements to indicate that this is the physical rock -->
         <PREMIS:significantProperties>

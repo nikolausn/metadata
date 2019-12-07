@@ -1,70 +1,69 @@
-@base <http://software-citation.org/corpus/> .
+@base <http://softwarecitation.web.illinois.edu/corpus/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix rel: <http://www.perceive.net/schemas/relationship/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix schema: <http://schema.org/> .
 @prefix github: <https://github.com/> .
-@prefix ytproject: <https://github.com/yt-project/> .
-@prefix scs: <http://software-citation.org/schema/> .
-@prefix ytdomain: <https://yt-project.org/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ns3: <http://purl.org/spar/datacite/> .
-@prefix ns1: <http://purl.org/spar/pro/> .
-@prefix ns2: <http://purl.org/spar/datacite/> .
+@prefix scs: <http://softwarecitation.web.illinois.edu/software-citation-schema#> .
+@prefix xsd: <http://www.w3.org/TR/xmlschema-2/#> .
 
 
  <author/#matthewjturk>
   a schema:Author ;
+  schema:identifier "local:/M.J.T."^^xsd:string ;
   schema:givenName "Matthew"^^xsd:string ;
-  schema:alternateName "J"^^xsd:string ;
+  schema:additionalName "J"^^xsd:string ;
   schema:familyName "Turk"^^xsd:string ;
   schema:affiliation "Center for Astrophysics and Space Sciences"^^xsd:string ;
-  schema:identifier "local:/M.J.T."^^xsd:string ;
+  .
 
 <author/#brittondsmith>
   a schema:Author ;
+  schema:identifier "local:/B.D.S."^^xsd:string ;
   schema:givenName "Britton"^^xsd:string ;
-  schema:alternateName "D."^^xsd:string ;
+  schema:additionalName "D."^^xsd:string ;
   schema:familyName "Smith"^^xsd:string ;
   schema:affiliation "Department of Physics and Astronomy, Michigan State University"^^xsd:string ;
-  schema:identifier "local:/B.D.S."^^xsd:string ;
+  .
 
 <author/#jeffreysoishi>
   a schema:Author ;
+  schema:identifier "local:/J.S.O."^^xsd:string ;
   schema:givenName "Jeffrey"^^xsd:string ;
-  schema:alternateName "S."^^xsd:string ;
+  schema:additionalName "S."^^xsd:string ;
   schema:familyName "Oishi"^^xsd:string ;
   schema:affiliation "Kavli Institute for Particle Astrophysics and Cosmology, Stanford University"^^xsd:string ;
   schema:affiliation "Department of Physics, Stanford University"^^xsd:string ;
-  schema:identifier "local:/J.S.O."^^xsd:string ;
+  .
 
 <author/#stephenstory>
   a schema:Author ;
+  schema:identifier "local:/S.S."^^xsd:string ;
   schema:givenName "Stephen"^^xsd:string ;
   schema:familyName "Skory"^^xsd:string ;
   schema:affiliation "Center for Astrophysics and Space Astronomy, University of Colorado, Boulder"^^xsd:string ;
-  schema:identifier "local:/S.S."^^xsd:string ;
+  .
 
 <author/#samuelwskillman>
   a schema:Author ;
+  schema:identifier "local:/S.W.S."^^xsd:string ;
   schema:givenName "Samuel"^^xsd:string ;
-  schema:alternateName "W."^^xsd:string ;
+  schema:additionalName "W."^^xsd:string ;
   schema:familyName "Skillman"^^xsd:string ;
   schema:affiliation "Center for Astrophysics and Space Astronomy, University of Colorado, Boulder"^^xsd:string ;
-  schema:identifier "local:/S.W.S."^^xsd:string ;
+  .
 
 <author/#tomabel>
   a schema:Author ;
+  schema:identifier "local:/T.A."^^xsd:string ;
   schema:givenName "Tom"^^xsd:string ;
   schema:familyName "Abel"^^xsd:string ;
   schema:affiliation "Kavli Institute for Particle Astrophysics and Cosmology, Stanford University"^^xsd:string ;
   schema:affiliation "Department of Physics, Stanford University"^^xsd:string ;
-  schema:identifier "local:/T.A."^^xsd:string ;
+  .
 
 <article/#ytpub>
   a scs:ScholarlyArticle
+  schema:identifier "doi:10.1088/0067-0049/192/1/9" ;
   schema:name "yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA"^^xsd:string ;
   schema:about "local:/cosmology: theory" ^^xsd:string ;
   schema:about "local:/methods - data analysis" ^^xsd:string ;
@@ -78,34 +77,38 @@
     a scs:AuthorOrder ;
     schema:author <author/#brittondsmith> ;
     scs:order: 2 ;
+    ] ;
   scs:authorOrder [
     a scs:AuthorOrder ;
     schema:author <author/#jeffreysoishi> ;
     scs:order: 3 ;
+    ];
   scs:authorOrder [
     a scs:AuthorOrder ;
     schema:author <author/#stephenstory> ;
     scs:order: 4 ;
+    ] ;
   scs:authorOrder [
     a scs:AuthorOrder ;
     schema:author <author/#samuelwskillman> ;
     scs:order: 5 ;
+    ] ;
   scs:authorOrder [
     a scs:AuthorOrder ;
     schema:author <author/#tomabel> ;
     scs:order: 6 ;
+    ];
   schema:abstract "The  analysis  of  complex  multiphysics  astrophysical  simulations  presents  a  unique  and  rapidly  growing  set  ofchallenges:  reproducibility,  parallelization,  and  vast  increases  in  data  size  and  complexity  chief  among  them. In  order  to  meet  these  challenges,  and  in  order  to  open  up  new  avenues  for  collaboration  between  users  ofmultiple simulation platforms, we present yt (available at
   http://yt.enzotools.org/) an open source, community-developed astrophysical analysis and visualization toolkit. Analysis and visualization withytare oriented aroundphysically  relevant  quantities  rather  than  quantities  native  to  astrophysical  simulation  codes.  While  originallydesigned for handling Enzo’s structure adaptive mesh refinement data,ythas been extended to work with severaldifferent  simulation  methods  and  simulation  codes  including  Orion,  RAMSES,  and  FLASH.  We  report  on  its methods for reading, handling, and visualizing data, including projections, multivariate volume rendering, multi-dimensional histograms, halo finding, light cone generation, and topologically connected isocontour identification.Furthermore, we discuss the underlying algorithmsytuses for processing and visualizing data, and its mechanisms for parallelization of analysis tasks." ^^xsd:string ;
-  schema:identifier "doi:10.1088/0067-0049/192/1/9" ^^xsd:string ;
   schema: publisher "The Astrophysical Journal Supplement Series" ^^xsd:string ;
-  schema: datePublished: "2011 January" ^^xsd:string ;
-  schema:publicationType "journal article" ^^xsd:string ;
+  schema: datePublished: "2011" ;
+  schema:publicationType "journal article" ;
   scs:citeSoftware [
     a scs:SoftwareOutcome ;
     schema:identifier <software/#yt> ;
     scs:outcome [
       a scs:Outcome ;
-      schema:articleBody "Figure 1.Script that loads data from disk, identifies halos within that data set,and then projects the density of those halos aligned with the angular momentumvector of the halo.(A color version of this figure is available in the online journal.)" ;
+      schema:articleBody "Figure 1.Script that loads data from disk, identifies halos within that data set,and then projects the density of those halos aligned with the angular momentumvector of the halo.(A color version of this figure is available in the online journal.)" ^^xsd:string ;
       schema:pageStart 2 ;
       scs:usageType "visualization" ;
       ]
@@ -154,6 +157,7 @@
       schema:pageStart 11 ;
       scs:usageType "performance analytics" ;
       ] ;
+      .
 
 
 <software/#yt>
@@ -171,8 +175,9 @@
   schema:version "3.5.1"^^xsd:string ;
   schema:license "BSD License (BSD 3-Clause)"^^xsd:string ;
   schema:softwareRequirements "python"^^xsd:string ;
+  .
 
-<sourcecode/#ytrepo>
+<repository/#ytrepo>
   a schema:SoftwareSourceCode ;
   schema:codeRepository <https://github.com/yt-project/yt/> ;
   schema:targetProduct <software/#yt> ;
@@ -180,20 +185,24 @@
   schema:contributor <codemaintainer/#matthewjturk> ;
   schema:contributor <codemaintainer/nathangoldbaum> ;
   schema:contributor <codemaintainer/brittondsmith> ;
+  .
 
 <codemaintainer/#matthewjturk>
   a scs:CodeMaintainer ;
   schema:identifier <https://github.com/matthewturk> ;
   schema:name "Matthew J. Turk" ^^xsd:string ;
   schema:sameAs <author/#matthewjturk> ;
+  .
 
 <codemaintainer/nathangoldbaum>
   a scs:CodeMaintainer ;
   schema:identifier <https://github.com/ngoldbaum> ;
   schema:name "Nathan Goldbaum" ^^xsd:string ;
+  .
 
 <codemaintainer/brittondsmith>
   a scs:CodeMaintainer ;
   schema:identifier <https://github.com/brittonsmith> ;
   schema:name "Britton D. Smith" ^^xsd:string ;
   schema:sameAs <author/#brittondsmith> ;
+  .
