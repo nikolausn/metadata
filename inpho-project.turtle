@@ -80,7 +80,7 @@ scs:usageType
 	a schema:Author ;
 	schema:identifier "orcid:/0000-0003-4258-0982"^^xsd:string ;
 	schema:givenName "Robert"^^xsd:string ; 
-	schema:additinalName "H."^^xsd:string ; 
+	schema:additionalName "H."^^xsd:string ; 
 	schema:familyName "Mcdonald"^^xsd:string ; 
 	schema:affiliation "Indiana University"^^xsd:string ; 
 	schema:email "rhmcdona@indiana.edu" ;
