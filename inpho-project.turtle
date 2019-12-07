@@ -86,6 +86,22 @@ scs:usageType
 	schema:email "rhmcdona@indiana.edu" ;
 	.
 
+<author/#cameronBuckner>
+	a schema:Author ;
+	schema:identifier "orcid:/0000-0003-0611-5354"^^xsd:string ;
+	schema:givenName "Cameron"^^xsd:string ; 
+	schema:familyName "Buckner"^^xsd:string ; 
+	schema:affiliation "Indiana University"^^xsd:string ; 
+	.
+
+<author/#mathiasNiepert>
+	a schema:Author ;
+	schema:identifier "local:/mathiasNiepert"^^xsd:string ;
+	schema:givenName "Mathias"^^xsd:string ; 
+	schema:familyName "Niepert"^^xsd:string ; 
+	schema:affiliation "Indiana University"^^xsd:string ; 
+	.
+
 <article/#inphoarticle1>
 	a scs:ScholarlyArticle ;
 	schema:identifier "doi:/10.1086/673276" ;
@@ -125,9 +141,12 @@ ideas and thinkers."""^^xsd:string ;
 	a scs:ScholarlyArticle ;
 	schema:identifier "doi:/10.1145/2756406.2756929" ;
 	schema:name "Topic Exploration with the HTRC Data Capsule for Non-Consumptive Research"^^xsd:string ;
-	schema:about "acm:/Distributed systems"^^xsd:string ;
-	schema:about "acm:/Digital libraries"^^xsd:string ;
-	schema:about "acm:/Text analysis"^^xsd:string ;
+	schema:about "local:/Ontology"^^xsd:string ;
+	schema:about "local:/Taxonomy"^^xsd:string ;
+	schema:about "local:/Ontology"^^xsd:string ;
+	schema:about "local:/Metaphilosophy"^^xsd:string ;
+	schema:about "local:/Digital philosophy "^^xsd:string ;
+	schema:about "local:/Semantic web"^^xsd:string ;
 	scs:author [
 		schema:author <author/#jaimieMurdock> ;
 		scs:order 1 ;
@@ -229,6 +248,52 @@ automatically-generated IPython/Jupyter Notebooks"""^^xsd:string ;
 		]
 	] ;
 	schema:url <https://www.researchgate.net/publication/267806761_InPhO_for_All_Why_APIs_Matter> ;
+	.	
+
+<article/#inphoarticle4>
+	a scs:ScholarlyArticle ;
+	schema:identifier "doi:/10.1007/s11229-009-9659-9" ;
+	schema:name "From encyclopedia to ontology: toward dynamic representation of the discipline of philosophy"^^xsd:string ;
+	schema:about "local:/semantic web"^^xsd:string ;
+	schema:about "local:/application programming interface"^^xsd:string ;
+	schema:about "local:/digital humanities"^^xsd:string ;
+	scs:author [
+		schema:author <author/#cameronBuckner> ;
+		scs:order 1 ;
+	] ;
+	scs:author [
+		schema:author <author/#mathiasNiepert> ;
+		scs:order 1 ;
+	] ;
+	scs:author [
+		schema:author <author/#colinAllen>;
+		scs:order 2 ;
+	] ;
+	schema:abstract """The application of digital humanities techniques to philosophy is changing
+the way scholars approach the discipline. This paper seeks to open a discussion about
+the difficulties, methods, opportunities, and dangers of creating and utilizing a formal
+representation of the discipline of philosophy. We review our current project, the Indiana Philosophy Ontology (InPhO) project, which uses a combination of automated
+methods and expert feedback to create a dynamic computational ontology for the discipline of philosophy. We argue that our distributed, expert-based approach to modeling
+the discipline carries substantial practical and philosophical benefits over alternatives.
+We also discuss challenges facing our project (and any other similar project) as well
+as the future directions for digital philosophy afforded by formal modeling."""^^xsd:string ;
+	schema:publisher "Springer"^^xsd:string ;
+	schema:datePublished "2011"^^xsd:string ;
+	schema:publicationType "journal"^^xsd:string ;	
+	scs:useSoftware [
+		a scs:SoftwareOutcome ;
+		schema:identifier <software/#inPho> ;
+		scs:outcome [
+			a scs:Outcome ;
+			schema:articleBody """This paper seeks to open a discussion about the difficulties, methods, opportunities,
+and dangers of creating and utilizing a formal representation of the discipline of philosophy. We review our current project at Indiana University, the Indiana Philosophy
+Ontology (InPhO)3 project. We are developing an ontology for the Stanford Encyclopedia of Philosophy (SEP),4 an online, open access, dynamic reference work. The
+ontology should also be suitable for deployment in other digital philosophy applications.5"""^^xsd:string ;
+			schema:pageStart "3" ;
+			scs:usageType "mention"^^xsd:string ;
+		]
+	] ;
+	schema:url <https://link.springer.com/article/10.1007/s11229-009-9659-9> ;
 	.	
 
 <software/#inPho>
