@@ -8,7 +8,7 @@
 
 
 <author/#matthewjturk>
-  a schema:Author ;
+  a scs:Author ;
   schema:identifier "local:/M.J.T."^^xsd:string ;
   schema:givenName "Matthew"^^xsd:string ;
   schema:additionalName "J"^^xsd:string ;
@@ -17,7 +17,7 @@
   .
 
 <author/#brittondsmith>
-  a schema:Author ;
+  a scs:Author ;
   schema:identifier "local:/B.D.S."^^xsd:string ;
   schema:givenName "Britton"^^xsd:string ;
   schema:additionalName "D."^^xsd:string ;
@@ -26,7 +26,7 @@
   .
 
 <author/#jeffreysoishi>
-  a schema:Author ;
+  a scs:Author ;
   schema:identifier "local:/J.S.O."^^xsd:string ;
   schema:givenName "Jeffrey"^^xsd:string ;
   schema:additionalName "S."^^xsd:string ;
@@ -36,7 +36,7 @@
   .
 
 <author/#stephenstory>
-  a schema:Author ;
+  a scs:Author ;
   schema:identifier "local:/S.S."^^xsd:string ;
   schema:givenName "Stephen"^^xsd:string ;
   schema:familyName "Skory"^^xsd:string ;
@@ -44,7 +44,7 @@
   .
 
 <author/#samuelwskillman>
-  a schema:Author ;
+  a scs:Author ;
   schema:identifier "local:/S.W.S."^^xsd:string ;
   schema:givenName "Samuel"^^xsd:string ;
   schema:additionalName "W."^^xsd:string ;
@@ -53,12 +53,50 @@
   .
 
 <author/#tomabel>
-  a schema:Author ;
+  a scs:Author ;
   schema:identifier "local:/T.A."^^xsd:string ;
   schema:givenName "Tom"^^xsd:string ;
   schema:familyName "Abel"^^xsd:string ;
   schema:affiliation "Kavli Institute for Particle Astrophysics and Cosmology, Stanford University"^^xsd:string ;
   schema:affiliation "Department of Physics, Stanford University"^^xsd:string ;
+  .
+
+<author/#benholtzman>
+  a scs:Author ;
+  schema:identifier "local:/B.H"^^xsd:string ;
+  schema:givenName "Benjamin"^^xsd:string ;
+  schema:familyName "Holtzman"^^xsd:string ;
+  schema:affiliation "Lamont Doherty Earth Observatory,Columbia University"^^xsd:string ;
+  schema:email "benh@ldeo.columbia.edu"^^xsd:string ;
+  .
+
+<author/#jasoncandler>
+  a scs:Author ;
+  schema:identifier "local:/J.C."^^xsd:string ;
+  schema:givenName "Jason"^^xsd:string ;
+  schema:familyName "Candler"^^xsd:string ;
+  schema:affiliation "Tisch School of the Arts, New York University"^^xsd:string ;
+  schema:email "jason@guarsh.com"^^xsd:string ;
+  .
+
+<author/#mattheturk>
+  a scs:Author ;
+  schema:identifier "local:/M.T."^^xsd:string ;
+  schema:givenName "Matthew"^^xsd:string ;
+  schema:familyName "Turk"^^xsd:string ;
+  schema:affiliation "Department of Astronomy and Astrophysics, Columbia University"^^xsd:string ;
+  schema:affiliation "National Center for Supercomputing Applications,University of Illinois at Urbana-Champaign"^^xsd:string ;
+  schema:email "matthewturk@gmail.com"^^xsd:string ;
+  .
+
+<author/#danielpeter>
+  a scs:Author ;
+  schema:identifier "local:/D.P."^^xsd:string ;
+  schema:givenName "Daniel"^^xsd:string ;
+  schema:familyName "Peter"^^xsd:string ;
+  schema:affiliation "Department of Astronomy and Astrophysics, Columbia University"^^xsd:string ;
+  schema:affiliation "Institute of Geophysics,ETH (Swiss Federal Institute of Technology"^^xsd:string ;
+  schema:email "peterda@ethz.ch"^^xsd:string ;
   .
 
 <article/#ytpub>
@@ -69,39 +107,33 @@
   schema:about "local:/methods - data analysis"^^xsd:string ;
   schema:about "local:/methods - numerical"^^xsd:string ;
   scs:author [
-    a scs:AuthorOrder ;
-    schema:author  <author/#matthewjturk>;
+    scs:author <author/#matthewjturk>;
     scs:order: 1 ;
     ] ;
-  scs:authorOrder [
-    a scs:AuthorOrder ;
-    schema:author <author/#brittondsmith> ;
+  scs:author [
+    scs:author <author/#brittondsmith> ;
     scs:order: 2 ;
     ] ;
-  scs:authorOrder [
-    a scs:AuthorOrder ;
-    schema:author <author/#jeffreysoishi> ;
+  scs:author [
+    scs:author <author/#jeffreysoishi> ;
     scs:order: 3 ;
     ];
-  scs:authorOrder [
-    a scs:AuthorOrder ;
-    schema:author <author/#stephenstory> ;
+  scs:author [
+    scs:author <author/#stephenstory> ;
     scs:order: 4 ;
     ] ;
-  scs:authorOrder [
-    a scs:AuthorOrder ;
-    schema:author <author/#samuelwskillman> ;
+  scs:author [
+    scs:author <author/#samuelwskillman> ;
     scs:order: 5 ;
     ] ;
-  scs:authorOrder [
-    a scs:AuthorOrder ;
-    schema:author <author/#tomabel> ;
+  scs:author [
+    scs:author <author/#tomabel> ;
     scs:order: 6 ;
     ];
   schema:abstract """The  analysis  of  complex  multiphysics  astrophysical  simulations  presents  a  unique  and  rapidly  growing  set  ofchallenges:  reproducibility,  parallelization,  and  vast  increases  in  data  size  and  complexity  chief  among  them. In  order  to  meet  these  challenges,  and  in  order  to  open  up  new  avenues  for  collaboration  between  users  ofmultiple simulation platforms, we present yt (available at
   http://yt.enzotools.org/) an open source, community-developed astrophysical analysis and visualization toolkit. Analysis and visualization withytare oriented aroundphysically  relevant  quantities  rather  than  quantities  native  to  astrophysical  simulation  codes.  While  originallydesigned for handling Enzo’s structure adaptive mesh refinement data,ythas been extended to work with severaldifferent  simulation  methods  and  simulation  codes  including  Orion,  RAMSES,  and  FLASH.  We  report  on  its methods for reading, handling, and visualizing data, including projections, multivariate volume rendering, multi-dimensional histograms, halo finding, light cone generation, and topologically connected isocontour identification.Furthermore, we discuss the underlying algorithmsytuses for processing and visualizing data, and its mechanisms for parallelization of analysis tasks."""^^xsd:string ;
   schema:publisher "The Astrophysical Journal Supplement Series"^^xsd:string ;
-  schema:datePublished: "2011" ;
+  schema:datePublished: "2011"^^xsd:string ;
   schema:publicationType "journal article" ;
   scs:citeSoftware [
     a scs:SoftwareOutcome ;
@@ -156,6 +188,114 @@
 	  schema:url <https://iopscience.iop.org/article/10.1088/0067-0049/192/1/9> ;
       .
 
+  <article/#seismologypub>
+    a scs:ScholarlyArticle ;
+    schema:identifier "doi:/10.1007/978-3-319-12976-1_10" ;
+    schema:identifier "ISBN:978-3-319-12976-1" ;
+    schema:name "Seismic Sound Lab:Sights, Sounds and Perceptionof the Earth as an Acoustic Space"^^xsd:string ;
+    schema:about "local:/Audification"^^xsd:string ;
+    schema:about "local:/Sonification"^^xsd:string ;
+    schema:about "local:/Seismology"^^xsd:string ;
+    schema:about "local:/Wave Field visualization"^^xsd:string ;
+    scs:author [
+      scs:author <author/#benholtzman> ;
+      scs:order: 1 ;
+      ] ;
+    scs:author [
+      scs:author <author/#jasoncandler> ;
+      scs:order: 2 ;
+      ] ;
+    scs:author [
+      scs:author <author/#matthewturk> ;
+      scs:order: 3 ;
+      ];
+    scs:author [
+      scs:author <author/#danielpeter> ;
+      scs:order: 4 ;
+      ] ;
+    schema:abstract """We construct a representation of earthquakes and global seis-mic waves through sound and animated images. The seismic wave fieldis the ensemble of elastic waves that propagate through the planet afteran earthquake, emanating from the rupture on the fault. The soundsare made by time compression (i.e. speeding up) of seismic data withminimal additional processing. The animated images are renderings ofnumerical simulations of seismic wave propagation in the globe. Synchro-nized sounds and images reveal complex patterns and illustrate numer-ous aspects of the seismic wave field. These movies represent phenomenaoccurring far from the time and length scales normally accessible to us,creating a profound experience for the observer. The multi-sensory per-ception of these complex phenomena may also bring new insights toresearchers."""^^xsd:string ;
+    schema:publisher "Springer, Cham"^^xsd:string ;
+    schema:datePublished: "2014"^^xsd:string ;
+    schema:publicationType "conference paper" ;
+    scs:citeSoftware [
+      a scs:SoftwareOutcome ;
+      schema:identifier <software/#yt> ;
+      schema:identifier <software/#specfem3d> ;
+      schema:identifier <software/#axisem> ;
+      scs:outcome [
+        a scs:Outcome ;
+        schema:articleBody """Fig. 1. (a)Sound processing: for a given earthquake, we obtain a list of active seismicstations on the globe (black dots), decide on the speaker geometry (white dots) andthe relation of it to the earthquake source (large black dot), and then find the neareststations to the speaker locations (dashed oval), download the data for those stationsfrom IRIS, and then run them through our sound generating/processing programs.(b)Image generation: for that given event, we run a simulation either in SPECFEM3Dor AXISEM, render the graphics inytand then synchronize with the sounds.(c)Wehave a small multi-channel (16) sound system with a projector at LDEO, but havedeveloped this material for the Hayden Planetarium"""^^xsd:string ;
+        schema:pageStart 165 ;
+        scs:usageType "visualization" ;
+        scs:usageType "sound processing" ;
+        ]
+      ];
+      a scs:SoftwareOutcome ;
+      schema:identifier <software/#yt> ;
+      scs:outcome [
+        a scs:Outcome ;
+        schema:articleBody """Fig. 3.Three time steps ofyt-rendered animations,(a)Small displacement transferfunction (top) corresponds predominantly to body waves (high frequency).(b)Largedisplacement transfer function (top) corresponds predominantly to the surface waves(low frequency). This simulation is of the first 4 hours after the 2011 Tohoku, Japan,Mag. 9.1 earthquake."""^^xsd:string ;
+        schema:pageStart 169 ;
+        scs:usageType "visualization" ;
+        scs:usageType "simulation" ;
+      ];
+
+  	  schema:url <https://link.springer.com/content/pdf/10.1007%2F978-3-319-12976-1_10.pdf> ;
+        .
+
+<software/#specfem3d>
+  a schema:SoftwareApplication ;
+  schema:name "SPECFEM3D"^^xsd:string ;
+  schema:alernate "SPECFEM3D_Cartesian"^^xsd:string ;
+  schema:description """SPECFEM3D_Cartesian simulates acoustic (fluid), elastic (solid), coupled acoustic/elastic, poroelastic or seismic wave propagation in any type of conforming mesh of hexahedra (structured or not.) It can, for instance, model seismic waves propagating in sedimentary basins or any other regional geological model following earthquakes. It can also be used for non-destructive testing or for ocean acoustics. Main 'historical' authors: Dimitri Komatitsch and Jeroen Tromp (there are currently many more!)"""^^xsd:string ;
+  schema:about "local:/Seismology"^^xsd:string ;
+  schema:about "local:/Geophysics"^^xsd:string ;
+  schema:about "local:/geological modeling"^^xsd:string ;
+  schema:about "local:/numerical simulations"^^xsd:string ;
+  schema:relatedLink <https://github.com/geodynamics/specfem3d> ;
+  schema:relatedLink <https://specfem3d.readthedocs.io/en/latest/> ;
+  schema:funder "NSF Grants No. EAR-0406751 and EAR-0711177"^^xsd:string ;
+  schema:funder """French CNRS, French INRIA Sud-Ouest MAGIQUE-3D, French ANR NUMASIS under Grant No. ANR-05-CIGC-002"""^^xsd:string ;
+  schema:funder """European FP6 Marie Curie International Reintegration Grant No. MIRG-CT-2005-017461"""^^xsd:string ;
+  schema:version "2.0.2"^^xsd:string ;
+  schema:license "GNU General Public License"^^xsd:string ;
+  schema:softwareRequirements "fortran"^^xsd:string ;
+  .
+
+<repository/#specfem3drepo>
+  a schema:SoftwareSourceCode ;
+  schema:codeRepository <https://github.com/geodynamics/specfem3d> ;
+  schema:targetProduct <software/#specfem3d> ;
+  schema:description """SPECFEM3D_Cartesian simulates acoustic (fluid), elastic (solid), coupled acoustic/elastic, poroelastic or seismic wave propagation in any type of conforming mesh of hexahedra (structured or not.) It can, for instance, model seismic waves propagating in sedimentary basins or any other regional geological model following earthquakes. It can also be used for non-destructive testing or for ocean acoustics. Main 'historical' authors: Dimitri Komatitsch and Jeroen Tromp (there are currently many more!)"""^^xsd:string ;
+  schema:contributor <developer/#dimitrikomatitsch> ;
+  schema:contributor <developer/#clementdurochat> ;
+  schema:contributor <developer/danielpeter> ;
+  .
+
+<software/#axisem>
+  a schema:SoftwareApplication ;
+  schema:name "AxiSEM"^^xsd:string ;
+  schema:description """AxiSEM is a parallel spectral-element method to solve 3D wave propagation in a sphere with axisymmetric or spherically symmetric visco-elastic, acoustic, anisotropic structures."""^^xsd:string ;
+  schema:about "local:/Seismology"^^xsd:string ;
+  schema:about "local:/spectral-elements"^^xsd:string ;
+  schema:about "local:/fortran"^^xsd:string ;
+  schema:about "local:/mpi"^^xsd:string ;
+  schema:about "local:/high-performance-computing"^^xsd:string ;
+  schema:relatedLink <https://github.com/geodynamics/axisem> ;
+  schema:version "1.3"^^xsd:string ;
+  schema:license "GNU General Public License"^^xsd:string ;
+  schema:softwareRequirements "fortran"^^xsd:string ;
+  .
+
+<repository/#axisemrepo>
+  a schema:SoftwareSourceCode ;
+  schema:codeRepository <https://github.com/geodynamics/axisem/releases> ;
+  schema:targetProduct <software/#axisem> ;
+  schema:description """AxiSEM is a parallel spectral-element method to solve 3D wave propagation in a sphere with axisymmetric or spherically symmetric visco-elastic, acoustic, anisotropic structures."""^^xsd:string ;
+  schema:contributor <developer/#matrinvandriel> ;
+  schema:contributor <developer/#simonstahler> ;
+  .
+
 
 <software/#yt>
   a schema:SoftwareApplication ;
@@ -179,25 +319,57 @@
   schema:codeRepository <https://github.com/yt-project/yt/> ;
   schema:targetProduct <software/#yt> ;
   schema:description "yt is an open-source, permissively-licensed python package for analyzing and visualizing volumetric data.yt supports structured, variable-resolution meshes, unstructured meshes, and discrete or sampled data such as particles. Focused on driving physically-meaningful inquiry, yt has been applied in domains such as astrophysics, seismology, nuclear engineering, molecular dynamics, and oceanography. Composed of a friendly community of users and developers, we want to make it easy to use and develop - we'd love it if you got involved! We've written a method paper you may be interested in; if you use yt in the preparation of a publication, please consider citing it."^^xsd:string ;
-  schema:contributor <codemaintainer/#matthewjturk> ;
-  schema:contributor <codemaintainer/nathangoldbaum> ;
-  schema:contributor <codemaintainer/brittondsmith> ;
+  schema:contributor <developer/#matthewjturk> ;
+  schema:contributor <developer/nathangoldbaum> ;
+  schema:contributor <developer/brittondsmith> ;
   .
 
-<codemaintainer/#matthewjturk>
+<developer/#dimitrikomatitsch>
+  a scs:CodeMaintainer ;
+  schema:identifier <https://github.com/komatits> ;
+  schema:name "Dimitri Komatitsch"^^xsd:string ;
+  .
+
+<developer/#clementdurochat>
+  a scs:CodeMaintainer ;
+  schema:identifier <https://github.com/durochat> ;
+  schema:name "Clement Durochat"^^xsd:string ;
+  .
+
+<developer/#danielpeter>
+  a scs:CodeMaintainer ;
+  schema:identifier <https://github.com/danielpeter> ;
+  schema:name "Daniel Peter"^^xsd:string ;
+  schema:sameAs <author/#danielpeter> ;
+  .
+
+<developer/#matrinvandriel>
+  a scs:CodeMaintainer ;
+  schema:identifier <https://github.com/martinvandriel> ;
+  schema:name "Martin van Driel"^^xsd:string ;
+  .
+
+<developer/#simonstahler>
+  a scs:CodeMaintainer ;
+  schema:identifier <https://github.com/sstaehler> ;
+  schema:name "Simon Stahler"^^xsd:string ;
+  .
+
+<developer/#matthewjturk>
   a scs:CodeMaintainer ;
   schema:identifier <https://github.com/matthewturk> ;
   schema:name "Matthew J. Turk"^^xsd:string ;
   schema:sameAs <author/#matthewjturk> ;
+  schema:sameAs <author/#matthewturk> ;
   .
 
-<codemaintainer/nathangoldbaum>
+<developer/#nathangoldbaum>
   a scs:CodeMaintainer ;
   schema:identifier <https://github.com/ngoldbaum> ;
   schema:name "Nathan Goldbaum"^^xsd:string ;
   .
 
-<codemaintainer/brittondsmith>
+<developer/#brittondsmith>
   a scs:CodeMaintainer ;
   schema:identifier <https://github.com/brittonsmith> ;
   schema:name "Britton D. Smith"^^xsd:string ;
